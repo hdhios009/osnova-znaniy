@@ -217,8 +217,6 @@
   .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
   .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:18ch}
   .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
-  .gift-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:var(--yellow);color:var(--text);border-radius:999px;font-weight:700;font-size:13.5px;letter-spacing:.02em;margin-top:6px;border:1px solid var(--yellow)}
-  #gift{scroll-margin-top:110px}
   .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
   .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
   .finale form input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
@@ -301,7 +299,6 @@
       <p class="lead">Покажем, что именно мешает ребёнку&#160;— <b>скорость, внимание, память или&#160;понимание текста</b>, и&#160;составим понятный план занятий.</p>
       <div class="hero-cta">
         <a href="#form" class="btn btn-primary btn-lg">Записаться на&#160;бесплатную диагностику</a>
-        <a href="#gift" class="btn btn-outline btn-lg">Получить подарок</a>
       </div>
       <div class="trust">
         <span>Реальные отзывы родителей</span>
@@ -480,7 +477,6 @@
     <div>
       <h2>Записаться на&#160;бесплатную диагностику</h2>
       <p>Проверим чтение, внимание, память и&#160;понимание текста. Оставьте контакты — администратор перезвонит и&#160;подберёт удобное время.</p>
-      <span id="gift" class="gift-tag">Подарок · проверка внимания и&#160;памяти ребёнка</span>
     </div>
     <form id="lead-form" novalidate>
       <h3>Оставьте заявку</h3>
@@ -494,7 +490,7 @@
       <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
       <button id="f_submit" type="submit">Записаться на бесплатную диагностику</button>
       <div id="form-status" class="form-status" aria-live="polite"></div>
-      <p class="privacy">Нажимая кнопку, вы соглашаетесь на&#160;<a href="privacy.html">обработку персональных данных</a>.</p>
+      <p class="privacy">Нажимая кнопку, вы соглашаетесь на&#160;<a href="/consent/">обработку персональных данных</a>.</p>
     </form>
   </div>
 </section>
@@ -509,7 +505,11 @@
 <footer class="site">
   <div class="wrap row">
     <div><strong>Основа <em>знаний</em></strong> · Москва, Мичуринский просп., 11, к. 3</div>
-    <div>Сайт создан в&#160;студии <a href="https://studioglubina.ru/" target="_blank" rel="noopener">ГЛУБИНА</a></div>
+    <div>
+      <a href="/privacy/">Политика конфиденциальности</a>
+      ·
+      Сайт создан в&#160;студии <a href="https://studioglubina.ru/" target="_blank" rel="noopener">ГЛУБИНА</a>
+    </div>
   </div>
 </footer>
 
