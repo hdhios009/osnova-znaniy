@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Основа знаний — подготовка к школе и скорочтение</title>
+<meta name="description" content="Пробное занятие бесплатно. Подготовка к школе 5–7 лет и скорочтение 7–14 лет. Мини-группы до 6 детей.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Основа знаний">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Основа знаний">
+<meta property="og:title" content="Основа знаний — пробное занятие 0 ₽">
+<meta property="og:description" content="Подготовка к школе и скорочтение. Пробное занятие бесплатно.">
+<meta property="og:image" content="https://kotiksym.ru/images/favicon-512.png">
+<meta property="og:locale" content="ru_RU">
+<meta name="yandex-verification" content="76be8c8c491245c5">
+<link rel="icon" type="image/png" sizes="120x120" href="favicon-120.png">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110489022', 'ym');
+   ym(110489022, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110489022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F4EE; --surface:#FFFFFF; --line:#E3DFD6;
+    --blue:#405FC2; --blue-hover:#3450A8; --dark-blue:#263B78; --blue-soft:#EEF2FC;
+    --yellow:#F1C84B; --yellow-hover:#DDAE2D; --yellow-soft:#FFF4C4;
+    --yellow-text:#A87500; --yellow-num:#C69200;
+    --text:#20232B; --muted:#656A73;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Onest",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--yellow);color:var(--text)}
+  img,svg,iframe{max-width:100%;display:block}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{color:var(--blue-hover)}
+  h1,h2,h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;color:var(--text);margin:0}
+  .wrap{width:calc(100% - 32px);max-width:1180px;margin:0 auto}
+  section[id]{scroll-margin-top:84px}
+  @keyframes draw{to{stroke-dashoffset:0}}
+
+  section{padding:74px 0}
+  section.hero{padding:64px 0 56px}
+  section.contacts{padding:60px 0}
+  section.live{padding:78px 0}
+  section.finale{padding:74px 0}
+
+  header.site{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.site nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
+  .brand{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--text)}
+  .brand em{font-style:normal;color:var(--blue)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-decoration:none}
+  .btn-primary{background:var(--blue);color:#fff}
+  .btn-primary:hover{background:var(--blue-hover);color:#fff}
+  .btn-outline{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+  .btn-outline:hover{background:var(--blue);color:#fff}
+  .btn-lg{padding:16px 28px;font-size:16px}
+
+  /* Hero */
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;font-weight:500;color:#43413c;background:var(--surface)}
+  .hero .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:inline-block}
+  .hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:22px 0 18px;text-wrap:balance;max-width:16ch}
+  .hero h1 .u{position:relative;white-space:nowrap;color:var(--blue)}
+  .hero h1 .u svg{position:absolute;left:-3%;right:-3%;bottom:-11px;width:106%;height:18px;overflow:visible}
+  .hero .diag{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:clamp(18px,3.4vw,28px);letter-spacing:-.02em;margin:0 0 18px;color:var(--dark-blue)}
+  .hero .diag em{font-style:normal;color:var(--blue)}
+  .hero p.lead{font-size:18.5px;line-height:1.62;color:var(--muted);max-width:52ch;margin:0 0 28px;text-wrap:pretty}
+  .hero p.lead b{color:var(--text);font-weight:600}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .hero-cta .btn-outline{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
+  .hero-cta .btn-outline:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
+  .trust{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+  .trust span{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:13.5px;font-weight:600}
+  .trust .stars{color:var(--yellow);letter-spacing:1px}
+  .hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:center}
+  .hero-photo{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 32px -18px rgba(38,59,120,.35);background:var(--surface)}
+  .hero-photo img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+
+  /* Real photo block */
+  .gallery{padding:18px 0 42px}
+  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+  .gallery-head h2{font-size:clamp(26px,3.5vw,40px)}
+  .gallery-head p{margin:0;color:var(--muted);max-width:36ch;font-size:15.5px}
+  .gallery-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-template-rows:230px 230px;gap:14px}
+  .gallery-item{appearance:none;padding:0;text-align:inherit;font:inherit;color:inherit;display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);cursor:zoom-in;position:relative}
+  .gallery-item:first-child{grid-row:1 / span 2}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+  .gallery-item:hover img{transform:scale(1.025)}
+  .gallery-item:nth-child(2) img{object-position:center 38%}
+  .gallery-item:nth-child(3) img{object-position:center 28%}
+  .gallery-item:nth-child(4) img{object-position:center 32%}
+  .gallery-item:nth-child(5) img{object-position:center 28%}
+
+  .photo-lightbox{position:fixed;inset:0;background:rgba(20,24,34,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:28px}
+  .photo-lightbox.open{display:flex}
+  .photo-lightbox img{max-width:min(1100px,94vw);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  .photo-lightbox button{position:absolute;top:18px;right:18px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:var(--text);font:600 25px/1 Onest,sans-serif;cursor:pointer}
+
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr}
+    .hero-photo{order:2;max-width:720px}
+    .gallery-head{align-items:start;flex-direction:column;gap:8px}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:220px 220px 220px}
+    .gallery-item:first-child{grid-row:auto;grid-column:1 / -1}
+  }
+  @media (max-width:560px){
+    .gallery{padding-top:10px}
+    .gallery-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:250px}
+    .gallery-item:first-child{grid-column:auto}
+    .gallery-item:nth-child(3),.gallery-item:nth-child(4),.gallery-item:nth-child(5){height:320px}
+  }
+  .proof{display:grid;grid-template-columns:repeat(3,1fr);max-width:560px;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .proof>div{padding:18px 20px;border-right:1px solid var(--line)}
+  .proof>div:last-child{border-right:0}
+  .proof b{display:block;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:26px;letter-spacing:-.04em;color:var(--dark-blue)}
+  .proof>div:nth-child(1) b{color:var(--blue)}
+  .proof>div:nth-child(2) b{color:var(--text)}
+  .proof>div:nth-child(3) b{color:var(--yellow-num)}
+  .proof span{display:block;color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.35}
+
+  /* Directions */
+  .directions h2{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
+  .directions .sub{color:var(--muted);max-width:44ch;margin:0 0 40px}
+  .dir-row{display:grid;grid-template-columns:60px 1fr 220px auto;gap:32px;align-items:center;padding:32px 16px;background:var(--blue-soft);margin:0 -16px;border-radius:12px;border:0}
+  .dir-row:last-child{border-bottom:0}
+  .dir-row.alt{background:var(--yellow-soft);margin:16px -16px 0;padding:32px 16px;border-radius:12px;border-top:0;border-bottom:0}
+  .dir-num{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:600;font-size:40px;letter-spacing:-.02em;line-height:1;opacity:.9;color:var(--blue)}
+  .dir-row.alt .dir-num{color:var(--yellow-num)}
+  .dir-body h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-size:26px;margin:0 0 6px;color:var(--text)}
+  .dir-body .age{color:var(--dark-blue);font-weight:600;font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+  .dir-row.alt .age{color:var(--yellow-text)}
+  .dir-body p{margin:0;color:var(--muted);font-size:16px;line-height:1.55}
+  .dir-params{display:grid;gap:6px;color:var(--text);font-size:14.5px;font-weight:500;margin:0;padding:0}
+  .dir-params li{list-style:none;padding-left:14px;position:relative}
+  .dir-params li::before{content:"·";position:absolute;left:0;color:var(--blue);font-weight:700}
+  .dir-row.alt .dir-params li::before{color:var(--yellow-num)}
+  .dir-cta{white-space:nowrap}
+  .dir-row.alt .dir-cta{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
+  .dir-row.alt .dir-cta:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
+
+  /* Results */
+  .results-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:44px}
+  .results-top h2{font-size:clamp(28px,4vw,44px)}
+  .results-top p{color:var(--muted);margin:0;max-width:44ch}
+  .journey{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+  .journey-col{padding:28px 0}
+  .journey-col.after{background:var(--blue-soft);padding:28px;border-radius:16px}
+  .journey-col h3{font-size:22px;color:var(--muted);margin:0 0 18px;font-family:'Unbounded','Onest',sans-serif;font-weight:600;letter-spacing:-.01em}
+  .journey-col.now h3::after{content:"";display:block;width:42px;height:5px;margin-top:10px;border-radius:999px;background:var(--yellow)}
+  .journey-col.after h3{color:var(--dark-blue)}
+  .journey-col ul{list-style:none;padding:0;margin:0;display:grid;gap:14px;color:var(--text);font-size:16px;line-height:1.5}
+  .journey-col li{padding-left:22px;position:relative}
+  .journey-col li::before{content:"";position:absolute;left:0;top:.65em;width:12px;height:2px;background:var(--muted);border-radius:2px}
+  .journey-col.after li::before{background:var(--blue)}
+  .journey-arrow{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--blue)}
+  .journey-arrow svg{width:56px;height:56px}
+  .journey-arrow span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:12ch;text-align:center;font-weight:600}
+
+  /* Live center — dark blue */
+  .live{background:var(--dark-blue);color:#fff}
+  .live .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .live h2{color:#fff;font-size:clamp(28px,3.8vw,42px);max-width:14ch}
+  .live p{color:#C9D1EA;font-size:18px;line-height:1.65;margin:20px 0 0}
+  .live p b{color:#fff;font-weight:600}
+  .live ol{list-style:none;padding:0;margin:0;counter-reset:live}
+  .live ol li{counter-increment:live;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline}
+  .live ol li:last-child{border-bottom:0}
+  .live ol li::before{content:counter(live,decimal-leading-zero);font-family:'Unbounded','Onest',sans-serif;font-weight:700;color:var(--yellow);font-size:15px;letter-spacing:.02em}
+  .live ol li b{display:block;font-weight:600;font-size:18px;margin-bottom:4px}
+  .live ol li span{color:#B7C0DA;font-size:14.5px;line-height:1.5}
+
+  /* Reviews */
+  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+  .reviews-head h2{font-size:clamp(28px,4vw,44px);max-width:16ch}
+  .reviews-rating{text-align:right}
+  .reviews-rating .num{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:44px;color:var(--dark-blue);line-height:1}
+  .reviews-rating .stars{color:var(--yellow);letter-spacing:3px;font-size:18px;margin-top:6px}
+  .reviews-rating .src{color:var(--muted);font-size:12.5px;margin-top:4px}
+  .reviews-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start}
+  .review-main{position:relative;padding-left:60px}
+  .review-main::before{content:"“";position:absolute;left:-6px;top:-40px;font-family:'Unbounded','Onest',sans-serif;font-size:180px;color:var(--yellow);line-height:1;opacity:.9}
+  .review-main .quote{font-family:'Unbounded','Onest',sans-serif;font-weight:600;font-size:clamp(22px,2.4vw,28px);line-height:1.3;color:var(--text);margin:0 0 18px;letter-spacing:-.01em}
+  .review-main p{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.65}
+  .review-main .meta{color:var(--text);font-weight:600}
+  .review-main .date{color:var(--muted);font-weight:400;margin-left:8px;font-size:14px}
+  .review-side{display:grid;gap:24px}
+  .review-side article{padding:22px 0;border-bottom:1px solid var(--line)}
+  .review-side article:last-child{border-bottom:0;padding-bottom:0}
+  .review-side .stars{color:var(--yellow);letter-spacing:2px;font-size:13px;margin-bottom:8px}
+  .review-side .title-l{font-weight:600;color:var(--text);margin:0 0 8px;font-size:16px;line-height:1.35}
+  .review-side p{margin:0 0 10px;color:var(--muted);font-size:14.5px;line-height:1.6}
+  .review-side .meta{color:var(--text);font-weight:600;font-size:13.5px}
+  .review-side .date{color:var(--muted);font-weight:400;margin-left:6px}
+  .reviews-cta{display:flex;justify-content:center;margin-top:36px}
+
+  /* Contacts — yellow info + map */
+  .contacts h2{font-size:clamp(28px,4vw,44px);margin:0 0 28px}
+  .contacts-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:0;overflow:hidden;border-radius:20px;border:1px solid var(--line)}
+  .contacts-info{background:var(--yellow-soft);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-right:1px solid var(--line)}
+  .contacts-info .name{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:22px;color:var(--text)}
+  .contacts-info .name em{font-style:normal;color:var(--blue)}
+  .contacts-info address{font-style:normal;font-size:22px;line-height:1.4;color:var(--text);font-weight:600}
+  .contacts-info p{margin:0;color:var(--muted);font-size:15px}
+  .contacts-map{min-height:340px;background:var(--blue-soft);display:block;overflow:hidden}
+  .contacts-map iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+
+  /* Final — blue-soft */
+  .finale{background:var(--blue-soft);border-top:0;color:var(--text)}
+  .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:18ch}
+  .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
+  .gift-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:var(--yellow);color:var(--text);border-radius:999px;font-weight:700;font-size:13.5px;letter-spacing:.02em;margin-top:6px;border:1px solid var(--yellow)}
+  #gift{scroll-margin-top:110px}
+  .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
+  .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
+  .finale form input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
+  .finale form input:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(64,95,194,.18)}
+  .finale form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .finale form button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--blue);color:#fff;font:600 16px/1 'Onest';cursor:pointer;transition:background .18s}
+  .finale form button:hover:not(:disabled){background:var(--blue-hover)}
+  .finale form button:disabled{opacity:.7;cursor:default}
+  .finale form .privacy{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0}
+  .finale form .privacy a{color:var(--blue);text-decoration:underline}
+  .form-status{font-size:13.5px;line-height:1.45;min-height:18px;margin:2px 0 -2px}
+  .form-status.err{color:#C13B29}
+  .form-status.ok{color:var(--dark-blue)}
+
+  /* Footer */
+  footer.site{background:var(--bg);border-top:1px solid var(--line);padding:24px 0}
+  footer.site .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}
+  footer.site .row a{color:var(--blue);text-decoration:underline}
+  footer.site .row a:hover{color:var(--blue-hover)}
+  footer.site strong em{font-style:normal;color:var(--blue)}
+  footer.site strong{color:var(--text)}
+
+  /* Mobile */
+  @media (max-width:900px){
+    .dir-row{grid-template-columns:44px 1fr;grid-template-rows:auto auto auto auto;gap:12px 16px}
+    .dir-num{grid-row:span 4;font-size:30px}
+    .dir-params,.dir-cta{grid-column:2}
+    .journey{grid-template-columns:1fr}
+    .journey-arrow{transform:rotate(90deg);margin:6px auto}
+    .live .wrap,.finale .wrap,.reviews-grid,.contacts-grid,.results-top{grid-template-columns:1fr;gap:28px}
+    .contacts-grid{border-radius:16px}
+    .contacts-info{border-right:0;border-bottom:1px solid var(--line)}
+    .contacts-map{min-height:280px}
+    .reviews-head{align-items:start}
+    .reviews-rating{text-align:left}
+    .review-main{padding-left:0}
+    .review-main::before{position:static;display:block;font-size:96px;height:80px}
+  }
+  @media (max-width:640px){
+    section{padding:52px 0}
+    section.hero{padding:40px 0 38px}
+    .hero h1{font-size:clamp(30px,8.4vw,42px)}
+    .hero .diag{font-size:20px}
+    .hero-cta{flex-direction:column}
+    .hero-cta .btn{width:100%}
+    .proof{grid-template-columns:1fr;max-width:100%}
+    .proof>div{border-right:0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:12px}
+    .proof>div:last-child{border-bottom:0}
+    .proof span{margin-top:0}
+    .dir-row,.dir-row.alt{margin-left:0;margin-right:0;border-radius:8px}
+    .dir-row.alt{margin-top:14px}
+    .finale form .row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<noscript>
+  <div style="max-width:760px;margin:0 auto;padding:32px 20px;font-family:system-ui,sans-serif;color:#20232B">
+    <p style="font-size:24px;font-weight:700;margin:0 0 12px">Основа знаний — центр развития ребёнка</p>
+    <p>Детский центр скорочтения, внимания и памяти. Бесплатная первая диагностика чтения, мини-группы до 6 детей.</p>
+    <p>Телефон: <a href="tel:+79684551800">+7 968 455 1800</a></p>
+  </div>
+</noscript>
+
+<header class="site">
+  <nav class="wrap">
+    <a href="#top" class="brand">Основа <em>знаний</em></a>
+    <a href="#form" class="btn btn-primary">Записаться</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>Бесплатная диагностика чтения · 40–60&#160;минут</span>
+      <h1>Чтобы ребёнок читал <span class="u">легко<svg viewBox="0 0 240 30" preserveAspectRatio="none"><path d="M6 18 C 70 4, 150 28, 234 10" fill="none" stroke="#F1C84B" stroke-width="8" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="320" style="animation:draw 1.1s .35s ease forwards"/></svg></span>, понимал и&#160;запоминал</h1>
+      <div class="diag">Первая диагностика&#160;— <em>0&#160;рублей</em></div>
+      <p class="lead">Покажем, что именно мешает ребёнку&#160;— <b>скорость, внимание, память или&#160;понимание текста</b>, и&#160;составим понятный план занятий.</p>
+      <div class="hero-cta">
+        <a href="#form" class="btn btn-primary btn-lg">Записаться на&#160;бесплатную диагностику</a>
+        <a href="#gift" class="btn btn-outline btn-lg">Получить подарок</a>
+      </div>
+      <div class="trust">
+        <span>Реальные отзывы родителей</span>
+        <span>Мини-группы до&#160;6&#160;детей</span>
+      </div>
+      <div class="proof">
+        <div><b>580+</b><span>детей прошли обучение</span></div>
+        <div><b>5–16</b><span>возраст детей для занятий</span></div>
+        <div><b>до 6</b><span>детей в мини-группе</span></div>
+      </div>
+    </div>
+    <button class="hero-photo gallery-item" type="button" data-full="images/hero-teacher.jpg" aria-label="Увеличить фотографию занятия">
+      <img src="images/hero-teacher.jpg" alt="Педагог центра занимается с ребёнком">
+    </button>
+  </div>
+</section>
+
+<section class="gallery" id="photos">
+  <div class="wrap">
+    <div class="gallery-head">
+      <h2>Как проходят занятия</h2>
+      <p>Настоящие фотографии центра, детей и занятий — без стоковых кадров.</p>
+    </div>
+    <div class="gallery-grid">
+      <button class="gallery-item" type="button" data-full="images/gallery-01.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-01.jpg" alt="Дети занимаются за столом в центре"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-02.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-02.jpg" alt="Ученик центра на занятии"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-03.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-03.jpg" alt="Ребёнок выполняет задание"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-04.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-04.jpg" alt="Ребёнок работает с учебным материалом"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-05.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-05.jpg" alt="Ученица центра с учебным пособием"></button>
+    </div>
+  </div>
+</section>
+
+<section id="directions" class="directions">
+  <div class="wrap">
+    <h2>Направления</h2>
+    <p class="sub">Две программы под возраст ребёнка. Начать можно с бесплатной диагностики.</p>
+
+    <div class="dir-row">
+      <div class="dir-num">01</div>
+      <div class="dir-body">
+        <div class="age">5–16 лет</div>
+        <h3>Скорочтение</h3>
+        <p>Ребёнок читает быстрее, лучше понимает и&#160;пересказывает текст.</p>
+      </div>
+      <ul class="dir-params">
+        <li>группа&#160;— 60&#160;мин</li>
+        <li>индивидуально&#160;— 40&#160;мин</li>
+      </ul>
+      <a href="#form" class="btn btn-outline dir-cta">Записаться&#160;→</a>
+    </div>
+
+    <div class="dir-row alt">
+      <div class="dir-num">02</div>
+      <div class="dir-body">
+        <div class="age">5–7 лет</div>
+        <h3>Подготовка к&#160;школе</h3>
+        <p>Готовим к&#160;1&#160;классу: чтение, письмо, счёт, логика, внимание и&#160;речь.</p>
+      </div>
+      <ul class="dir-params">
+        <li>группа&#160;— 60&#160;мин</li>
+        <li>индивидуально&#160;— 40&#160;мин</li>
+      </ul>
+      <a href="#form" class="btn btn-outline dir-cta">Записаться&#160;→</a>
+    </div>
+  </div>
+</section>
+
+<section id="result" class="results">
+  <div class="wrap">
+    <div class="results-top">
+      <h2>Что меняется после занятий</h2>
+      <p>Цель — не просто быстрее читать, а&#160;понимать, запоминать и&#160;увереннее учиться.</p>
+    </div>
+    <div class="journey">
+      <div class="journey-col now">
+        <h3>Сейчас</h3>
+        <ul>
+          <li>Читает медленно и&#160;быстро устаёт</li>
+          <li>Забывает, что только что прочитал</li>
+          <li>Не может пересказать своими словами</li>
+          <li>Делает домашку только с&#160;родителем</li>
+        </ul>
+      </div>
+      <div class="journey-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        <span>работаем над навыками</span>
+      </div>
+      <div class="journey-col after">
+        <h3>После работы</h3>
+        <ul>
+          <li>Читает спокойнее и&#160;увереннее</li>
+          <li>Лучше понимает смысл текста</li>
+          <li>Выделяет главное и&#160;пересказывает</li>
+          <li>Быстрее справляется с&#160;заданиями</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="live">
+  <div class="wrap">
+    <div>
+      <h2>Живой центр, где ребёнка видят лично</h2>
+      <p>На занятии педагог замечает, где ребёнок теряет внимание, что мешает понимать текст и&#160;почему сложно пересказывать. Родитель получает <b>не общие слова, а&#160;понятную обратную связь</b>.</p>
+    </div>
+    <ol>
+      <li><div><b>Видим каждого ребёнка</b><span>Замечаем, где теряется внимание и&#160;что мешает понимать текст.</span></div></li>
+      <li><div><b>Понятная обратная связь</b><span>Родитель получает конкретику после занятий, а&#160;не общие слова.</span></div></li>
+      <li><div><b>Мини-группы до&#160;6&#160;детей</b><span>Педагог успевает к&#160;каждому и&#160;ведёт по&#160;его уровню.</span></div></li>
+      <li><div><b>Понятный план занятий</b><span>Родитель видит, что делаем и&#160;почему это работает.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="reviews-head">
+      <h2>Отзывы родителей на&#160;Яндекс&#160;Картах</h2>
+      <div class="reviews-rating">
+        <div class="num">5,0</div>
+        <div class="stars">★★★★★</div>
+        <div class="src">На основе отзывов на Яндекс Картах</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-main">
+        <div class="quote">Раньше не любили читать — теперь сам садится и&#160;читает</div>
+        <p>Ходим на&#160;скорочтение с&#160;декабря 2025&#160;года, ребёнок всегда идёт с&#160;удовольствием, педагог заинтересовал. Потихоньку приходит желание к&#160;чтению. Спасибо, что находите подход к&#160;детям.</p>
+        <div><span class="meta">Родитель ученика</span><span class="date">19 мая 2026</span></div>
+      </div>
+
+      <div class="review-side">
+        <article>
+          <div class="stars">★★★★★</div>
+          <div class="title-l">«Небольшие группы и&#160;разносторонние задания»</div>
+          <p>Ходим второй месяц, ребёнку очень нравится, группы действительно небольшие. Педагог много делает с&#160;детьми: на&#160;логику, память, счёт, внимательность. Спасибо за&#160;такой подход.</p>
+          <div><span class="meta">Родитель ученика</span><span class="date">14 января 2026</span></div>
+        </article>
+        <article>
+          <div class="stars">★★★★★</div>
+          <div class="title-l">«Бесплатное пробное и&#160;живая обратная связь педагогов»</div>
+          <p>Администратор подбирает время, начиная с&#160;пробного занятия — оно бесплатное. Педагоги молодые, но&#160;высококвалифицированные, прислушиваются к&#160;ребёнку. Однозначно рекомендую.</p>
+          <div><span class="meta">Родитель ученика</span><span class="date">22 октября 2025</span></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="reviews-cta">
+      <a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" class="btn btn-outline">Посмотреть отзывы на&#160;Яндекс&#160;Картах →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <h2>Как нас найти</h2>
+    <div class="contacts-grid">
+      <div class="contacts-info">
+        <div class="name">Основа <em>знаний</em></div>
+        <address>Москва, Мичуринский&#160;просп., 11, корп.&#160;3</address>
+        <p>Приезжайте на&#160;пробное занятие — покажем кабинет и&#160;познакомим с&#160;педагогом.</p>
+        <a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start">Открыть в&#160;Яндекс&#160;Картах →</a>
+      </div>
+      <a class="contacts-map" href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" aria-label="Открыть карту в Яндекс Картах">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.511283%2C55.699093&z=18&pt=37.511283%2C55.699093%2Cpm2rdm" loading="lazy" allowfullscreen="true" style="border:0;width:100%;height:100%;min-height:340px;display:block"></iframe>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="form" class="finale">
+  <div class="wrap">
+    <div>
+      <h2>Записаться на&#160;бесплатную диагностику</h2>
+      <p>Проверим чтение, внимание, память и&#160;понимание текста. Оставьте контакты — администратор перезвонит и&#160;подберёт удобное время.</p>
+      <span id="gift" class="gift-tag">Подарок · проверка внимания и&#160;памяти ребёнка</span>
+    </div>
+    <form id="lead-form" novalidate>
+      <h3>Оставьте заявку</h3>
+      <div>
+        <input id="f_name" name="name" type="text" placeholder="Ваше имя" required autocomplete="name">
+      </div>
+      <div class="row">
+        <input id="f_phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">
+        <input id="f_age" name="age" type="number" min="4" max="17" placeholder="Возраст ребёнка">
+      </div>
+      <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+      <button id="f_submit" type="submit">Записаться на бесплатную диагностику</button>
+      <div id="form-status" class="form-status" aria-live="polite"></div>
+      <p class="privacy">Нажимая кнопку, вы соглашаетесь на&#160;<a href="privacy.html">обработку персональных данных</a>.</p>
+    </form>
+  </div>
+</section>
+
+<div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
+  <button type="button" aria-label="Закрыть">×</button>
+  <img src="" alt="Увеличенная фотография">
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap row">
+    <div><strong>Основа <em>знаний</em></strong> · Москва, Мичуринский просп., 11, к. 3</div>
+    <div>Сайт создан в&#160;студии <a href="https://studioglubina.ru/" target="_blank" rel="noopener">ГЛУБИНА</a></div>
+  </div>
+</footer>
+
+<script src="form.js"></script>
+<script>
+(function(){
+  var lb=document.getElementById('photo-lightbox');
+  if(!lb) return;
+  var img=lb.querySelector('img');
+  var close=lb.querySelector('button');
+  document.querySelectorAll('.gallery-item[data-full]').forEach(function(item){
+    item.addEventListener('click',function(){
+      img.src=item.getAttribute('data-full');
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';
+    });
+  });
+  function hide(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');img.src='';document.body.style.overflow='';}
+  close.addEventListener('click',hide);
+  lb.addEventListener('click',function(e){if(e.target===lb) hide();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape' && lb.classList.contains('open')) hide();});
+})();
+</script>
+
+</body>
+</html>
