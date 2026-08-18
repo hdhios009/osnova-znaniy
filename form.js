@@ -14,9 +14,6 @@
     'yclid',
     'gclid'
   ];
-  var TIMEOUT = 18000;
-  var CD = 5000;
-
   function readStoredAttribution() {
     try {
       var raw = sessionStorage.getItem(ATTR_KEY);
@@ -224,19 +221,10 @@
     btn.textContent = 'Отправляем…';
     setStatus('', '');
 
-    var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    var timer = setTimeout(function () {
-      if (controller) controller.abort();
-    }, TIMEOUT);
-
-    /* CORS from osnova.kotiksym.ru was NOT verified: GAS POST 302-redirects;
-       a followed POST to script.googleusercontent.com returned 405. Keep the
-       production-proven opaque send. Field errors stay. */
     fetch(FORM_ENDPOINT, {
       method: 'POST',
       mode: 'no-cors',
-      body: body,
-      signal: controller ? controller.signal : undefined
+      body: body
     })
       .then(function () {
         lastSentKey = key;
@@ -254,12 +242,9 @@
         setStatus('Не удалось отправить заявку. Попробуйте ещё раз.', 'err');
       })
       .then(function () {
-        clearTimeout(timer);
-        setTimeout(function () {
-          busy = false;
-          btn.disabled = false;
-          btn.textContent = orig;
-        }, CD);
+        busy = false;
+        btn.disabled = false;
+        btn.textContent = orig;
       });
   });
 })();
