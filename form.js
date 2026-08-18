@@ -229,23 +229,15 @@
       if (controller) controller.abort();
     }, TIMEOUT);
 
+    /* CORS from osnova.kotiksym.ru was NOT verified: GAS POST 302-redirects;
+       a followed POST to script.googleusercontent.com returned 405. Keep the
+       production-proven opaque send. Field errors stay. */
     fetch(FORM_ENDPOINT, {
       method: 'POST',
+      mode: 'no-cors',
       body: body,
       signal: controller ? controller.signal : undefined
     })
-      .then(function (res) {
-        return res.text().then(function (text) {
-          var data = null;
-          try {
-            data = text ? JSON.parse(text) : null;
-          } catch (err) {
-            data = null;
-          }
-          if (res.ok && data && data.ok === true) return data;
-          throw new Error('bad_response');
-        });
-      })
       .then(function () {
         lastSentKey = key;
         goal('lead_form_submit');
