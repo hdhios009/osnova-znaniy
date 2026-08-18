@@ -76,7 +76,7 @@
   function validAge(v) {
     if (!v) return true;
     var n = parseInt(v, 10);
-    return !isNaN(n) && n >= 4 && n <= 17;
+    return !isNaN(n) && n >= 4 && n <= 16;
   }
 
   function leadKey(name, phone, age) {
@@ -141,7 +141,7 @@
       return;
     }
     if (!validAge(age)) {
-      setStatus('Возраст ребёнка — от 4 до 17 лет.', 'err');
+      setStatus('Возраст ребёнка — от 4 до 16 лет.', 'err');
       if (ageEl) ageEl.focus();
       return;
     }
