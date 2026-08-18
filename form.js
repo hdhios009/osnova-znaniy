@@ -14,7 +14,6 @@
     'yclid',
     'gclid'
   ];
-
   function readStoredAttribution() {
     try {
       var raw = sessionStorage.getItem(ATTR_KEY);
@@ -83,6 +82,25 @@
     return [name, phone, age].join('|');
   }
 
+  function showFieldError(field, message) {
+    var wrap = document.querySelector('[data-field="' + field + '"]');
+    var err = document.querySelector('[data-error-for="' + field + '"]');
+    if (err) {
+      err.textContent = message || '';
+      if (message) err.removeAttribute('hidden');
+      else err.setAttribute('hidden', '');
+    }
+    if (wrap && wrap.querySelector('input')) {
+      wrap.querySelector('input').setAttribute('aria-invalid', message ? 'true' : 'false');
+    }
+  }
+
+  function clearFieldErrors() {
+    showFieldError('name', '');
+    showFieldError('phone', '');
+    showFieldError('age', '');
+  }
+
   var attribution = captureAttribution();
 
   var form = document.getElementById('lead-form');
@@ -95,6 +113,7 @@
   var prevPhone = '';
   var busy = false;
   var lastSentKey = '';
+  var formStarted = false;
 
   function setStatus(text, kind) {
     if (!status) return;
@@ -102,17 +121,41 @@
     status.className = 'form-status' + (kind ? ' ' + kind : '');
   }
 
+  function goal(name) {
+    if (typeof ym === 'function') ym(110489022, 'reachGoal', name);
+  }
+
+  if (form) {
+    form.addEventListener(
+      'focusin',
+      function () {
+        if (formStarted) return;
+        formStarted = true;
+        goal('lead_form_start');
+      },
+      true
+    );
+  }
+
   if (phoneEl) {
     phoneEl.addEventListener('input', function () {
       var v = fmtPhone(phoneEl.value, prevPhone);
       phoneEl.value = v;
       prevPhone = v;
+      showFieldError('phone', '');
+    });
+  }
+
+  if (nameEl) {
+    nameEl.addEventListener('input', function () {
+      showFieldError('name', '');
     });
   }
 
   if (ageEl) {
     ageEl.addEventListener('input', function () {
       ageEl.value = ageEl.value.replace(/[^0-9]/g, '').slice(0, 2);
+      showFieldError('age', '');
     });
   }
 
@@ -123,6 +166,7 @@
     if (busy || btn.disabled) return;
 
     setStatus('', '');
+    clearFieldErrors();
 
     var name = ((nameEl && nameEl.value) || '').trim();
     var phone = ((phoneEl && phoneEl.value) || '').trim();
@@ -131,16 +175,19 @@
     var key = leadKey(name, phone, age);
 
     if (!name) {
+      showFieldError('name', 'Пожалуйста, укажите имя.');
       setStatus('Пожалуйста, укажите имя.', 'err');
       if (nameEl) nameEl.focus();
       return;
     }
     if (!validPhone(phone)) {
+      showFieldError('phone', 'Введите корректный российский номер: +7 и 10 цифр.');
       setStatus('Введите корректный российский номер: +7 и 10 цифр.', 'err');
       if (phoneEl) phoneEl.focus();
       return;
     }
     if (!validAge(age)) {
+      showFieldError('age', 'Возраст ребёнка — от 4 до 16 лет.');
       setStatus('Возраст ребёнка — от 4 до 16 лет.', 'err');
       if (ageEl) ageEl.focus();
       return;
@@ -181,13 +228,14 @@
     })
       .then(function () {
         lastSentKey = key;
-        if (window.ym) ym(110489022, 'reachGoal', 'lead_form_submit');
-        setStatus('Заявка отправлена. Мы свяжемся с вами в ближайшее время.', 'ok');
+        goal('lead_form_submit');
+        setStatus('Заявка отправлена. Мы свяжемся с вами по указанному номеру.', 'ok');
         if (nameEl) nameEl.value = '';
         if (phoneEl) phoneEl.value = '';
         if (ageEl) ageEl.value = '';
         if (websiteEl) websiteEl.value = '';
         prevPhone = '';
+        clearFieldErrors();
       })
       .catch(function (err) {
         console.error(err);

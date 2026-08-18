@@ -1,20 +1,26 @@
 # Основа знаний — сайт для GitHub Pages
 
+Production: https://osnova.kotiksym.ru/  
+Репозиторий: `hdhios009/osnova-znaniy`
+
+Это отдельный локальный сайт центра на Мичуринском проспекте. Не путать с КотиксУМ (`kotiksym.ru`, м. Планерная).
+
 ## Структура
-- `index.html` — главная страница
-- `images/` — все фотографии сайта
-- `favicon-120.png` — favicon
-- `privacy.html` — временная заглушка политики; перед публикацией замените на утверждённый документ
-- `.nojekyll` — чтобы GitHub Pages отдавал файлы как обычный статический сайт
+- `index.html` — главная
+- `form.js` — заявка в существующий Google Apps Script, attribution в `sessionStorage` (`osnova_attribution`)
+- `privacy/index.html`, `consent/index.html` — юридические страницы бренда «Основа знаний»
+- `privacy.html` — редирект на `/privacy/`
+- `robots.txt`, `sitemap.xml`
+- `images/` — фотографии центра
+- `favicon-120.png`
+- `.nojekyll` — GitHub Pages отдаёт файлы как статику
+- `CNAME` — `osnova.kotiksym.ru`
 
-## Как запустить на GitHub Pages
-1. Создайте новый репозиторий на GitHub.
-2. Загрузите **содержимое этой папки** в корень репозитория.
-3. Откройте `Settings → Pages`.
-4. В `Build and deployment` выберите `Deploy from a branch`.
-5. Branch: `main`, folder: `/ (root)`, затем `Save`.
-6. Через несколько минут GitHub покажет адрес сайта.
+## Форма
+Заявки уходят на тот же Apps Script endpoint, что и у КотиксУМ. Поля: имя, телефон, возраст, `page_name`, `page_url`, `referrer`, UTM, `yclid`, `gclid`, honeypot `website`. Цель Метрики: `lead_form_submit` (счётчик `110489022`).
 
-## Важно перед публикацией
-- В `index.html` сейчас `FORM_ENDPOINT = ''`, поэтому форма не отправляет заявки.
-- Замените `privacy.html` на актуальную политику обработки персональных данных.
+Не меняйте endpoint без решения владельца.
+
+## GitHub Pages
+1. Branch: `main`, folder: `/ (root)`.
+2. Custom domain: `osnova.kotiksym.ru`, HTTPS включён.
