@@ -1,0 +1,152 @@
+/* Shared layout hardening for Osnova. Loaded last. */
+
+.wrap {
+  min-width: 0;
+}
+
+.hero .wrap {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+}
+
+.hero .wrap > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero h1,
+.hero h1 .u,
+.hero .diag,
+.hero .eyebrow {
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.hero h1 {
+  max-width: 16ch;
+}
+
+.trust {
+  flex-wrap: wrap;
+}
+
+.trust span {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.hero-cta {
+  flex-wrap: wrap;
+}
+
+.hero-cta .btn,
+.dir-cta {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.hero-photo,
+.hero-photo img {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-photo img {
+  height: auto;
+}
+
+.proof,
+.proof > div,
+.dir-row,
+.finale form,
+.finale form .row,
+.form-field {
+  min-width: 0;
+}
+
+.finale form input,
+.finale form button {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1099px) {
+  .hero .wrap,
+  .live .wrap,
+  .finale .wrap,
+  .reviews-grid,
+  .contacts-grid,
+  .results-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+
+  .hero-photo {
+    order: 2;
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .dir-row,
+  .dir-row.alt {
+    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 12px 16px;
+  }
+
+  .dir-num {
+    grid-row: span 4;
+  }
+
+  .dir-params,
+  .dir-cta {
+    grid-column: 2;
+  }
+
+  .dir-cta {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .journey {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn,
+  .dir-cta,
+  .reviews-cta .btn,
+  .contacts-info .btn,
+  .finale form button {
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
+  }
+
+  .finale form .row,
+  .proof {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .finale form input,
+  .finale form button {
+    font-size: 16px;
+  }
+
+  .proof > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
