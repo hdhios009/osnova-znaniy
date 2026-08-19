@@ -4,6 +4,15 @@
   min-width: 0;
 }
 
+html, body {
+  overflow-x: clip;
+}
+
+header.site nav,
+.brand {
+  min-width: 0;
+}
+
 .hero .wrap {
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
 }
@@ -15,24 +24,27 @@
 
 .hero h1,
 .hero h1 .u,
-.hero .diag,
-.hero .eyebrow {
+.hero .eyebrow,
+.hero-meta,
+.dir-card,
+.dir-card .trigger,
+.dir-card .result,
+.pain-grid li,
+.check-item,
+.journey-col li {
   white-space: normal;
   overflow-wrap: break-word;
   max-width: 100%;
 }
 
 .hero h1 {
-  max-width: 16ch;
+  max-width: 22ch;
 }
 
-.trust {
-  flex-wrap: wrap;
-}
-
-.trust span {
-  white-space: normal;
-  max-width: 100%;
+@media (min-width: 1100px) {
+  .hero h1 {
+    text-wrap: balance;
+  }
 }
 
 .hero-cta {
@@ -40,7 +52,8 @@
 }
 
 .hero-cta .btn,
-.dir-cta {
+.dir-cta,
+.check .btn {
   white-space: normal;
   max-width: 100%;
 }
@@ -57,7 +70,11 @@
 
 .proof,
 .proof > div,
-.dir-row,
+.dir-choice,
+.dir-card,
+.pain-grid,
+.check-grid,
+.check-item,
 .finale form,
 .finale form .row,
 .form-field {
@@ -70,6 +87,17 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.reviews-head p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 42ch;
+}
+
+.reviews-cta.start {
+  margin-top: 0;
+  justify-content: flex-start;
 }
 
 @media (max-width: 1099px) {
@@ -85,6 +113,8 @@
 
   .hero h1 {
     max-width: none;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .hero-photo {
@@ -94,20 +124,10 @@
     margin-inline: auto;
   }
 
-  .dir-row,
-  .dir-row.alt {
-    grid-template-columns: 44px minmax(0, 1fr);
-    grid-template-rows: auto auto auto auto;
-    gap: 12px 16px;
-  }
-
-  .dir-num {
-    grid-row: span 4;
-  }
-
-  .dir-params,
-  .dir-cta {
-    grid-column: 2;
+  .dir-choice,
+  .pain-grid,
+  .check-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .dir-cta {
@@ -118,6 +138,12 @@
   .journey {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  .gallery-grid .gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 768px) {
@@ -127,6 +153,7 @@
 
   .hero-cta .btn,
   .dir-cta,
+  .check .btn,
   .reviews-cta .btn,
   .contacts-info .btn,
   .finale form button {
@@ -148,5 +175,15 @@
   .proof > div {
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 640px) {
+  .dir-choice {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gallery-grid .gallery-item img {
+    height: 140px;
   }
 }
