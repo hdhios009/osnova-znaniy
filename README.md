@@ -9,6 +9,7 @@ Production: https://osnova.kotiksym.ru/
 - `index.html` — главная
 - `form.js` — заявка в существующий Google Apps Script, attribution в `sessionStorage` (`osnova_attribution`)
 - `privacy/index.html`, `consent/index.html` — юридические страницы бренда «Основа знаний»
+- `license/index.html`, `license/l035-01298-77-01792169.pdf` — выписка из реестра лицензий
 - `privacy.html` — редирект на `/privacy/`
 - `robots.txt`, `sitemap.xml`
 - `images/` — фотографии центра
