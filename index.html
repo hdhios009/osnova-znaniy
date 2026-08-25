@@ -94,8 +94,10 @@
 
   header.site{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   header.site nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
-  .brand{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--text)}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--text)}
   .brand em{font-style:normal;color:var(--blue)}
+  .brand-mark{width:42px;height:42px;border-radius:11px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;flex:0 0 auto}
+  .brand-mark img{width:36px;height:36px;object-fit:contain}
   .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-decoration:none}
   .btn-primary{background:var(--blue);color:#fff}
   .btn-primary:hover{background:var(--blue-hover);color:#fff}
@@ -416,7 +418,7 @@
 
 <header class="site">
   <nav class="wrap">
-    <a href="#top" class="brand">Основа <em>знаний</em></a>
+    <a href="#top" class="brand"><span class="brand-mark"><img src="/images/logo.jpg" alt="Основа знаний"></span>Основа <em>знаний</em></a>
     <a href="#form" class="btn btn-primary">Записаться</a>
   </nav>
 </header>
