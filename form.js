@@ -90,8 +90,9 @@
       if (message) err.removeAttribute('hidden');
       else err.setAttribute('hidden', '');
     }
-    if (wrap && wrap.querySelector('input')) {
-      wrap.querySelector('input').setAttribute('aria-invalid', message ? 'true' : 'false');
+    if (wrap) {
+      var control = wrap.querySelector('input, select, textarea');
+      if (control) control.setAttribute('aria-invalid', message ? 'true' : 'false');
     }
   }
 
@@ -107,6 +108,8 @@
   var nameEl = document.getElementById('f_name');
   var phoneEl = document.getElementById('f_phone');
   var ageEl = document.getElementById('f_age');
+  var taskEl = document.getElementById('f_task');
+  var commentEl = document.getElementById('f_comment');
   var websiteEl = document.getElementById('f_website');
   var btn = document.getElementById('f_submit');
   var status = document.getElementById('form-status');
@@ -152,9 +155,13 @@
     });
   }
 
-  if (ageEl) {
+  if (ageEl && ageEl.tagName !== 'SELECT') {
     ageEl.addEventListener('input', function () {
       ageEl.value = ageEl.value.replace(/[^0-9]/g, '').slice(0, 2);
+      showFieldError('age', '');
+    });
+  } else if (ageEl) {
+    ageEl.addEventListener('change', function () {
       showFieldError('age', '');
     });
   }
@@ -171,6 +178,8 @@
     var name = ((nameEl && nameEl.value) || '').trim();
     var phone = ((phoneEl && phoneEl.value) || '').trim();
     var age = ((ageEl && ageEl.value) || '').trim();
+    var task = ((taskEl && taskEl.value) || '').trim();
+    var comment = ((commentEl && commentEl.value) || '').trim();
     var website = ((websiteEl && websiteEl.value) || '').trim();
     var key = leadKey(name, phone, age);
 
@@ -184,6 +193,12 @@
       showFieldError('phone', 'Введите корректный российский номер: +7 и 10 цифр.');
       setStatus('Введите корректный российский номер: +7 и 10 цифр.', 'err');
       if (phoneEl) phoneEl.focus();
+      return;
+    }
+    if (ageEl && ageEl.hasAttribute('required') && !age) {
+      showFieldError('age', 'Укажите возраст ребёнка.');
+      setStatus('Укажите возраст ребёнка.', 'err');
+      ageEl.focus();
       return;
     }
     if (!validAge(age)) {
@@ -203,6 +218,8 @@
     body.append('name', name);
     body.append('phone', phone);
     body.append('age', age);
+    if (task) body.append('task', task);
+    if (comment) body.append('comment', comment);
     body.append('page_name', PAGE_NAME);
     body.append('page_url', window.location.href);
     body.append('referrer', document.referrer || '');
@@ -233,6 +250,8 @@
         if (nameEl) nameEl.value = '';
         if (phoneEl) phoneEl.value = '';
         if (ageEl) ageEl.value = '';
+        if (taskEl) taskEl.value = '';
+        if (commentEl) commentEl.value = '';
         if (websiteEl) websiteEl.value = '';
         prevPhone = '';
         clearFieldErrors();
