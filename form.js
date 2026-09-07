@@ -73,9 +73,9 @@
   }
 
   function validAge(v) {
-    if (!v) return true;
+    if (!v) return false;
     var n = parseInt(v, 10);
-    return !isNaN(n) && n >= 4 && n <= 16;
+    return !isNaN(n) && n >= 5 && n <= 13;
   }
 
   function leadKey(name, phone, age) {
@@ -90,8 +90,9 @@
       if (message) err.removeAttribute('hidden');
       else err.setAttribute('hidden', '');
     }
-    if (wrap && wrap.querySelector('input')) {
-      wrap.querySelector('input').setAttribute('aria-invalid', message ? 'true' : 'false');
+    if (wrap) {
+      var control = wrap.querySelector('input, select, textarea');
+      if (control) control.setAttribute('aria-invalid', message ? 'true' : 'false');
     }
   }
 
@@ -107,6 +108,8 @@
   var nameEl = document.getElementById('f_name');
   var phoneEl = document.getElementById('f_phone');
   var ageEl = document.getElementById('f_age');
+  var taskEl = document.getElementById('f_task');
+  var commentEl = document.getElementById('f_comment');
   var websiteEl = document.getElementById('f_website');
   var btn = document.getElementById('f_submit');
   var status = document.getElementById('form-status');
@@ -153,8 +156,7 @@
   }
 
   if (ageEl) {
-    ageEl.addEventListener('input', function () {
-      ageEl.value = ageEl.value.replace(/[^0-9]/g, '').slice(0, 2);
+    ageEl.addEventListener('change', function () {
       showFieldError('age', '');
     });
   }
@@ -171,7 +173,10 @@
     var name = ((nameEl && nameEl.value) || '').trim();
     var phone = ((phoneEl && phoneEl.value) || '').trim();
     var age = ((ageEl && ageEl.value) || '').trim();
+    var task = ((taskEl && taskEl.value) || '').trim();
+    var comment = ((commentEl && commentEl.value) || '').trim();
     var website = ((websiteEl && websiteEl.value) || '').trim();
+    var extra = [task, comment].filter(Boolean).join(' — ');
     var key = leadKey(name, phone, age);
 
     if (!name) {
@@ -187,8 +192,8 @@
       return;
     }
     if (!validAge(age)) {
-      showFieldError('age', 'Возраст ребёнка — от 4 до 16 лет.');
-      setStatus('Возраст ребёнка — от 4 до 16 лет.', 'err');
+      showFieldError('age', 'Выберите возраст ребёнка — от 5 до 13 лет.');
+      setStatus('Выберите возраст ребёнка — от 5 до 13 лет.', 'err');
       if (ageEl) ageEl.focus();
       return;
     }
@@ -203,7 +208,8 @@
     body.append('name', name);
     body.append('phone', phone);
     body.append('age', age);
-    body.append('page_name', PAGE_NAME);
+    body.append('comment', extra);
+    body.append('page_name', extra ? PAGE_NAME + ' | ' + extra : PAGE_NAME);
     body.append('page_url', window.location.href);
     body.append('referrer', document.referrer || '');
     body.append('utm_source', attribution.utm_source || '');
@@ -232,7 +238,9 @@
         setStatus('Заявка отправлена. Мы свяжемся с вами по указанному номеру.', 'ok');
         if (nameEl) nameEl.value = '';
         if (phoneEl) phoneEl.value = '';
-        if (ageEl) ageEl.value = '';
+        if (ageEl) ageEl.selectedIndex = 0;
+        if (taskEl) taskEl.selectedIndex = 0;
+        if (commentEl) commentEl.value = '';
         if (websiteEl) websiteEl.value = '';
         prevPhone = '';
         clearFieldErrors();

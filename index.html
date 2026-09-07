@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>(function(){var p=location.pathname;if(/\/index\.html$/i.test(p))location.replace(p.replace(/\/index\.html$/i,'/')+location.search+location.hash);})();</script>
-<title>Основа знаний — подготовка к школе и скорочтение</title>
-<meta name="description" content="Центр «Основа знаний» на Мичуринском: скорочтение 4–16 лет и подготовка к школе 4–7 лет. Диагностика навыков 40–60 минут, мини-группы до 6 детей.">
+<title>Основа знаний — кабинет интеллектуального развития детей 5–13 лет</title>
+<meta name="description" content="ОСНОВА с Ириной Шик на Мичуринском: скорочтение и развитие мышления 7–13 лет, подготовка к школе 5–7 лет. Бесплатная диагностика 40 минут.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Основа знаний">
 <link rel="canonical" href="https://osnova.kotiksym.ru/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Основа знаний">
-<meta property="og:title" content="Основа знаний — подготовка к школе и скорочтение">
-<meta property="og:description" content="Скорочтение и подготовка к школе на Мичуринском проспекте. Проверяем навыки на диагностике 40–60 минут.">
+<meta property="og:title" content="Основа знаний — кабинет интеллектуального развития детей 5–13 лет">
+<meta property="og:description" content="Скорочтение и развитие мышления 7–13 лет. Подготовка к школе 5–7 лет. Бесплатная диагностика 40 минут.">
 <meta property="og:url" content="https://osnova.kotiksym.ru/">
-<meta property="og:image" content="https://osnova.kotiksym.ru/images/hero-teacher.jpg">
+<meta property="og:image" content="https://osnova.kotiksym.ru/images/hero.jpg">
 <meta property="og:locale" content="ru_RU">
 <meta name="geo.region" content="RU-MOW">
 <meta name="geo.placename" content="Москва">
@@ -31,9 +31,9 @@
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Основа знаний",
-  "description": "Детский центр на Мичуринском проспекте: скорочтение и подготовка к школе. Диагностика навыков, мини-группы до 6 детей.",
+  "description": "Кабинет интеллектуального развития детей 5–13 лет на Мичуринском проспекте. Скорочтение и развитие мышления 7–13 лет, подготовка к школе 5–7 лет.",
   "url": "https://osnova.kotiksym.ru/",
-  "image": "https://osnova.kotiksym.ru/images/hero-teacher.jpg",
+  "image": "https://osnova.kotiksym.ru/images/hero.jpg",
   "logo": "https://osnova.kotiksym.ru/images/favicon-512.png",
   "address": {
     "@type": "PostalAddress",
@@ -108,7 +108,7 @@
   /* Hero */
   .hero .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;font-weight:500;color:#43413c;background:var(--surface)}
   .hero .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:inline-block}
-  .hero h1{font-size:clamp(30px,4.4vw,48px);line-height:1.12;margin:20px 0 16px;text-wrap:wrap;max-width:22ch}
+  .hero h1{font-size:clamp(30px,4.4vw,48px);line-height:1.12;margin:20px 0 16px;text-wrap:wrap;max-width:16ch}
   .hero h1 .u{position:relative;white-space:normal;color:var(--blue)}
   .hero h1 .u svg{position:absolute;left:-3%;right:-3%;bottom:-11px;width:106%;height:18px;overflow:visible}
   .hero p.lead{font-size:18px;line-height:1.58;color:var(--muted);max-width:48ch;margin:0 0 22px;text-wrap:pretty}
@@ -182,6 +182,45 @@
   .dir-card .dir-cta{margin-top:14px;align-self:flex-start;white-space:normal}
   .dir-card.alt .dir-cta{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
   .dir-card.alt .dir-cta:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
+  .dir-card h4{margin:10px 0 0;font-size:13px;font-family:Onest,sans-serif;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--dark-blue)}
+  .dir-card.alt h4{color:var(--yellow-text)}
+  .dir-card ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+  .dir-card li{padding-left:16px;position:relative;color:var(--muted);font-size:14.5px;line-height:1.4}
+  .dir-card li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2px;background:var(--blue)}
+  .dir-card.alt li::before{background:var(--yellow-num)}
+  .dir-card .dir-note{margin-top:10px;padding-top:12px;border-top:1px solid rgba(38,59,120,.12);font-size:14.5px;color:var(--text);line-height:1.5}
+  .dir-card .dir-note b{display:block;margin-bottom:4px}
+
+  .skills{padding:12px 0 8px}
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .skill-grid article{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .skill-grid h3{font-size:18px;margin:0 0 8px}
+  .skill-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+
+  .format-sec{padding:56px 0}
+  .format-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
+  .format-sec .sub{color:var(--muted);max-width:56ch;margin:0 0 24px}
+  .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .format-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+  .format-card h3{font-size:22px;margin:0 0 12px}
+  .format-card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  .format-card li{padding-left:16px;position:relative;color:var(--muted);font-size:15.5px;line-height:1.45}
+  .format-card li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2px;background:var(--blue)}
+  .format-cta{margin-top:22px}
+
+  .faq-sec{padding:56px 0}
+  .faq-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 22px}
+  .faq-list{display:grid;gap:10px;max-width:900px}
+  .faq-list details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 22px}
+  .faq-list summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list details p{margin:0 0 16px;color:var(--muted);font-size:15.5px;line-height:1.55}
+
+  .cta-points{display:grid;gap:10px;margin:18px 0 0;padding:0;list-style:none}
+  .cta-points li{padding-left:18px;position:relative;color:var(--muted)}
+  .cta-points li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:2px;background:var(--blue)}
+
+  .reviews{padding:74px 0}
 
   /* Recognize pains */
   .recognize{padding:52px 0}
@@ -276,12 +315,13 @@
   /* Final — blue-soft */
   .finale{background:var(--blue-soft);border-top:0;color:var(--text)}
   .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:18ch}
+  .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:22ch}
   .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
   .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
   .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
-  .finale form input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
-  .finale form input:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(64,95,194,.18)}
+  .finale form input,.finale form select,.finale form textarea{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
+  .finale form input:focus,.finale form select:focus,.finale form textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(64,95,194,.18)}
+  .finale form textarea{min-height:88px;resize:vertical}
   .finale form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
   .finale form button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--blue);color:#fff;font:600 16px/1 'Onest';cursor:pointer;transition:background .18s}
   .finale form button:hover:not(:disabled){background:var(--blue-hover)}
@@ -316,7 +356,7 @@
     .hero .wrap{gap:28px}
     .hero-photo{order:2;max-width:none;width:100%;border-radius:16px}
     .hero h1{max-width:none;text-wrap:wrap}
-    .dir-choice,.pain-grid,.check-grid{grid-template-columns:1fr 1fr}
+    .dir-choice,.pain-grid,.check-grid,.skill-grid,.format-grid{grid-template-columns:1fr 1fr}
     .dir-card h3{font-size:22px}
     .dir-cta{justify-self:start}
     .journey{grid-template-columns:1fr}
@@ -365,8 +405,8 @@
     .gallery-head p,.directions .sub,.recognize .sub,.results-top p,.finale p,.live p,.check .after{font-size:15.5px}
     .gallery-grid{gap:10px}
     .gallery-item{border-radius:12px}
-    .dir-choice{grid-template-columns:1fr}
-    .pain-grid,.check-grid{grid-template-columns:1fr 1fr;gap:8px 10px}
+    .dir-choice,.format-grid{grid-template-columns:1fr}
+    .pain-grid,.check-grid,.skill-grid{grid-template-columns:1fr 1fr;gap:8px 10px}
     .dir-card{padding:18px 16px;border-radius:10px}
     .check .btn,.dir-cta{width:100%;justify-self:stretch;white-space:normal}
     section.directions,section.recognize,section.check{padding:32px 0}
@@ -410,8 +450,8 @@
 <body>
 <noscript>
   <div style="max-width:760px;margin:0 auto;padding:32px 20px;font-family:system-ui,sans-serif;color:#20232B">
-    <p style="font-size:24px;font-weight:700;margin:0 0 12px">Основа знаний — скорочтение и подготовка к школе</p>
-    <p>Детский центр на Мичуринском проспекте, 11, корп. 3. Скорочтение 4–16 лет и подготовка к школе 4–7 лет. Первая диагностика бесплатно, мини-группы до 6 детей.</p>
+    <p style="font-size:24px;font-weight:700;margin:0 0 12px">Основа знаний — кабинет интеллектуального развития детей 5–13 лет</p>
+    <p>Мичуринский проспект, 11, корп. 3. Скорочтение и развитие мышления 7–13 лет, подготовка к школе 5–7 лет. Бесплатная диагностика 40 минут.</p>
     <p>Телефон: <a href="tel:+79684551800">+7 968 455 1800</a></p>
   </div>
 </noscript>
@@ -428,45 +468,64 @@
 <section id="top" class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow"><i></i>Камерный центр на&#160;Мичуринском</span>
-      <h1>Ребёнок читает, но&#160;<span class="u">не&#160;понимает<svg viewBox="0 0 240 30" preserveAspectRatio="none"><path d="M6 18 C 70 4, 150 28, 234 10" fill="none" stroke="#F1C84B" stroke-width="8" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="320" style="animation:draw 1.1s .35s ease forwards"/></svg></span>? Или без подсказки не&#160;справляется с&#160;заданием?</h1>
-      <p class="lead">Скорочтение 4–16 лет и&#160;подготовка к&#160;школе 4–7 лет на&#160;Мичуринском. Развиваем чтение, память, внимание и&#160;умение работать самостоятельно.</p>
+      <span class="eyebrow"><i></i>ОСНОВА с Ириной Шик · кабинет интеллектуального развития детей 5–13 лет</span>
+      <h1>Навыки, на которых строится <span class="u">самостоятельная<svg viewBox="0 0 240 30" preserveAspectRatio="none"><path d="M6 18 C 70 4, 150 28, 234 10" fill="none" stroke="#F1C84B" stroke-width="8" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="320" style="animation:draw 1.1s .35s ease forwards"/></svg></span> и успешная учёба</h1>
+      <p class="lead">Скорочтение и развитие мышления — 7–13 лет. Подготовка к школе — 5–7 лет. Формируем чтение, память, внимание, мышление, счёт и самостоятельность.</p>
       <div class="hero-cta">
-        <a href="#form" class="btn btn-primary btn-lg" data-cta="diagnostic">Записаться на&#160;бесплатную диагностику</a>
+        <a href="#form" class="btn btn-primary btn-lg" data-cta="diagnostic">Получить диагностику бесплатно</a>
+        <a href="#directions" class="btn btn-outline btn-lg">Выбрать направление</a>
       </div>
-      <p class="hero-meta">40–60&#160;минут · обратная связь родителю · мини-группы</p>
+      <p class="hero-meta">40 минут · более 500 родителей прошли диагностику · мини-группы и индивидуально</p>
       <div class="proof">
-        <div><b>580+</b><span>детей прошли обучение</span></div>
-        <div><b>4–16</b><span>скорочтение: возраст детей</span></div>
-        <div><b>до 6</b><span>детей в мини-группе</span></div>
+        <div><b>500+</b><span>родителей прошли диагностику</span></div>
+        <div><b>5–13</b><span>возраст детей в кабинете</span></div>
+        <div><b>2</b><span>формата: мини-группы и индивидуально</span></div>
       </div>
     </div>
-    <button class="hero-photo gallery-item" type="button" data-full="images/hero-teacher.jpg" aria-label="Увеличить фотографию занятия">
-      <img src="images/hero-teacher.jpg" alt="Девочка на занятии поднимает руку с улыбкой">
+    <button class="hero-photo gallery-item" type="button" data-full="images/hero.jpg" aria-label="Увеличить фотографию">
+      <img src="images/hero.jpg" alt="Ирина Шик, кабинет интеллектуального развития ОСНОВА">
     </button>
   </div>
 </section>
 
 <section id="directions" class="directions">
   <div class="wrap">
-    <h2>Выберите направление</h2>
-    <p class="sub">Две программы. Начать можно с&#160;бесплатной диагностики — педагог увидит, где ребёнок теряется.</p>
+    <h2>Подбираем программу под возраст и задачу ребёнка</h2>
+    <p class="sub">Мы не записываем всех в одну группу. Сначала понимаем, какие навыки нужно развивать именно вашему ребёнку.</p>
 
     <div class="dir-choice">
       <article class="dir-card">
-        <div class="age">4–16 лет</div>
-        <h3>Скорочтение</h3>
-        <p class="trigger">Читает медленно, забывает прочитанное или не&#160;может пересказать?</p>
-        <p class="result">Прочитал → понял → запомнил → рассказал своими словами</p>
-        <a href="#skorochtenie" class="btn btn-outline dir-cta">Подробнее о&#160;скорочтении</a>
+        <div class="age">7–13 лет</div>
+        <h3>Скорочтение и развитие мышления</h3>
+        <p class="trigger">Для школьников, которым важно легче работать с текстами, быстрее понимать задания, запоминать материал и учиться самостоятельнее.</p>
+        <h4>Подходит, если ребёнок:</h4>
+        <ul>
+          <li>читает медленно или быстро устаёт;</li>
+          <li>не понимает смысл текста;</li>
+          <li>не может пересказать;</li>
+          <li>забывает прочитанное;</li>
+          <li>долго думает и теряется;</li>
+          <li>отвлекается и ждёт подсказки.</li>
+        </ul>
+        <p class="dir-note"><b>Результат направления</b>Ребёнку легче читать, понимать задания, запоминать информацию, рассуждать и справляться без постоянной опоры на взрослого.</p>
+        <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 7–13 лет</a>
       </article>
 
       <article class="dir-card alt">
-        <div class="age">4–7 лет</div>
-        <h3>Подготовка к&#160;школе</h3>
-        <p class="trigger">Знает многое, но&#160;задание выполняет только после нескольких подсказок?</p>
-        <p class="result">Услышал → понял → удержал инструкцию → сделал сам</p>
-        <a href="#podgotovka" class="btn btn-outline dir-cta">Подробнее о&#160;подготовке</a>
+        <div class="age">5–7 лет</div>
+        <h3>Подготовка к школе без пробелов</h3>
+        <p class="trigger">Для дошкольников, которым важно прийти в 1 класс не просто со знанием букв, а с готовностью учиться, слушать, думать и выполнять задания.</p>
+        <h4>Развиваем:</h4>
+        <ul>
+          <li>навык чтения;</li>
+          <li>счёт и счёт в уме;</li>
+          <li>память и внимание;</li>
+          <li>мышление и речь;</li>
+          <li>понимание инструкции;</li>
+          <li>усидчивость и самостоятельность.</li>
+        </ul>
+        <p class="dir-note"><b>Результат направления</b>Ребёнок приходит в школу более собранным, уверенным и готовым учиться: слышит задание, удерживает внимание, запоминает и отвечает.</p>
+        <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 5–7 лет</a>
       </article>
     </div>
   </div>
@@ -474,42 +533,63 @@
 
 <section id="pains" class="recognize">
   <div class="wrap">
-    <h2>Узнаёте своего ребёнка?</h2>
-    <p class="sub">Иногда ребёнку не&#160;нужно просто «больше заниматься». Важно понять, на&#160;каком этапе он&#160;теряется.</p>
+    <h2>Если ребёнок способный, но учёба даётся тяжелее, чем могла бы</h2>
+    <p class="sub">Часто проблема не в лени и не в характере. Ребёнку может не хватать конкретных учебных навыков: внимания, памяти, техники чтения, мышления и самоконтроля.</p>
     <ul class="pain-grid">
-      <li>Читает медленно</li>
-      <li>Прочитал — не&#160;может пересказать</li>
-      <li>Быстро забывает материал</li>
-      <li>Домашка — только со&#160;взрослым</li>
-      <li>Не удерживает инструкцию</li>
-      <li>Не понимает, с&#160;чего начать</li>
+      <li>Читает медленно и быстро устаёт</li>
+      <li>Забывает информацию в нужный момент</li>
+      <li>Не может пересказать своими словами</li>
+      <li>Отвлекается и не доводит до конца</li>
+      <li>Долго думает и теряется при ответе</li>
+      <li>Домашка занимает больше времени, чем должна</li>
+      <li>Ждёт помощи взрослого и подсказок</li>
+      <li>Боится больших текстов и сложных заданий</li>
     </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <div class="wrap">
+    <div class="skill-grid">
+      <article>
+        <h3>Чтение и понимание</h3>
+        <p>Чтобы ребёнок не просто произносил слова, а понимал текст, удерживал смысл и мог пересказать.</p>
+      </article>
+      <article>
+        <h3>Память и внимание</h3>
+        <p>Чтобы меньше отвлекался, быстрее вспоминал информацию и доводил задания до результата.</p>
+      </article>
+      <article>
+        <h3>Мышление и самостоятельность</h3>
+        <p>Чтобы ребёнок рассуждал, считал, искал решения и меньше зависел от помощи родителей.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section id="diagnostic" class="check">
   <div class="wrap">
-    <h2>За первую встречу вы&#160;поймёте, где именно ребёнку трудно</h2>
+    <h2>Сначала мы понимаем, что нужно именно вашему ребёнку</h2>
+    <p class="after">Перед началом занятий педагог смотрит не только знания, а базовые навыки, которые влияют на учёбу каждый день.</p>
     <div class="check-grid">
       <article class="check-item">
-        <h3>Чтение</h3>
-        <p>Темп, ошибки, понимание текста.</p>
+        <h3>1. Чтение и текст</h3>
+        <p>Как ребёнок читает, понимает ли смысл, может ли ответить на вопросы и пересказать.</p>
       </article>
       <article class="check-item">
-        <h3>Память</h3>
-        <p>Что ребёнок запоминает и&#160;насколько легко может воспроизвести.</p>
+        <h3>2. Память</h3>
+        <p>Как запоминает информацию и насколько быстро может вспомнить её без долгих пауз.</p>
       </article>
       <article class="check-item">
-        <h3>Внимание</h3>
-        <p>Удерживает ли задание и&#160;замечает ли важные детали.</p>
+        <h3>3. Внимание</h3>
+        <p>Насколько ребёнок удерживает задачу, не отвлекается и доводит работу до конца.</p>
       </article>
       <article class="check-item">
-        <h3>Самостоятельность</h3>
-        <p>Понимает ли инструкцию и&#160;может ли начать выполнять без постоянной подсказки.</p>
+        <h3>4. План развития</h3>
+        <p>Родители получают понятную картину: что уже хорошо и какую программу выбрать.</p>
       </article>
     </div>
-    <p class="after">После встречи педагог расскажет родителю, что у&#160;ребёнка уже получается хорошо, где возникает трудность и&#160;на&#160;что стоит обратить внимание в&#160;первую очередь.</p>
-    <a href="#form" class="btn btn-primary" data-cta="diagnostic">Проверить навыки ребёнка бесплатно</a>
+    <a href="#form" class="btn btn-primary" data-cta="diagnostic">Получить диагностику бесплатно</a>
   </div>
 </section>
 
@@ -517,60 +597,40 @@
   <div class="wrap">
     <div class="results-top">
       <h2>Что меняется после занятий</h2>
-      <p>Работаем с навыком: понял → запомнил → сделал сам.</p>
+      <p>Мы не обещаем «волшебный результат за неделю». Мы системно развиваем навыки, которые помогают ребёнку учиться спокойнее и самостоятельнее.</p>
     </div>
 
     <div class="journey-block" id="skorochtenie">
-      <h3 class="journey-program">Скорочтение</h3>
+      <h3 class="journey-program">До и после занятий</h3>
       <div class="journey">
         <div class="journey-col now">
-          <h3>Было</h3>
+          <h3>До занятий</h3>
           <ul>
-            <li>Читает долго и&#160;быстро устаёт</li>
-            <li>Прочитал страницу — не&#160;помнит начало</li>
-            <li>Не может пересказать</li>
-            <li>Домашка растягивается на&#160;вечер</li>
+            <li>читает медленно;</li>
+            <li>говорит «не помню»;</li>
+            <li>забывает прочитанное;</li>
+            <li>не может пересказать;</li>
+            <li>отвлекается;</li>
+            <li>не доводит задания до конца;</li>
+            <li>ждёт помощи от родителей;</li>
+            <li>не уверен в себе.</li>
           </ul>
         </div>
         <div class="journey-arrow" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
-          <span>понял → запомнил → сделал сам</span>
+          <span>навыки, которые помогают учиться</span>
         </div>
         <div class="journey-col after">
-          <h3>Становится</h3>
+          <h3>После занятий</h3>
           <ul>
-            <li>Читает увереннее и&#160;быстрее справляется с&#160;учебным текстом</li>
-            <li>Понимает смысл и&#160;удерживает прочитанное</li>
-            <li>Выделяет главное и&#160;рассказывает своими словами</li>
-            <li>Быстрее работает с&#160;текстовыми заданиями</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="journey-block prep" id="podgotovka">
-      <h3 class="journey-program">Подготовка к&#160;школе</h3>
-      <div class="journey">
-        <div class="journey-col now">
-          <h3>Было</h3>
-          <ul>
-            <li>Нужно несколько раз повторять задание</li>
-            <li>Не понимает, с&#160;чего начать</li>
-            <li>Постоянно ждёт помощи взрослого</li>
-            <li>Быстро отвлекается</li>
-          </ul>
-        </div>
-        <div class="journey-arrow" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
-          <span>удержал инструкцию</span>
-        </div>
-        <div class="journey-col after prep">
-          <h3>Становится</h3>
-          <ul>
-            <li>Слышит инструкцию и&#160;удерживает её</li>
-            <li>Разбирается в&#160;задании и&#160;начинает самостоятельно</li>
-            <li>Пробует выполнить задание сам</li>
-            <li>Дольше удерживает внимание на&#160;работе</li>
+            <li>читает увереннее;</li>
+            <li>лучше понимает текст;</li>
+            <li>быстрее вспоминает информацию;</li>
+            <li>пересказывает своими словами;</li>
+            <li>дольше держит внимание;</li>
+            <li>увереннее считает и рассуждает;</li>
+            <li>чаще справляется самостоятельно;</li>
+            <li>становится спокойнее в учёбе.</li>
           </ul>
         </div>
       </div>
@@ -581,15 +641,15 @@
 <section class="gallery" id="photos">
   <div class="wrap">
     <div class="gallery-head">
-      <h2>Так проходят занятия в&#160;«Основе»</h2>
-      <p>Небольшие группы, спокойная рабочая атмосфера и&#160;внимание педагога к&#160;каждому ребёнку.</p>
+      <h2>Спокойная среда. Сильные задачи. Понятный прогресс.</h2>
+      <p>Занятия проходят в небольших группах или индивидуально. Педагог видит особенности ребёнка и постепенно ведёт его к более уверенной, собранной и самостоятельной работе.</p>
     </div>
     <div class="gallery-grid">
-      <button class="gallery-item" type="button" data-full="images/gallery-01.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-01.jpg" alt="Дети занимаются за столом в центре"></button>
-      <button class="gallery-item" type="button" data-full="images/gallery-02.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-02.jpg" alt="Ученик центра на занятии"></button>
-      <button class="gallery-item" type="button" data-full="images/gallery-03.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-03.jpg" alt="Ребёнок выполняет задание"></button>
-      <button class="gallery-item" type="button" data-full="images/gallery-04.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-04.jpg" alt="Ребёнок работает с учебным материалом"></button>
-      <button class="gallery-item" type="button" data-full="images/gallery-05.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-05.jpg" alt="Ученица центра с учебным пособием"></button>
+      <button class="gallery-item" type="button" data-full="images/lesson-main.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-main.jpg" alt="Педагог занимается с ребёнком"></button>
+      <button class="gallery-item" type="button" data-full="images/lesson-1.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-1.jpg" alt="Ребёнок работает с текстом"></button>
+      <button class="gallery-item" type="button" data-full="images/lesson-2.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-2.jpg" alt="Задания на память и внимание"></button>
+      <button class="gallery-item" type="button" data-full="images/lesson-3.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-3.jpg" alt="Мини-группа на занятии"></button>
+      <button class="gallery-item" type="button" data-full="images/lesson-4.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-4.jpg" alt="Ребёнок после выполненного задания"></button>
     </div>
   </div>
 </section>
@@ -597,15 +657,108 @@
 <section id="why" class="live">
   <div class="wrap">
     <div>
-      <h2>Почему родители выбирают «Основу»</h2>
-      <p>Камерный центр на&#160;Мичуринском: ребёнка здесь <b>знают лично</b> и&#160;помогают стать самостоятельнее в&#160;учёбе.</p>
+      <h2>Не просто «дополнительные занятия», а сильная интеллектуальная база</h2>
+      <p>Современная школа требует от ребёнка не только знаний. Важно, чтобы он умел понимать задачу, концентрироваться, запоминать, думать, проверять себя и не сдаваться при трудности.</p>
     </div>
     <ol>
-      <li><div><b>Небольшие группы</b><span>Педагог видит, где именно ребёнок начинает теряться.</span></div></li>
-      <li><div><b>Понятная обратная связь</b><span>Родитель понимает, над чем сейчас работает ребёнок и&#160;что уже изменилось.</span></div></li>
-      <li><div><b>Учимся не&#160;ждать подсказку</b><span>Одна из главных целей — чтобы ребёнок всё чаще мог разобраться и&#160;выполнить задание самостоятельно.</span></div></li>
-      <li><div><b>Центр рядом</b><span>Мичуринский проспект — занятия недалеко от&#160;дома и&#160;школы.</span></div></li>
+      <li><div><b>Понимать задачу с первого раза</b><span>Ребёнок слышит инструкцию и сразу понимает, что нужно сделать.</span></div></li>
+      <li><div><b>Удерживать внимание и инструкцию</b><span>Меньше отвлекается и доводит работу до конца.</span></div></li>
+      <li><div><b>Запоминать и воспроизводить материал</b><span>Быстрее вспоминает информацию без долгих пауз.</span></div></li>
+      <li><div><b>Работать с текстом и смыслом</b><span>Читает, понимает и пересказывает своими словами.</span></div></li>
+      <li><div><b>Считать и рассуждать увереннее</b><span>Ищет решение сам, а не ждёт подсказку.</span></div></li>
+      <li><div><b>Доводить начатое до результата</b><span>Становится спокойнее и самостоятельнее в учёбе.</span></div></li>
     </ol>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews-head">
+      <h2>Что чаще всего отмечают родители</h2>
+      <div class="reviews-rating">
+        <div class="num">5.0</div>
+        <div class="stars">★★★★★</div>
+        <div class="src">отзывы родителей</div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-main">
+        <p class="quote">Ребёнок стал быстрее понимать задание и меньше ждать, что ему всё подскажут.</p>
+        <div class="meta">Мама школьника, 9 лет</div>
+      </article>
+      <div class="review-side">
+        <article>
+          <div class="stars">★★★★★</div>
+          <p class="title-l">Перед школой стало спокойнее</p>
+          <p>Ребёнок лучше держит внимание и понимает инструкции.</p>
+          <div class="meta">Мама дошкольника, 6 лет</div>
+        </article>
+        <article>
+          <div class="stars">★★★★★</div>
+          <p class="title-l">Начал пересказывать, а не просто читать слова</p>
+          <p>Домашка проходит спокойнее.</p>
+          <div class="meta">Мама школьника, 8 лет</div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="format" class="format-sec">
+  <div class="wrap">
+    <h2>Сначала подбираем маршрут, потом программу</h2>
+    <p class="sub">Стоимость зависит от формата: мини-группа или индивидуальные занятия. На диагностике мы определяем, какое направление подойдёт ребёнку.</p>
+    <div class="format-grid">
+      <article class="format-card">
+        <h3>Мини-группы</h3>
+        <ul>
+          <li>для детей 5–7 и 7–13 лет;</li>
+          <li>маленькая группа;</li>
+          <li>программа по возрасту и задаче;</li>
+          <li>обратная связь родителям.</li>
+        </ul>
+      </article>
+      <article class="format-card">
+        <h3>Индивидуально</h3>
+        <ul>
+          <li>если нужна персональная траектория;</li>
+          <li>для выраженных трудностей с чтением или вниманием;</li>
+          <li>гибкий темп и акцент на слабые навыки;</li>
+          <li>подробные рекомендации родителям.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="format-cta">
+      <a href="#form" class="btn btn-primary">Узнать расписание и стоимость</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-sec">
+  <div class="wrap">
+    <h2>Частые вопросы</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>Моему ребёнку 5 лет. Уже можно начинать?</summary>
+        <p>Да. В 5–7 лет важно развивать внимание, память, счёт, понимание инструкции, речь и навык чтения — это база для спокойного старта в школе.</p>
+      </details>
+      <details>
+        <summary>Скорочтение у вас с какого возраста?</summary>
+        <p>Скорочтение и развитие мышления — для детей 7–13 лет. Для детей 5–7 лет подходит направление подготовки к школе.</p>
+      </details>
+      <details>
+        <summary>Ребёнок умный, но отвлекается. Это к вам?</summary>
+        <p>Да. Часто ребёнок способен, но не удерживает внимание, теряет инструкцию, не доводит работу до конца и ждёт помощи взрослого. Эти навыки можно развивать.</p>
+      </details>
+      <details>
+        <summary>Вы занимаетесь только чтением?</summary>
+        <p>Нет. Направление для школьников — это скорочтение и развитие мышления: чтение, понимание текста, память, внимание, логика, пересказ и самостоятельность.</p>
+      </details>
+      <details>
+        <summary>Можно сначала понять, что нужно ребёнку?</summary>
+        <p>Да. Для этого проводится диагностика. После неё педагог объясняет, какое направление и формат лучше подойдут ребёнку.</p>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -617,7 +770,7 @@
         <div class="name">Основа <em>знаний</em></div>
         <address>Москва, Мичуринский&#160;просп., 11, корп.&#160;3</address>
         <p><a href="tel:+79684551800">+7 968 455 1800</a></p>
-        <p>Приезжайте на&#160;диагностику — покажем кабинет и&#160;познакомим с&#160;педагогом.</p>
+        <p>м. Раменки · Мичуринский проспект 11 к3. Приезжайте на диагностику — покажем кабинет и познакомим с педагогом.</p>
         <a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start">Открыть в&#160;Яндекс&#160;Картах →</a>
         <p><a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener">Отзывы родителей → Яндекс Карты</a></p>
       </div>
@@ -631,12 +784,17 @@
 <section id="form" class="finale">
   <div class="wrap">
     <div>
-      <h2>Запишите ребёнка на&#160;бесплатную диагностику</h2>
-      <p>Мы свяжемся с&#160;вами, уточним возраст ребёнка и&#160;подберём удобное время.</p>
-      <p>Есть образовательная лицензия · можно вернуть 13% стоимости обучения через налоговый вычет · возможна оплата материнским капиталом при соблюдении условий. <a href="/license/">Подробнее о&#160;лицензии и&#160;оплате</a></p>
+      <h2>Помогите ребёнку стать сильнее в учёбе — без постоянной зависимости от помощи взрослых</h2>
+      <p>Оставьте заявку — мы уточним возраст ребёнка, задачу семьи и подберём подходящее направление: скорочтение и развитие мышления 7–13 лет или подготовку к школе 5–7 лет.</p>
+      <ul class="cta-points">
+        <li>Диагностика перед стартом</li>
+        <li>Подбор направления по возрасту и навыкам</li>
+        <li>Мини-группы или индивидуальный формат</li>
+      </ul>
+      <p>Есть образовательная лицензия · можно вернуть 13% стоимости обучения через налоговый вычет · возможна оплата материнским капиталом при соблюдении условий. <a href="/license/">Подробнее о лицензии и оплате</a></p>
     </div>
     <form id="lead-form" novalidate>
-      <h3>Оставьте заявку</h3>
+      <h3>Запись на диагностику</h3>
       <div class="form-field" data-field="name">
         <input id="f_name" name="name" type="text" placeholder="Ваше имя" required autocomplete="name">
         <div class="field-error" data-error-for="name" hidden></div>
@@ -647,15 +805,41 @@
           <div class="field-error" data-error-for="phone" hidden></div>
         </div>
         <div class="form-field" data-field="age">
-          <input id="f_age" name="age" type="number" min="4" max="16" placeholder="Возраст ребёнка">
+          <select id="f_age" name="age" required>
+            <option value="" selected disabled>Возраст ребёнка</option>
+            <option value="5">5 лет</option>
+            <option value="6">6 лет</option>
+            <option value="7">7 лет</option>
+            <option value="8">8 лет</option>
+            <option value="9">9 лет</option>
+            <option value="10">10 лет</option>
+            <option value="11">11 лет</option>
+            <option value="12">12 лет</option>
+            <option value="13">13 лет</option>
+          </select>
           <div class="field-error" data-error-for="age" hidden></div>
         </div>
       </div>
+      <div class="form-field" data-field="task">
+        <select id="f_task" name="task">
+          <option value="" selected>Что беспокоит больше всего?</option>
+          <option>Медленно читает</option>
+          <option>Плохо запоминает</option>
+          <option>Отвлекается</option>
+          <option>Не может пересказать</option>
+          <option>Сложно с подготовкой к школе</option>
+          <option>Нужна самостоятельность в учёбе</option>
+          <option>Не знаю, хочу диагностику</option>
+        </select>
+      </div>
+      <div class="form-field" data-field="comment">
+        <textarea id="f_comment" name="comment" placeholder="Комментарий, если хотите"></textarea>
+      </div>
       <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
-      <button id="f_submit" type="submit">Записаться бесплатно</button>
+      <button id="f_submit" type="submit">Получить диагностику бесплатно</button>
       <p class="form-note">Без обязательства покупать курс</p>
       <div id="form-status" class="form-status" aria-live="polite"></div>
-      <p class="privacy">Нажимая кнопку, вы соглашаетесь на&#160;<a href="/consent/">обработку персональных данных</a>.</p>
+      <p class="privacy">Нажимая кнопку, вы соглашаетесь на <a href="/consent/">обработку персональных данных</a>.</p>
     </form>
   </div>
 </section>

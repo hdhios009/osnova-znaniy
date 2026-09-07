@@ -126,7 +126,9 @@ header.site nav,
 
   .dir-choice,
   .pain-grid,
-  .check-grid {
+  .check-grid,
+  .skill-grid,
+  .format-grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
@@ -179,8 +181,16 @@ header.site nav,
 }
 
 @media (max-width: 640px) {
-  .dir-choice {
+  .dir-choice,
+  .format-grid,
+  .skill-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .finale form select,
+  .finale form textarea {
+    font-size: 16px;
+    max-width: 100%;
   }
 
   .gallery-grid .gallery-item img {
