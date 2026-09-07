@@ -1,943 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>(function(){var p=location.pathname;if(/\/index\.html$/i.test(p))location.replace(p.replace(/\/index\.html$/i,'/')+location.search+location.hash);})();</script>
-  <title>ОСНОВА с Ириной Шик — кабинет интеллектуального развития детей 5–13 лет</title>
-  <meta name="description" content="ОСНОВА с Ириной Шик на Мичуринском: скорочтение и развитие мышления 7–13 лет, подготовка к школе 5–7 лет. Чтение, память, внимание, мышление, счёт и самостоятельность." />
-  <meta name="keywords" content="ОСНОВА Ирина Шик, скорочтение Москва, подготовка к школе, развитие мышления, детский центр, Раменки, Мичуринский, чтение, память, внимание, дети 5-13 лет" />
-  <link rel="icon" type="image/png" sizes="120x120" href="/favicon-120.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Основа знаний">
-  <link rel="canonical" href="https://osnova.kotiksym.ru/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Основа знаний" />
-  <meta property="og:title" content="ОСНОВА с Ириной Шик — кабинет интеллектуального развития детей 5–13 лет" />
-  <meta property="og:description" content="Скорочтение и развитие мышления 7–13 лет. Подготовка к школе 5–7 лет. Бесплатная диагностика 40 минут." />
-  <meta property="og:url" content="https://osnova.kotiksym.ru/" />
-  <meta property="og:image" content="https://osnova.kotiksym.ru/images/hero.jpg" />
-  <meta property="og:locale" content="ru_RU" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="geo.region" content="RU-MOW">
-  <meta name="geo.placename" content="Москва">
-  <meta name="geo.position" content="55.699093;37.511283">
-  <meta name="ICBM" content="55.699093, 37.511283">
-  <meta name="yandex-verification" content="76be8c8c491245c5">
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();
-     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110489022', 'ym');
-     ym(110489022, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/110489022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --yellow:#FFC400;
-      --yellow2:#FFD84A;
-      --lemon:#D8FF3D;
-      --lime:#B8F24B;
-      --cream:#FFFDF6;
-      --white:#FFFFFF;
-      --black:#151515;
-      --text:#1B1B1B;
-      --muted:#555B62;
-      --muted2:#7B828B;
-      --line:rgba(21,21,21,.10);
-      --soft:#FFF4BD;
-      --soft2:#F7FFE0;
-      --green:#22B36E;
-      --greenLight:#EFFFF4;
-      --warm:#FFF1DA;
-      --shadow:0 24px 70px rgba(15,15,15,.10);
-      --shadowSoft:0 14px 38px rgba(15,15,15,.07);
-      --radius:34px;
-      --radiusSmall:22px;
-      --max:1180px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter, Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background:var(--yellow);
-      color:var(--text);
-      line-height:1.5;
-      text-rendering:geometricPrecision;
-    }
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-
-    /* Общая логика как в референсе: яркий фон + большие белые модули-карточки */
-    .page-bg{
-      min-height:100vh;
-      padding:28px 0 54px;
-      background:
-        radial-gradient(900px circle at 8% 0%, rgba(255,255,255,.18), transparent 45%),
-        radial-gradient(760px circle at 92% 10%, rgba(216,255,61,.25), transparent 48%),
-        var(--yellow);
-    }
-    .site-shell{
-      max-width:1280px;
-      margin:0 auto;
-      background:var(--cream);
-      border-radius:42px;
-      overflow:hidden;
-      box-shadow:0 36px 110px rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.55);
-      padding:0 24px;
-    }
-
-    /* Верхняя плашка */
-    .top-strip{
-      background:var(--black);
-      color:#fff;
-      font-size:14px;
-      font-weight:900;
-    }
-    .top-strip .wrap{
-      min-height:44px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-    }
-    .top-strip span{display:inline-flex;align-items:center;gap:8px}
-    .top-strip a{
-      background:var(--yellow);
-      color:var(--black);
-      border-radius:999px;
-      padding:8px 14px;
-      font-size:13px;
-      white-space:nowrap;
-    }
-
-    /* Header */
-    header{
-      background:rgba(255,253,246,.92);
-      backdrop-filter:blur(18px);
-      border-bottom:1px solid var(--line);
-      position:sticky;
-      top:0;
-      z-index:20;
-    }
-    .nav{
-      height:74px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:22px;
-    }
-    .brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:-.2px}
-    .brand-mark-old{
-      width:42px;height:42px;border-radius:16px;
-      display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(135deg,var(--yellow),var(--lemon));
-      color:var(--black);
-      box-shadow:0 12px 30px rgba(255,196,0,.32);
-      border:1px solid rgba(21,21,21,.08);
-      font-weight:950;
-      font-size:19px;
-    }
-    .brand-text{display:flex;flex-direction:column;line-height:1.02}
-    .brand-text strong{font-size:22px;letter-spacing:.3px}
-    .brand-text small{font-size:12px;color:var(--muted);font-weight:850;margin-top:2px}
-    .nav-links{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px;font-weight:750}
-    .nav-links a:hover{color:#000}
-    .nav-right{display:flex;align-items:center;gap:14px}
-    .location{font-size:14px;color:var(--muted);font-weight:800}
-
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      min-height:54px;padding:16px 28px;border-radius:999px;
-      background:var(--black);color:#fff;
-      border:1px solid rgba(0,0,0,.08);
-      font-weight:900;font-size:15.5px;
-      cursor:pointer;transition:.22s ease;
-      box-shadow:0 16px 38px rgba(0,0,0,.18);
-    }
-    .btn:hover{transform:translateY(-2px);box-shadow:0 22px 48px rgba(0,0,0,.23)}
-    .btn.yellow{background:linear-gradient(135deg,var(--yellow),var(--yellow2));color:var(--black);box-shadow:0 18px 42px rgba(255,196,0,.32)}
-    .btn.white{background:#fff;color:var(--black);box-shadow:0 12px 28px rgba(0,0,0,.07);border:1px solid var(--line)}
-    .btn.small{min-height:42px;padding:11px 18px;font-size:14px;box-shadow:none}
-
-    /* Типографика */
-    section{padding:62px 0}
-    h1,h2,h3,p{margin-top:0}
-    h1{
-      font-size:clamp(42px,5.1vw,70px);
-      line-height:.97;
-      letter-spacing:-2.2px;
-      margin:20px 0 20px;
-      max-width:760px;
-    }
-    .lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:720px;margin:0}
-    .section-head{max-width:820px;margin-bottom:30px}
-    .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
-    .section-title{font-size:clamp(31px,4vw,48px);line-height:1.04;letter-spacing:-1.25px;margin:0 0 14px}
-    .section-sub{font-size:18px;color:var(--muted);max-width:760px;margin:0}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:9px;
-      padding:9px 14px;border-radius:999px;
-      background:#fff;border:1px solid var(--line);
-      font-size:13px;font-weight:900;color:#303030;
-      box-shadow:0 10px 24px rgba(0,0,0,.04);
-    }
-
-    .card{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:var(--radiusSmall);
-      padding:24px;
-      box-shadow:var(--shadowSoft);
-    }
-    .card h3{font-size:22px;line-height:1.14;margin:0 0 9px;letter-spacing:-.35px}
-    .card p{color:var(--muted);font-size:15.5px;margin:0}
-    .grid-2{display:grid;grid-template-columns:1.02fr .98fr;gap:38px;align-items:center}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-
-    /* HERO как большой белый блок внутри яркого сайта */
-    .hero{padding:54px 0 46px;background:var(--cream)}
-    .hero-card{
-      position:relative;
-      background:#fff;
-      border-radius:38px;
-      padding:34px;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-    .hero-card:before{
-      content:"";
-      position:absolute;
-      width:420px;height:420px;border-radius:50%;
-      background:rgba(216,255,61,.60);
-      right:-150px;top:-170px;
-      z-index:0;
-    }
-    .hero-card:after{
-      content:"";
-      position:absolute;
-      width:260px;height:120px;border-radius:999px;
-      background:rgba(255,196,0,.54);
-      right:210px;bottom:80px;transform:rotate(-18deg);
-      z-index:0;
-    }
-    .hero-card > *{position:relative;z-index:1}
-    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0 24px}
-    .micro{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:700px}
-    .micro div{
-      background:#fff;border:1px solid var(--line);border-radius:18px;
-      padding:13px 14px;font-size:13.5px;font-weight:850;
-      box-shadow:0 10px 24px rgba(0,0,0,.05);
-    }
-    .hero-photo{
-      min-height:520px;
-      border-radius:32px;
-      overflow:hidden;
-      background:linear-gradient(135deg,#F2F2F2,#FFF1A7);
-      position:relative;
-      border:1px solid rgba(0,0,0,.08);
-      box-shadow:0 24px 56px rgba(0,0,0,.13);
-    }
-    .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .photo-note{
-      position:absolute;left:20px;right:20px;bottom:20px;
-      background:rgba(255,255,255,.92);backdrop-filter:blur(14px);
-      border:1px solid rgba(255,255,255,.75);border-radius:22px;
-      padding:17px;box-shadow:0 18px 40px rgba(0,0,0,.14);
-    }
-    .photo-note strong{display:block;font-size:16px;margin-bottom:5px}
-    .photo-note span{display:block;color:var(--muted);font-size:14px}
-
-    /* Блок быстрых направлений как в референсе */
-    .directions-panel{
-      background:var(--yellow);
-      border-radius:36px;
-      padding:34px;
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      position:relative;
-      border:1px solid rgba(0,0,0,.09);
-    }
-    .directions-panel:before{
-      content:"";position:absolute;width:280px;height:280px;border-radius:60px;
-      background:rgba(216,255,61,.58);right:-70px;top:-90px;transform:rotate(18deg);
-    }
-    .directions-panel .section-head{position:relative;z-index:1;margin-bottom:24px}
-    .directions-panel .section-title{color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.08);max-width:620px}
-    .directions-panel .section-sub{color:rgba(21,21,21,.74);font-weight:750}
-    .direction-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative;z-index:1}
-    .direction-card{display:flex;flex-direction:column;
-    
-      background:#fff;
-      border-radius:28px;
-      padding:26px;
-      min-height:560px;
-      display:flex;flex-direction:column;
-      border:1px solid rgba(0,0,0,.08);
-      box-shadow:0 18px 42px rgba(0,0,0,.10);
-      position:relative;overflow:hidden;
-    }
-    .direction-card:after{
-      content:"";position:absolute;width:150px;height:150px;border-radius:45px;
-      right:-48px;top:-50px;opacity:.7;transform:rotate(18deg);
-    }
-    .direction-card.school:after{background:var(--soft)}
-    .direction-card.prep:after{background:var(--soft2)}
-    .age-pill{display:inline-flex;width:max-content;background:var(--black);color:#fff;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:900;margin-bottom:16px;position:relative;z-index:1}
-    .direction-card h3{font-size:32px;line-height:1.02;letter-spacing:-.9px;margin:0 0 14px;position:relative;z-index:1}
-    .direction-card p{font-size:15.7px;color:var(--muted);margin:0 0 18px;position:relative;z-index:1}
-    .direction-card h4{margin:0 0 10px;position:relative;z-index:1}
-    .check-list{list-style:none;margin:0;padding:0;display:grid;gap:9px;position:relative;z-index:1}
-    .check-list li{position:relative;padding-left:28px;color:#30343A;font-size:15px}
-    .check-list li:before{content:"✓";position:absolute;left:0;top:-2px;color:var(--green);font-weight:950;font-size:19px}
-    .direction-result{
-      margin-top:auto;
-      background:#F8F8F8;border:1px solid var(--line);border-radius:22px;
-      padding:18px;position:relative;z-index:1;
-    }
-    .direction-result strong{display:block;margin-bottom:6px}
-
-    /* Боли и результаты — белые карточки на светлом фоне */
-    .module{background:var(--cream)}
-    .pain-block{
-      background:linear-gradient(135deg,#fff,#FFF3C6);
-      border:1px solid rgba(0,0,0,.08);
-      border-radius:38px;
-      padding:40px;
-      box-shadow:var(--shadow);
-    }
-    .pain-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
-    .pain-item{
-      background:#fff;border:1px solid var(--line);border-radius:22px;
-      padding:18px;font-weight:900;color:#303030;min-height:98px;
-      display:flex;align-items:flex-start;gap:10px;box-shadow:0 12px 28px rgba(0,0,0,.06);
-    }
-    .pain-item span{font-size:22px;line-height:1}
-
-    .diag-card .num{
-      width:44px;height:44px;border-radius:16px;
-      background:var(--yellow);color:var(--black);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:950;margin-bottom:14px;border:1px solid rgba(0,0,0,.08);
-    }
-
-    .before-after{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .ba-card{border-radius:30px;padding:30px;border:1px solid var(--line);box-shadow:var(--shadowSoft)}
-    .ba-card.before{background:var(--warm)}
-    .ba-card.after{background:var(--greenLight)}
-    .ba-card h3{font-size:26px;margin:0 0 16px}
-    .ba-card ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-    .ba-card li{position:relative;padding-left:31px;font-weight:750;color:#32363C}
-    .ba-card.before li:before{content:"×";position:absolute;left:0;top:-3px;color:#E25151;font-size:24px;font-weight:950}
-    .ba-card.after li:before{content:"✓";position:absolute;left:0;top:-1px;color:var(--green);font-size:20px;font-weight:950}
-
-    .dark-section{
-      background:var(--black);
-      color:#fff;border-radius:38px;padding:46px;box-shadow:var(--shadow);position:relative;overflow:hidden;
-    }
-    .dark-section:after{content:"";position:absolute;right:-95px;top:-95px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,196,0,.5),transparent 70%)}
-    .dark-section .section-title,.dark-section h3{color:#fff}
-    .dark-section .section-sub,.dark-section p{color:#D9DEE2}
-    .premium-list{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:28px;position:relative;z-index:1}
-    .premium-list div{padding:17px;border-radius:19px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);font-weight:850;color:#fff}
-
-    .photo-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:245px 245px;gap:16px;margin-top:30px}
-    .ph{background:linear-gradient(135deg,#F2F2F2,#FFF2A6);border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadowSoft)}
-    .ph.big{grid-row:span 2}
-    .ph img{width:100%;height:100%;object-fit:cover}
-
-    .review-card blockquote{margin:0;color:#262A30;font-size:17px;line-height:1.55;font-weight:750}
-    .review-card .stars{color:var(--yellow);font-size:16px;margin-bottom:10px;letter-spacing:1px;text-shadow:0 1px 0 rgba(0,0,0,.14)}
-    .review-card .who{margin-top:16px;color:var(--muted);font-size:14px;font-weight:800}
-
-    .format-block{
-      background:linear-gradient(135deg,#fff,#FFF2B2);
-      border-radius:38px;padding:40px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.08);
-    }
-    .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
-    .format-card{background:#fff;border-radius:26px;padding:26px;border:1px solid var(--line);box-shadow:var(--shadowSoft)}
-    .format-card h3{font-size:24px;margin:0 0 12px}
-
-    .faq{max-width:860px;margin:0 auto;display:grid;gap:12px}
-    details{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 10px 28px rgba(0,0,0,.05);overflow:hidden}
-    summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:900;display:flex;justify-content:space-between;gap:18px;align-items:center}
-    summary::-webkit-details-marker{display:none}
-    summary:after{content:"+";font-size:25px;line-height:1;color:var(--black)}
-    details[open] summary:after{content:"–"}
-    details p{padding:0 24px 22px;margin:0;color:var(--muted)}
-
-    .final-cta{
-      background:var(--black);color:#fff;border-radius:38px;padding:46px;box-shadow:var(--shadow);position:relative;overflow:hidden;
-    }
-    .final-cta:before{content:"";position:absolute;right:-110px;bottom:-120px;width:340px;height:340px;border-radius:50%;background:rgba(255,196,0,.40)}
-    .final-cta .section-title{color:#fff}
-    .final-cta .section-sub{color:#D9DEE2}
-    .form-grid{display:grid;grid-template-columns:1fr .92fr;gap:34px;align-items:start;margin-top:30px;position:relative;z-index:1}
-    form{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:28px;padding:26px}
-    label{display:block;font-weight:850;font-size:14px;margin-bottom:7px;color:#fff}
-    input,select,textarea{width:100%;border:1px solid rgba(255,255,255,.18);background:#fff;border-radius:16px;padding:15px 16px;font-size:16px;font-family:inherit;outline:none;margin-bottom:15px;color:var(--text)}
-    textarea{min-height:92px;resize:vertical}
-    input:focus,select:focus,textarea:focus{border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,196,0,.22)}
-    .fineprint{font-size:12.5px;color:#BFC5CB;margin:12px 0 0;text-align:center}
-    .cta-points{display:grid;gap:13px;margin-top:22px}
-    .cta-points div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:16px;color:#fff;font-weight:850}
-    .form-field{min-width:0}
-    .field-error{color:#ffb4b4;font-size:12px;line-height:1.3;margin:-8px 0 12px}
-    .field-error[hidden]{display:none!important}
-    .form-status{font-size:13.5px;line-height:1.45;min-height:18px;margin:8px 0 0;text-align:center}
-    .form-status.err{color:#ffb4b4}
-    .form-status.ok{color:#D8FF3D}
-    form button:disabled{opacity:.7;cursor:default}
-
-    @media(max-width:980px){
-      .page-bg{padding:14px 0 30px}
-      .site-shell{border-radius:30px}
-      .nav-links{display:none}
-      .grid-2,.direction-grid,.before-after,.format-grid,.form-grid{grid-template-columns:1fr}
-      .micro{grid-template-columns:1fr 1fr}
-      .pain-list{grid-template-columns:1fr 1fr}
-      .grid-3,.premium-list{grid-template-columns:1fr}
-      .grid-4{grid-template-columns:1fr 1fr}
-      .direction-card{display:flex;flex-direction:column;
-    min-height:auto}
-      .hero-photo{min-height:440px}
-      .photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 220px 220px}
-      .ph.big{grid-column:span 2;grid-row:auto}
-    }
-    @media(max-width:640px){
-      .page-bg{padding:0;background:var(--yellow)}
-      .site-shell{border-radius:0}
-      .wrap{padding:0 16px}
-      .top-strip .wrap{min-height:46px;align-items:flex-start;flex-direction:column;padding-top:10px;padding-bottom:10px;gap:8px}
-      .nav{height:64px}
-      .brand-mark-old{width:34px;height:34px;border-radius:13px}.brand-text strong{font-size:18px}.brand-text small{font-size:10.5px}
-      .location{display:none}.btn{width:100%;min-height:52px;padding:14px 22px}.btn.small{width:auto}
-      section{padding:46px 0}.hero{padding:28px 0 40px}
-      .hero-card{padding:22px;border-radius:28px}
-      h1{letter-spacing:-1.35px}.hero-actions{gap:10px;margin:24px 0 20px}
-      .micro,.pain-list,.grid-4{grid-template-columns:1fr}
-      .hero-photo{min-height:350px;border-radius:24px}.photo-note{left:14px;right:14px;bottom:14px;border-radius:18px;padding:14px}
-      .directions-panel,.pain-block,.dark-section,.format-block,.final-cta{padding:24px 16px;border-radius:28px}
-      .card,.direction-card,.ba-card,.format-card{padding:20px;border-radius:22px}
-      .direction-card h3{font-size:27px}
-      .photo-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:12px}
-      .ph,.ph.big{grid-column:auto;min-height:220px}
-      form{padding:20px;border-radius:22px}
-    }
-  </style>
-</head>
-
-<body>
-<div class="page-bg">
-  <div class="site-shell">
-    <div class="top-strip">
-      <div class="wrap">
-        <span>Пробное занятие бесплатно</span>
-        <a href="#form">Записаться</a>
-      </div>
-    </div>
-
-    <header>
-      <div class="wrap nav">
-        <a href="#top" class="brand" aria-label="На главную" style="display:flex;align-items:center;gap:10px">
-          <img src="images/logo.jpg" alt="ОСНОВА" style="height:38px;width:auto;display:block;border-radius:8px">
-          <span style="font-weight:900;font-size:20px;color:#00A8B5;letter-spacing:-0.3px">ОСНОВА</span>
-        </a>
-
-        <nav class="nav-links">
-          <a href="#directions">Направления</a>
-          <a href="#diagnostics">Диагностика</a>
-          <a href="#results">Результаты</a>
-          <a href="#format">Формат</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-
-        <div class="nav-right">
-          <div class="location">м. Раменки · Мичуринский проспект 11 к3</div>
-          <a class="btn small white" href="#form">Записаться</a>
-        </div>
-      </div>
-    </header>
-
-    <main id="top">
-      <!--
-        HERO PHOTO
-        Файл: images/hero.jpg
-        Размер: 1200×1400 px или 1000×1200 px, вертикальное фото.
-        Что на фото: ребёнок 7–10 лет за столом, рядом педагог, светлая премиальная обстановка,
-        книги/тетради, без яркого хаоса. Лучше реальное фото, не сток.
-      -->
-      <section class="hero">
-        <div class="wrap">
-          <div class="hero-card grid-2">
-            <div>
-              <div class="eyebrow">ОСНОВА с Ириной Шик · кабинет интеллектуального развития детей 5–13 лет</div>
-              <h1>Навыки, на которых строится самостоятельная и успешная учёба</h1>
-              <p class="lead">Скорочтение и развитие мышления — 7–13 лет. Подготовка к школе — 5–7 лет. Формируем чтение, память, внимание, мышление, счёт и самостоятельность.</p>
-
-              <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap">
-                <span style="background:rgba(255,255,255,0.5);padding:6px 14px;border-radius:30px;font-size:0.85rem">⭐⭐⭐⭐⭐</span>
-                <span style="font-size:0.85rem;padding:6px 0;color:var(--muted)">Более 500 родителей прошли диагностику</span>
-              </div>
-
-              <div class="hero-actions">
-                <a class="btn yellow" href="#form">🔥 Получить диагностику бесплатно</a>
-                <a class="btn white" href="#directions">Выбрать направление</a>
-              </div>
-
-              <div class="micro">
-                <div>5–13 лет</div>
-                <div>Мини-группы и индивидуально</div>
-                <div>Диагностика перед стартом</div>
-              </div>
-            </div>
-
-            <div style="width:100%;padding:0;margin:0;overflow:hidden">
-              <img src="images/hero.jpg" alt="Ирина Шик, кабинет интеллектуального развития ОСНОВА" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap">
-          <div class="directions-panel" id="directions">
-            <div class="section-head">
-              <div class="eyebrow">Два направления</div>
-              <h2 class="section-title">Подбираем программу под возраст и задачу ребёнка</h2>
-              <p class="section-sub">Мы не записываем всех в одну группу. Сначала понимаем, какие навыки нужно развивать именно вашему ребёнку.</p>
-            </div>
-
-            <div class="direction-grid">
-              <div class="direction-card school">
-                <span class="age-pill">7–13 лет</span>
-                <h3>Скорочтение и развитие мышления</h3>
-                <p>Для школьников, которым важно легче работать с текстами, быстрее понимать задания, запоминать материал и учиться самостоятельнее.</p>
-
-                <h4>Подходит, если ребёнок:</h4>
-                <ul class="check-list">
-                  <li>читает медленно или быстро устаёт;</li>
-                  <li>не понимает смысл текста;</li>
-                  <li>не может пересказать;</li>
-                  <li>забывает прочитанное;</li>
-                  <li>долго думает и теряется;</li>
-                  <li>отвлекается и ждёт подсказки.</li>
-                </ul>
-
-                <div class="direction-result">
-                  <strong>Результат направления</strong>
-                  <p>Ребёнку легче читать, понимать задания, запоминать информацию, рассуждать и справляться без постоянной опоры на взрослого.</p>
-                </div>
-                <div style="margin-top:18px"><a class="btn yellow" href="#form">Подобрать программу 7–13 лет</a></div>
-              </div>
-
-              <div class="direction-card prep">
-                <span class="age-pill">5–7 лет</span>
-                <h3>Подготовка к школе без пробелов</h3>
-                <p>Для дошкольников, которым важно прийти в 1 класс не просто со знанием букв, а с готовностью учиться, слушать, думать и выполнять задания.</p>
-
-                <h4>Развиваем:</h4>
-                <ul class="check-list">
-                  <li>навык чтения;</li>
-                  <li>счёт и счёт в уме;</li>
-                  <li>память и внимание;</li>
-                  <li>мышление и речь;</li>
-                  <li>понимание инструкции;</li>
-                  <li>усидчивость и самостоятельность.</li>
-                </ul>
-
-                <div class="direction-result">
-                  <strong>Результат направления</strong>
-                  <p>Ребёнок приходит в школу более собранным, уверенным и готовым учиться: слышит задание, удерживает внимание, запоминает и отвечает.</p>
-                </div>
-                <div style="margin-top:18px"><a class="btn yellow" href="#form">Подобрать программу 5–7 лет</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap pain-block">
-          <div class="section-head center">
-            <div class="eyebrow">Для холодной аудитории</div>
-            <h2 class="section-title">Если ребёнок способный, но учёба даётся тяжелее, чем могла бы</h2>
-            <p class="section-sub">Часто проблема не в лени и не в характере. Ребёнку может не хватать конкретных учебных навыков: внимания, памяти, техники чтения, мышления и самоконтроля.</p>
-          </div>
-
-          <div class="pain-list">
-            <div class="pain-item"><span>📖</span>Читает медленно и быстро устаёт</div>
-            <div class="pain-item"><span>🧠</span>Забывает информацию в нужный момент</div>
-            <div class="pain-item"><span>💬</span>Не может пересказать своими словами</div>
-            <div class="pain-item"><span>🎯</span>Отвлекается и не доводит до конца</div>
-            <div class="pain-item"><span>⏳</span>Долго думает и теряется при ответе</div>
-            <div class="pain-item"><span>📝</span>Домашка занимает больше времени, чем должна</div>
-            <div class="pain-item"><span>👀</span>Ждёт помощи взрослого и подсказок</div>
-            <div class="pain-item"><span>📚</span>Боится больших текстов и сложных заданий</div>
-          </div>
-
-          <div style="text-align:center;margin-top:30px">
-            <a class="btn yellow" href="#form">Понять, что мешает ребёнку</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap grid-3">
-          <div class="card">
-            <h3>Чтение и понимание</h3>
-            <p>Чтобы ребёнок не просто произносил слова, а понимал текст, удерживал смысл и мог пересказать.</p>
-          </div>
-          <div class="card">
-            <h3>Память и внимание</h3>
-            <p>Чтобы меньше отвлекался, быстрее вспоминал информацию и доводил задания до результата.</p>
-          </div>
-          <div class="card">
-            <h3>Мышление и самостоятельность</h3>
-            <p>Чтобы ребёнок рассуждал, считал, искал решения и меньше зависел от помощи родителей.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="module" id="diagnostics">
-        <div class="wrap">
-          <div class="section-head center">
-            <div class="eyebrow">Диагностика</div>
-            <h2 class="section-title">Сначала мы понимаем, что нужно именно вашему ребёнку</h2>
-            <p class="section-sub">Перед началом занятий педагог смотрит не только знания, а базовые навыки, которые влияют на учебу каждый день.</p>
-          </div>
-
-          <div class="grid-4">
-            <div class="card diag-card">
-              <div class="num">1</div>
-              <h3>Чтение и текст</h3>
-              <p>Как ребёнок читает, понимает ли смысл, может ли ответить на вопросы и пересказать.</p>
-            </div>
-            <div class="card diag-card">
-              <div class="num">2</div>
-              <h3>Память</h3>
-              <p>Как запоминает информацию и насколько быстро может вспомнить её без долгих пауз.</p>
-            </div>
-            <div class="card diag-card">
-              <div class="num">3</div>
-              <h3>Внимание</h3>
-              <p>Насколько ребёнок удерживает задачу, не отвлекается и доводит работу до конца.</p>
-            </div>
-            <div class="card diag-card">
-              <div class="num">4</div>
-              <h3>План развития</h3>
-              <p>Родители получают понятную картину: что уже хорошо и какую программу выбрать.</p>
-            </div>
-          </div>
-
-          <div style="text-align:center;margin-top:30px">
-            <a class="btn yellow" href="#form">🔥 Получить диагностику бесплатно</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="module" id="results">
-        <div class="wrap">
-          <div class="section-head center">
-            <h2 class="section-title">Что меняется после занятий</h2>
-            <p class="section-sub">Мы не обещаем “волшебный результат за неделю”. Мы системно развиваем навыки, которые помогают ребёнку учиться спокойнее и самостоятельнее.</p>
-          </div>
-
-          <div class="before-after">
-            <div class="ba-card before">
-              <h3>До занятий</h3>
-              <ul>
-                <li>читает медленно;</li>
-                <li>говорит “не помню”;</li>
-                <li>забывает прочитанное;</li>
-                <li>не может пересказать;</li>
-                <li>отвлекается;</li>
-                <li>не доводит задания до конца;</li>
-                <li>ждёт помощи от родителей;</li>
-                <li>не уверен в себе.</li>
-              </ul>
-            </div>
-            <div class="ba-card after">
-              <h3>После занятий</h3>
-              <ul>
-                <li>читает увереннее;</li>
-                <li>лучше понимает текст;</li>
-                <li>быстрее вспоминает информацию;</li>
-                <li>пересказывает своими словами;</li>
-                <li>дольше держит внимание;</li>
-                <li>увереннее считает и рассуждает;</li>
-                <li>чаще справляется самостоятельно;</li>
-                <li>становится спокойнее в учёбе.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap dark-section">
-          <div class="section-head" style="position:relative;z-index:1">
-            <div class="eyebrow">Для премиальных родителей</div>
-            <h2 class="section-title">Не просто “дополнительные занятия”, а сильная интеллектуальная база</h2>
-            <p class="section-sub">Современная школа требует от ребёнка не только знаний. Важно, чтобы он умел понимать задачу, концентрироваться, запоминать, думать, проверять себя и не сдаваться при трудности.</p>
-          </div>
-
-          <div class="premium-list">
-            <div>Понимать задачу с первого раза</div>
-            <div>Удерживать внимание и инструкцию</div>
-            <div>Запоминать и воспроизводить материал</div>
-            <div>Работать с текстом и смыслом</div>
-            <div>Считать и рассуждать увереннее</div>
-            <div>Доводить начатое до результата</div>
-          </div>
-        </div>
-      </section>
-
-      <!--
-        PHOTO GRID
-        Рекомендуемые файлы и размеры:
-        images/lesson-main.jpg  — 1200×900 px, педагог с ребёнком за заданием, главное фото.
-        images/lesson-1.jpg     — 800×600 px, ребёнок читает/работает с текстом.
-        images/lesson-2.jpg     — 800×600 px, задания на память/карточки/тетрадь.
-        images/lesson-3.jpg     — 800×600 px, мини-группа или педагог помогает ребёнку.
-        images/lesson-4.jpg     — 800×600 px, ребёнок улыбается после выполненного задания.
-        Все фото: светлые, чистые, премиальные, без визуального шума.
-      -->
-      <section class="module" id="format">
-        <div class="wrap">
-          <div class="section-head center">
-            <div class="eyebrow">Как проходят занятия</div>
-            <h2 class="section-title">Спокойная среда. Сильные задачи. Понятный прогресс.</h2>
-            <p class="section-sub">Занятия проходят в небольших группах или индивидуально. Педагог видит особенности ребёнка и постепенно ведёт его к более уверенной, собранной и самостоятельной работе.</p>
-          </div>
-
-          <div class="grid-3">
-            <div class="card"><h3>Мини-группы</h3><p>Ребёнок не теряется в потоке, педагог видит его темп, ошибки и сильные стороны.</p></div>
-            <div class="card"><h3>Системная программа</h3><p>Каждое занятие развивает чтение, память, внимание, мышление и самостоятельность.</p></div>
-            <div class="card"><h3>Обратная связь</h3><p>Родители понимают, что тренируем, что меняется и на что обратить внимание дома.</p></div>
-          </div>
-
-          <div class="photo-grid">
-            <div class="ph big"><img src="images/lesson-main.jpg" alt="Педагог занимается с ребёнком" /></div>
-            <div class="ph"><img src="images/lesson-1.jpg" alt="Ребёнок работает с текстом" /></div>
-            <div class="ph"><img src="images/lesson-2.jpg" alt="Задания на память и внимание" /></div>
-            <div class="ph"><img src="images/lesson-3.jpg" alt="Мини-группа на занятии" /></div>
-            <div class="ph"><img src="images/lesson-4.jpg" alt="Ребёнок после выполненного задания" /></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap">
-          <div class="section-head center">
-            <h2 class="section-title">Что чаще всего отмечают родители</h2>
-            <p class="section-sub">После открытия кабинета здесь можно заменить текстовые отзывы на реальные скрины и видеоотзывы родителей.</p>
-          </div>
-
-          <div class="grid-3">
-            <div class="card review-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>“Ребёнок стал быстрее понимать задание и меньше ждать, что ему всё подскажут.”</blockquote>
-              <div class="who">Мама школьника, 9 лет</div>
-            </div>
-            <div class="card review-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>“Перед школой стало спокойнее: ребёнок лучше держит внимание и понимает инструкции.”</blockquote>
-              <div class="who">Мама дошкольника, 6 лет</div>
-            </div>
-            <div class="card review-card">
-              <div class="stars">★★★★★</div>
-              <blockquote>“Начал пересказывать, а не просто читать слова. Домашка проходит спокойнее.”</blockquote>
-              <div class="who">Мама школьника, 8 лет</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="module">
-        <div class="wrap format-block">
-          <div class="section-head center">
-            <div class="eyebrow">Формат и стоимость</div>
-            <h2 class="section-title">Сначала подбираем маршрут, потом программу</h2>
-            <p class="section-sub">Стоимость зависит от формата: мини-группа или индивидуальные занятия. На диагностике мы определяем, какое направление подойдёт ребёнку.</p>
-          </div>
-
-          <div class="format-grid">
-            <div class="format-card">
-              <h3>Мини-группы</h3>
-              <ul class="check-list">
-                <li>для детей 5–7 и 7–13 лет;</li>
-                <li>маленькая группа;</li>
-                <li>программа по возрасту и задаче;</li>
-                <li>обратная связь родителям.</li>
-              </ul>
-            </div>
-            <div class="format-card">
-              <h3>Индивидуально</h3>
-              <ul class="check-list">
-                <li>если нужна персональная траектория;</li>
-                <li>для выраженных трудностей с чтением или вниманием;</li>
-                <li>гибкий темп и акцент на слабые навыки;</li>
-                <li>подробные рекомендации родителям.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div style="text-align:center;margin-top:30px">
-            <a class="btn yellow" href="#form">Узнать расписание и стоимость</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="module" id="faq">
-        <div class="wrap">
-          <div class="section-head center">
-            <h2 class="section-title">Частые вопросы</h2>
-          </div>
-
-          <div class="faq">
-            <details open>
-              <summary>Моему ребёнку 5 лет. Уже можно начинать?</summary>
-              <p>Да. В 5–7 лет важно развивать внимание, память, счёт, понимание инструкции, речь и навык чтения — это база для спокойного старта в школе.</p>
-            </details>
-            <details>
-              <summary>Скорочтение у вас с какого возраста?</summary>
-              <p>Скорочтение и развитие мышления — для детей 7–13 лет. Для детей 5–7 лет подходит направление подготовки к школе.</p>
-            </details>
-            <details>
-              <summary>Ребёнок умный, но отвлекается. Это к вам?</summary>
-              <p>Да. Часто ребёнок способен, но не удерживает внимание, теряет инструкцию, не доводит работу до конца и ждёт помощи взрослого. Эти навыки можно развивать.</p>
-            </details>
-            <details>
-              <summary>Вы занимаетесь только чтением?</summary>
-              <p>Нет. Направление для школьников — это скорочтение и развитие мышления: чтение, понимание текста, память, внимание, логика, пересказ и самостоятельность.</p>
-            </details>
-            <details>
-              <summary>Можно сначала понять, что нужно ребёнку?</summary>
-              <p>Да. Для этого проводится диагностика. После неё педагог объясняет, какое направление и формат лучше подойдут ребёнку.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="module" id="form">
-        <div class="wrap final-cta">
-          <div class="form-grid">
-            <div>
-              <div class="eyebrow">Запись на диагностику</div>
-              <h2 class="section-title">Помогите ребёнку стать сильнее в учёбе — без постоянной зависимости от помощи взрослых</h2>
-              <p class="section-sub">Оставьте заявку — мы уточним возраст ребёнка, задачу семьи и подберём подходящее направление: скорочтение и развитие мышления 7–13 лет или подготовку к школе 5–7 лет.</p>
-
-              <div class="cta-points">
-                <div>Диагностика перед стартом</div>
-                <div>Подбор направления по возрасту и навыкам</div>
-                <div>Мини-группы или индивидуальный формат</div>
-              </div>
-            </div>
-
-            <form id="lead-form" novalidate>
-              <div class="form-field" data-field="name">
-                <label for="f_name">Ваше имя</label>
-                <input id="f_name" name="name" type="text" required autocomplete="name" placeholder="Например: Анна" />
-                <div class="field-error" data-error-for="name" hidden></div>
-              </div>
-
-              <div class="form-field" data-field="phone">
-                <label for="f_phone">Телефон</label>
-                <input id="f_phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" />
-                <div class="field-error" data-error-for="phone" hidden></div>
-              </div>
-
-              <div class="form-field" data-field="age">
-                <label for="f_age">Возраст ребёнка</label>
-                <select id="f_age" name="age" required>
-                  <option value="" selected disabled>Выберите возраст</option>
-                  <option value="5">5 лет</option>
-                  <option value="6">6 лет</option>
-                  <option value="7">7 лет</option>
-                  <option value="8">8 лет</option>
-                  <option value="9">9 лет</option>
-                  <option value="10">10 лет</option>
-                  <option value="11">11 лет</option>
-                  <option value="12">12 лет</option>
-                  <option value="13">13 лет</option>
-                </select>
-                <div class="field-error" data-error-for="age" hidden></div>
-              </div>
-
-              <label for="f_task">Что беспокоит больше всего?</label>
-              <select id="f_task" name="task">
-                <option value="" selected>Выберите задачу</option>
-                <option>Медленно читает</option>
-                <option>Плохо запоминает</option>
-                <option>Отвлекается</option>
-                <option>Не может пересказать</option>
-                <option>Сложно с подготовкой к школе</option>
-                <option>Нужна самостоятельность в учёбе</option>
-                <option>Не знаю, хочу диагностику</option>
-              </select>
-
-              <label for="f_comment">Комментарий</label>
-              <textarea id="f_comment" name="comment" placeholder="Коротко опишите ситуацию, если хотите"></textarea>
-
-              <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
-              <p style="margin-top:0;margin-bottom:14px;font-size:12px;color:rgba(255,255,255,.7);line-height:1.5">
-                Нажимая на кнопку, вы соглашаетесь на <a href="/consent/" style="color:var(--yellow);text-decoration:underline">обработку персональных данных</a> в соответствии с <a href="/privacy/" style="color:var(--yellow);text-decoration:underline">Политикой конфиденциальности</a>.
-              </p>
-              <button class="btn yellow" id="f_submit" type="submit" style="width:100%">🔥 Получить диагностику бесплатно</button>
-              <div id="form-status" class="form-status" aria-live="polite"></div>
-              <p class="fineprint">Или напишите в мессенджер: <a href="https://t.me/Kotiksym" style="color:#FFD84A;font-weight:900;text-decoration:underline">Telegram</a></p>
-              <p class="fineprint">Есть образовательная лицензия · можно вернуть 13% через налоговый вычет. <a href="/license/" style="color:var(--yellow);text-decoration:underline">Подробнее</a></p>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-</div>
-
-      <!-- Футер -->
-      <footer style="background:var(--black);color:#fff;padding:20px 24px;font-size:13px;text-align:center">
-        <div style="max-width:var(--max);margin:0 auto">
-          <a href="/privacy/" style="color:var(--yellow);text-decoration:none;font-weight:600">Политика конфиденциальности</a>
-          <span style="color:rgba(255,255,255,.4);margin:0 8px">&middot;</span>
-          <a href="/license/" style="color:var(--yellow);text-decoration:none;font-weight:600">Лицензия</a>
-          <span style="color:rgba(255,255,255,.4);margin:0 8px">&middot;</span>
-          <a href="tel:+79684551800" style="color:var(--yellow);text-decoration:none;font-weight:600">+7 968 455 1800</a>
-          <span style="color:rgba(255,255,255,.4);margin:0 8px">&middot;</span>
-          <span style="color:rgba(255,255,255,.4)">&copy; 2026 ИП Шкодина И.С.</span>
-          <div style="margin-top:10px;color:rgba(255,255,255,.4);font-size:12px">Сайт создан в студии <a href="https://studioglubina.ru/" target="_blank" rel="noopener" style="color:var(--yellow);text-decoration:none;font-weight:700">ГЛУБИНА</a></div>
-        </div>
-      </footer>
-
-<!-- Schema.org для поисковиков -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var p=location.pathname;if(/\/index\.html$/i.test(p))location.replace(p.replace(/\/index\.html$/i,'/')+location.search+location.hash);})();</script>
+<title>Основа знаний — подготовка к школе и скорочтение</title>
+<meta name="description" content="Центр «Основа знаний» на Мичуринском: скорочтение 4–16 лет и подготовка к школе 4–7 лет. Диагностика навыков 40–60 минут, мини-группы до 6 детей.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Основа знаний">
+<link rel="canonical" href="https://osnova.kotiksym.ru/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Основа знаний">
+<meta property="og:title" content="Основа знаний — подготовка к школе и скорочтение">
+<meta property="og:description" content="Скорочтение и подготовка к школе на Мичуринском проспекте. Проверяем навыки на диагностике 40–60 минут.">
+<meta property="og:url" content="https://osnova.kotiksym.ru/">
+<meta property="og:image" content="https://osnova.kotiksym.ru/images/hero-teacher.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta name="geo.region" content="RU-MOW">
+<meta name="geo.placename" content="Москва">
+<meta name="geo.position" content="55.699093;37.511283">
+<meta name="ICBM" content="55.699093, 37.511283">
+<meta name="yandex-verification" content="76be8c8c491245c5">
+<link rel="icon" type="image/png" sizes="120x120" href="/favicon-120.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Основа знаний",
-  "alternateName": "ОСНОВА с Ириной Шик",
-  "description": "Кабинет интеллектуального развития детей 5–13 лет на Мичуринском проспекте. Скорочтение, подготовка к школе.",
+  "description": "Детский центр на Мичуринском проспекте: скорочтение и подготовка к школе. Диагностика навыков, мини-группы до 6 детей.",
   "url": "https://osnova.kotiksym.ru/",
-  "telephone": "+7 968 455 1800",
-  "image": "https://osnova.kotiksym.ru/images/hero.jpg",
+  "image": "https://osnova.kotiksym.ru/images/hero-teacher.jpg",
   "logo": "https://osnova.kotiksym.ru/images/favicon-512.png",
   "address": {
     "@type": "PostalAddress",
@@ -951,9 +47,660 @@
     "latitude": 55.699093,
     "longitude": 37.511283
   },
+  "hasMap": "https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4",
   "areaServed": "Москва"
 }
 </script>
-<script src="/form.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110489022', 'ym');
+   ym(110489022, 'init', {ssr:true, webvisor:true, clickmap:true, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110489022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F4EE; --surface:#FFFFFF; --line:#E3DFD6;
+    --blue:#405FC2; --blue-hover:#3450A8; --dark-blue:#263B78; --blue-soft:#EEF2FC;
+    --yellow:#F1C84B; --yellow-hover:#DDAE2D; --yellow-soft:#FFF4C4;
+    --yellow-text:#A87500; --yellow-num:#C69200;
+    --text:#20232B; --muted:#656A73;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Onest",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--yellow);color:var(--text)}
+  img,svg,iframe{max-width:100%;display:block}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{color:var(--blue-hover)}
+  h1,h2,h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;color:var(--text);margin:0}
+  .wrap{width:calc(100% - 32px);max-width:1180px;margin:0 auto}
+  section[id]{scroll-margin-top:84px}
+  .journey-block{scroll-margin-top:84px}
+  @keyframes draw{to{stroke-dashoffset:0}}
+
+  section{padding:74px 0}
+  section.hero{padding:64px 0 56px}
+  section.contacts{padding:60px 0}
+  section.live{padding:78px 0}
+  section.finale{padding:74px 0}
+
+  header.site{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.site nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--text)}
+  .brand em{font-style:normal;color:var(--blue)}
+  .brand-mark{width:42px;height:42px;border-radius:11px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;flex:0 0 auto}
+  .brand-mark img{width:36px;height:36px;object-fit:contain}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-decoration:none}
+  .btn-primary{background:var(--blue);color:#fff}
+  .btn-primary:hover{background:var(--blue-hover);color:#fff}
+  .btn-outline{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+  .btn-outline:hover{background:var(--blue);color:#fff}
+  .btn-lg{padding:16px 28px;font-size:16px}
+
+  /* Hero */
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;font-weight:500;color:#43413c;background:var(--surface)}
+  .hero .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:inline-block}
+  .hero h1{font-size:clamp(30px,4.4vw,48px);line-height:1.12;margin:20px 0 16px;text-wrap:wrap;max-width:22ch}
+  .hero h1 .u{position:relative;white-space:normal;color:var(--blue)}
+  .hero h1 .u svg{position:absolute;left:-3%;right:-3%;bottom:-11px;width:106%;height:18px;overflow:visible}
+  .hero p.lead{font-size:18px;line-height:1.58;color:var(--muted);max-width:48ch;margin:0 0 22px;text-wrap:pretty}
+  .hero p.lead b{color:var(--text);font-weight:600}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .hero-cta .btn-outline{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
+  .hero-cta .btn-outline:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
+  .hero-meta{margin:0 0 26px;color:var(--muted);font-size:14.5px;font-weight:500;letter-spacing:.01em}
+  .trust{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+  .trust span{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:13.5px;font-weight:600}
+  .trust .stars{color:var(--yellow);letter-spacing:1px}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:44px;align-items:center}
+  .hero-photo{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 32px -18px rgba(38,59,120,.35);background:var(--surface)}
+  .hero-photo img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+
+  /* Real photo block */
+  .gallery{padding:18px 0 42px}
+  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+  .gallery-head h2{font-size:clamp(26px,3.5vw,40px)}
+  .gallery-head p{margin:0;color:var(--muted);max-width:36ch;font-size:15.5px}
+  .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;align-items:start}
+  .gallery-item{appearance:none;padding:0;text-align:inherit;font:inherit;color:inherit;display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);cursor:zoom-in;position:relative}
+  .gallery-grid .gallery-item{grid-column:span 4}
+  .gallery-grid .gallery-item:nth-child(1){grid-column:span 8}
+  .gallery-grid .gallery-item:nth-child(2){grid-column:span 4}
+  .gallery-grid .gallery-item img{width:100%;height:auto;display:block;transition:transform .35s ease}
+  .gallery-grid .gallery-item:hover img{transform:scale(1.02)}
+
+  .photo-lightbox{position:fixed;inset:0;background:rgba(20,24,34,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:28px}
+  .photo-lightbox.open{display:flex}
+  .photo-lightbox img{max-width:min(1100px,94vw);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  .photo-lightbox button{position:absolute;top:18px;right:18px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:var(--text);font:600 25px/1 Onest,sans-serif;cursor:pointer}
+
+  @media (max-width:1099px){
+    .hero .wrap{grid-template-columns:minmax(0,1fr)}
+    .gallery-head{align-items:start;flex-direction:column;gap:8px}
+    .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    .gallery-grid .gallery-item,
+    .gallery-grid .gallery-item:nth-child(1),
+    .gallery-grid .gallery-item:nth-child(2){grid-column:auto}
+    .gallery-grid .gallery-item:first-child{grid-column:1 / -1}
+  }
+  @media (max-width:560px){
+    .gallery-grid{grid-template-columns:1fr 1fr;gap:10px}
+    .gallery-grid .gallery-item,
+    .gallery-grid .gallery-item:first-child{grid-column:auto}
+    .gallery-grid .gallery-item img{height:140px;object-fit:cover}
+  }
+  .proof{display:grid;grid-template-columns:repeat(3,1fr);max-width:560px;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .proof>div{padding:18px 20px;border-right:1px solid var(--line)}
+  .proof>div:last-child{border-right:0}
+  .proof b{display:block;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:26px;letter-spacing:-.04em;color:var(--dark-blue)}
+  .proof>div:nth-child(1) b{color:var(--blue)}
+  .proof>div:nth-child(2) b{color:var(--text)}
+  .proof>div:nth-child(3) b{color:var(--yellow-num)}
+  .proof span{display:block;color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.35}
+
+  /* Directions — two choice blocks */
+  .directions{padding:56px 0}
+  .directions h2{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
+  .directions .sub{color:var(--muted);max-width:44ch;margin:0 0 28px}
+  .dir-choice{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+  .dir-card{background:var(--blue-soft);border-radius:12px;padding:26px 24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+  .dir-card.alt{background:var(--yellow-soft)}
+  .dir-card .age{color:var(--dark-blue);font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+  .dir-card.alt .age{color:var(--yellow-text)}
+  .dir-card h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-size:24px;margin:0;color:var(--text)}
+  .dir-card .trigger{margin:6px 0 0;color:var(--text);font-size:16.5px;font-weight:600;line-height:1.4}
+  .dir-card .result{margin:0;color:var(--muted);font-size:15.5px;line-height:1.5}
+  .dir-card .dir-cta{margin-top:14px;align-self:flex-start;white-space:normal}
+  .dir-card.alt .dir-cta{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
+  .dir-card.alt .dir-cta:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
+
+  /* Recognize pains */
+  .recognize{padding:52px 0}
+  .recognize h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
+  .recognize .sub{color:var(--muted);max-width:52ch;margin:0 0 24px}
+  .pain-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px 18px;list-style:none;margin:0;padding:0}
+  .pain-grid li{padding:12px 14px 12px 18px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:15.5px;font-weight:500;line-height:1.4;position:relative}
+  .pain-grid li::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:2px;background:var(--blue)}
+  .pain-grid li:nth-child(n+4)::before{background:var(--yellow)}
+
+  /* Diagnostic check */
+  .check{padding:56px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .check h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px;max-width:22ch}
+  .check-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px 22px;margin:28px 0 22px}
+  .check-item h3{font-size:18px;margin:0 0 6px}
+  .check-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+  .check .after{color:var(--muted);font-size:16.5px;line-height:1.6;max-width:62ch;margin:0 0 22px}
+  .check .btn{min-height:48px}
+
+  /* Results */
+  .results-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:28px}
+  .results-top h2{font-size:clamp(28px,4vw,44px)}
+  .results-top p{color:var(--muted);margin:0;max-width:44ch}
+  .journey-block{margin-top:28px;padding-top:8px}
+  .journey-program{font-size:20px;margin:0 0 14px;color:var(--dark-blue)}
+  .journey-block.prep .journey-program{color:var(--yellow-text)}
+  .journey-col.after.prep{background:var(--yellow-soft)}
+  .journey-block.prep .journey-col.after li::before{background:var(--yellow-num)}
+  .journey-block.prep .journey-arrow{color:var(--yellow-num)}
+  .journey{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+  .journey-col{padding:28px 0}
+  .journey-col.after{background:var(--blue-soft);padding:28px;border-radius:16px}
+  .journey-col h3{font-size:22px;color:var(--muted);margin:0 0 18px;font-family:'Unbounded','Onest',sans-serif;font-weight:600;letter-spacing:-.01em}
+  .journey-col.now h3::after{content:"";display:block;width:42px;height:5px;margin-top:10px;border-radius:999px;background:var(--yellow)}
+  .journey-col.after h3{color:var(--dark-blue)}
+  .journey-col ul{list-style:none;padding:0;margin:0;display:grid;gap:14px;color:var(--text);font-size:16px;line-height:1.5}
+  .journey-col li{padding-left:22px;position:relative}
+  .journey-col li::before{content:"";position:absolute;left:0;top:.65em;width:12px;height:2px;background:var(--muted);border-radius:2px}
+  .journey-col.after li::before{background:var(--blue)}
+  .journey-arrow{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--blue)}
+  .journey-arrow svg{width:56px;height:56px}
+  .journey-arrow span{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);max-width:16ch;text-align:center;font-weight:600}
+
+  /* Live center — dark blue */
+  .live{background:var(--dark-blue);color:#fff}
+  .live .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .live h2{color:#fff;font-size:clamp(28px,3.8vw,42px);max-width:18ch}
+  .live p{color:#C9D1EA;font-size:18px;line-height:1.65;margin:20px 0 0}
+  .live p b{color:#fff;font-weight:600}
+  .live ol{list-style:none;padding:0;margin:0;counter-reset:live}
+  .live ol li{counter-increment:live;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline}
+  .live ol li:last-child{border-bottom:0}
+  .live ol li::before{content:counter(live,decimal-leading-zero);font-family:'Unbounded','Onest',sans-serif;font-weight:700;color:var(--yellow);font-size:15px;letter-spacing:.02em}
+  .live ol li b{display:block;font-weight:600;font-size:18px;margin-bottom:4px}
+  .live ol li span{color:#B7C0DA;font-size:14.5px;line-height:1.5}
+
+  /* Reviews */
+  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+  .reviews-head h2{font-size:clamp(28px,4vw,44px);max-width:16ch}
+  .reviews-rating{text-align:right}
+  .reviews-rating .num{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:44px;color:var(--dark-blue);line-height:1}
+  .reviews-rating .stars{color:var(--yellow);letter-spacing:3px;font-size:18px;margin-top:6px}
+  .reviews-rating .src{color:var(--muted);font-size:12.5px;margin-top:4px}
+  .reviews-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start}
+  .review-main{position:relative;padding-left:60px}
+  .review-main::before{content:"“";position:absolute;left:-6px;top:-40px;font-family:'Unbounded','Onest',sans-serif;font-size:180px;color:var(--yellow);line-height:1;opacity:.9}
+  .review-main .quote{font-family:'Unbounded','Onest',sans-serif;font-weight:600;font-size:clamp(22px,2.4vw,28px);line-height:1.3;color:var(--text);margin:0 0 18px;letter-spacing:-.01em}
+  .review-main p{margin:0 0 20px;color:var(--muted);font-size:16px;line-height:1.65}
+  .review-main .meta{color:var(--text);font-weight:600}
+  .review-main .date{color:var(--muted);font-weight:400;margin-left:8px;font-size:14px}
+  .review-side{display:grid;gap:24px}
+  .review-side article{padding:22px 0;border-bottom:1px solid var(--line)}
+  .review-side article:last-child{border-bottom:0;padding-bottom:0}
+  .review-side .stars{color:var(--yellow);letter-spacing:2px;font-size:13px;margin-bottom:8px}
+  .review-side .title-l{font-weight:600;color:var(--text);margin:0 0 8px;font-size:16px;line-height:1.35}
+  .review-side p{margin:0 0 10px;color:var(--muted);font-size:14.5px;line-height:1.6}
+  .review-side .meta{color:var(--text);font-weight:600;font-size:13.5px}
+  .review-side .date{color:var(--muted);font-weight:400;margin-left:6px}
+  .reviews-cta{display:flex;justify-content:center;margin-top:36px}
+
+  /* Contacts — yellow info + map */
+  .contacts h2{font-size:clamp(28px,4vw,44px);margin:0 0 28px}
+  .contacts-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:0;overflow:hidden;border-radius:20px;border:1px solid var(--line)}
+  .contacts-info{background:var(--yellow-soft);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-right:1px solid var(--line)}
+  .contacts-info .name{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:22px;color:var(--text)}
+  .contacts-info .name em{font-style:normal;color:var(--blue)}
+  .contacts-info address{font-style:normal;font-size:22px;line-height:1.4;color:var(--text);font-weight:600}
+  .contacts-info p{margin:0;color:var(--muted);font-size:15px}
+  .contacts-map{min-height:340px;background:var(--blue-soft);display:block;overflow:hidden}
+  .contacts-map iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+
+  /* Final — blue-soft */
+  .finale{background:var(--blue-soft);border-top:0;color:var(--text)}
+  .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:18ch}
+  .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
+  .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
+  .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
+  .finale form input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
+  .finale form input:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(64,95,194,.18)}
+  .finale form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .finale form button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--blue);color:#fff;font:600 16px/1 'Onest';cursor:pointer;transition:background .18s}
+  .finale form button:hover:not(:disabled){background:var(--blue-hover)}
+  .finale form button:disabled{opacity:.7;cursor:default}
+  .finale form .privacy{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0}
+  .finale form .privacy a{color:var(--blue);text-decoration:underline}
+  .form-status{font-size:13.5px;line-height:1.45;min-height:18px;margin:2px 0 -2px}
+  .form-status.err{color:#C13B29}
+  .form-status.ok{color:var(--dark-blue)}
+  .form-field{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .field-error{color:#C13B29;font-size:12px;line-height:1.3}
+  .field-error[hidden]{display:none!important}
+  .form-note{margin:2px 0 0;font-size:13.5px;color:var(--muted);font-weight:500}
+
+  /* Footer */
+  footer.site{background:var(--bg);border-top:1px solid var(--line);padding:24px 0}
+  footer.site .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}
+  footer.site .row a{color:var(--blue);text-decoration:underline}
+  footer.site .row a:hover{color:var(--blue-hover)}
+  footer.site strong em{font-style:normal;color:var(--blue)}
+  footer.site strong{color:var(--text)}
+
+  /* Tablet / mobile */
+  @media (max-width:1099px){
+    .wrap{width:calc(100% - 28px)}
+    section{padding:56px 0}
+    section.hero{padding:36px 0 32px}
+    section.live,section.finale{padding:56px 0}
+    header.site nav{padding:12px 0;gap:12px}
+    .brand{font-size:17px}
+    .btn{min-height:44px}
+    .hero .wrap{gap:28px}
+    .hero-photo{order:2;max-width:none;width:100%;border-radius:16px}
+    .hero h1{max-width:none;text-wrap:wrap}
+    .dir-choice,.pain-grid,.check-grid{grid-template-columns:1fr 1fr}
+    .dir-card h3{font-size:22px}
+    .dir-cta{justify-self:start}
+    .journey{grid-template-columns:1fr}
+    .journey-arrow{transform:rotate(90deg);margin:6px auto}
+    .live .wrap,.finale .wrap,.reviews-grid,.contacts-grid,.results-top{grid-template-columns:1fr;gap:24px}
+    section.directions,section.recognize,section.check{padding:40px 0}
+    .contacts-grid{border-radius:16px}
+    .contacts-info{border-right:0;border-bottom:1px solid var(--line);padding:28px 22px}
+    .contacts-info address{font-size:20px}
+    .contacts-map,.contacts-map iframe{min-height:260px}
+    .reviews-head{align-items:start;gap:14px;margin-bottom:28px}
+    .reviews-rating{text-align:left}
+    .review-main{padding-left:0}
+    .review-main::before{position:static;display:block;font-size:84px;height:64px;line-height:1}
+    .reviews-cta .btn,.contacts-info .btn{width:100%}
+    .finale form{padding:24px 18px}
+    footer.site .row{flex-direction:column;gap:10px}
+  }
+  @media (max-width:640px){
+    body{font-size:16px}
+    .wrap{width:calc(100% - 24px)}
+    section{padding:44px 0}
+    section.hero{padding:28px 0 24px}
+    section.gallery{padding:8px 0 28px}
+    section.live,section.finale,section.contacts{padding:44px 0}
+    section[id]{scroll-margin-top:72px}
+    .brand{font-size:15px;min-width:0}
+    header.site nav{padding:10px 0;gap:8px}
+    header.site .btn{padding:8px 12px;font-size:13.5px;min-height:40px;flex:0 0 auto}
+    .hero .eyebrow{font-size:12.5px;padding:6px 10px;max-width:100%;white-space:normal;line-height:1.35}
+    .hero h1{font-size:clamp(20px,5.8vw,26px);margin:12px 0 10px;line-height:1.2;padding-right:2px}
+    .hero h1 .u{white-space:normal}
+    .hero h1 .u svg{display:none}
+    .hero p.lead{font-size:15.5px;margin-bottom:14px;line-height:1.5}
+    .hero-cta{flex-direction:column;margin-bottom:8px}
+    .hero-cta .btn{width:100%;padding:15px 18px;font-size:15px;text-align:center}
+    .hero-meta{margin:0 0 18px;font-size:13.5px;line-height:1.4}
+    .trust{gap:8px;margin-bottom:20px}
+    .trust span{font-size:12.5px;padding:7px 11px}
+    .proof{grid-template-columns:1fr;max-width:100%}
+    .proof>div{border-right:0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:12px;padding:14px 0}
+    .proof>div:last-child{border-bottom:0}
+    .proof b{font-size:22px}
+    .proof span{margin-top:0;font-size:13px}
+    .gallery-head h2,.directions h2,.recognize h2,.check h2,.results-top h2,.reviews-head h2,.contacts h2,.live h2,.finale h2{font-size:clamp(24px,7vw,32px)}
+    .gallery-head p,.directions .sub,.recognize .sub,.results-top p,.finale p,.live p,.check .after{font-size:15.5px}
+    .gallery-grid{gap:10px}
+    .gallery-item{border-radius:12px}
+    .dir-choice{grid-template-columns:1fr}
+    .pain-grid,.check-grid{grid-template-columns:1fr 1fr;gap:8px 10px}
+    .dir-card{padding:18px 16px;border-radius:10px}
+    .check .btn,.dir-cta{width:100%;justify-self:stretch;white-space:normal}
+    section.directions,section.recognize,section.check{padding:32px 0}
+    .journey-block{margin-top:18px}
+    .proof{margin-bottom:0}
+    .journey-col{padding:18px 0}
+    .journey-col.after{padding:20px}
+    .journey-col h3{font-size:20px}
+    .journey-col ul{font-size:15px;gap:12px}
+    .live ol li{padding:16px 0;gap:10px}
+    .live ol li b{font-size:16px}
+    .live ol li span{font-size:14px}
+    .review-main .quote{font-size:20px}
+    .review-main p,.review-side p{font-size:15px}
+    .reviews-rating .num{font-size:36px}
+    .reviews-cta{margin-top:28px}
+    .contacts-info{padding:22px 18px;gap:12px}
+    .contacts-info .name{font-size:20px}
+    .contacts-info address{font-size:18px}
+    .contacts-map,.contacts-map iframe{min-height:220px}
+    .finale form{padding:20px 16px;border-radius:14px;gap:10px}
+    .finale form h3{font-size:18px}
+    .finale form .row{grid-template-columns:1fr}
+    .finale form input{font-size:16px;padding:14px 14px;min-height:48px}
+    .finale form button{min-height:52px;padding:16px 14px;font-size:15px;line-height:1.25}
+    .finale form .privacy{font-size:12px}
+    .photo-lightbox{padding:16px}
+    .photo-lightbox button{top:12px;right:12px;width:44px;height:44px}
+    footer.site{padding:20px 0 28px}
+    footer.site .row{font-size:13px;line-height:1.5}
+  }
+  @media (max-width:380px){
+    .wrap{width:calc(100% - 24px)}
+    .hero h1{font-size:19px;line-height:1.22;padding-right:2px}
+    .hero-cta .btn,.finale form button{font-size:14px}
+    header.site .btn{padding:8px 10px;font-size:13px}
+  }
+</style>
+<link rel="stylesheet" href="/responsive.css">
+</head>
+<body>
+<noscript>
+  <div style="max-width:760px;margin:0 auto;padding:32px 20px;font-family:system-ui,sans-serif;color:#20232B">
+    <p style="font-size:24px;font-weight:700;margin:0 0 12px">Основа знаний — скорочтение и подготовка к школе</p>
+    <p>Детский центр на Мичуринском проспекте, 11, корп. 3. Скорочтение 4–16 лет и подготовка к школе 4–7 лет. Первая диагностика бесплатно, мини-группы до 6 детей.</p>
+    <p>Телефон: <a href="tel:+79684551800">+7 968 455 1800</a></p>
+  </div>
+</noscript>
+
+<header class="site">
+  <nav class="wrap">
+    <a href="#top" class="brand"><span class="brand-mark"><img src="/images/logo.jpg" alt="Основа знаний"></span>Основа <em>знаний</em></a>
+    <a href="#form" class="btn btn-primary">Записаться</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>Камерный центр на&#160;Мичуринском</span>
+      <h1>Ребёнок читает, но&#160;<span class="u">не&#160;понимает<svg viewBox="0 0 240 30" preserveAspectRatio="none"><path d="M6 18 C 70 4, 150 28, 234 10" fill="none" stroke="#F1C84B" stroke-width="8" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="320" style="animation:draw 1.1s .35s ease forwards"/></svg></span>? Или без подсказки не&#160;справляется с&#160;заданием?</h1>
+      <p class="lead">Скорочтение 4–16 лет и&#160;подготовка к&#160;школе 4–7 лет на&#160;Мичуринском. Развиваем чтение, память, внимание и&#160;умение работать самостоятельно.</p>
+      <div class="hero-cta">
+        <a href="#form" class="btn btn-primary btn-lg" data-cta="diagnostic">Записаться на&#160;бесплатную диагностику</a>
+      </div>
+      <p class="hero-meta">40–60&#160;минут · обратная связь родителю · мини-группы</p>
+      <div class="proof">
+        <div><b>580+</b><span>детей прошли обучение</span></div>
+        <div><b>4–16</b><span>скорочтение: возраст детей</span></div>
+        <div><b>до 6</b><span>детей в мини-группе</span></div>
+      </div>
+    </div>
+    <button class="hero-photo gallery-item" type="button" data-full="images/hero-teacher.jpg" aria-label="Увеличить фотографию занятия">
+      <img src="images/hero-teacher.jpg" alt="Девочка на занятии поднимает руку с улыбкой">
+    </button>
+  </div>
+</section>
+
+<section id="directions" class="directions">
+  <div class="wrap">
+    <h2>Выберите направление</h2>
+    <p class="sub">Две программы. Начать можно с&#160;бесплатной диагностики — педагог увидит, где ребёнок теряется.</p>
+
+    <div class="dir-choice">
+      <article class="dir-card">
+        <div class="age">4–16 лет</div>
+        <h3>Скорочтение</h3>
+        <p class="trigger">Читает медленно, забывает прочитанное или не&#160;может пересказать?</p>
+        <p class="result">Прочитал → понял → запомнил → рассказал своими словами</p>
+        <a href="#skorochtenie" class="btn btn-outline dir-cta">Подробнее о&#160;скорочтении</a>
+      </article>
+
+      <article class="dir-card alt">
+        <div class="age">4–7 лет</div>
+        <h3>Подготовка к&#160;школе</h3>
+        <p class="trigger">Знает многое, но&#160;задание выполняет только после нескольких подсказок?</p>
+        <p class="result">Услышал → понял → удержал инструкцию → сделал сам</p>
+        <a href="#podgotovka" class="btn btn-outline dir-cta">Подробнее о&#160;подготовке</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pains" class="recognize">
+  <div class="wrap">
+    <h2>Узнаёте своего ребёнка?</h2>
+    <p class="sub">Иногда ребёнку не&#160;нужно просто «больше заниматься». Важно понять, на&#160;каком этапе он&#160;теряется.</p>
+    <ul class="pain-grid">
+      <li>Читает медленно</li>
+      <li>Прочитал — не&#160;может пересказать</li>
+      <li>Быстро забывает материал</li>
+      <li>Домашка — только со&#160;взрослым</li>
+      <li>Не удерживает инструкцию</li>
+      <li>Не понимает, с&#160;чего начать</li>
+    </ul>
+  </div>
+</section>
+
+<section id="diagnostic" class="check">
+  <div class="wrap">
+    <h2>За первую встречу вы&#160;поймёте, где именно ребёнку трудно</h2>
+    <div class="check-grid">
+      <article class="check-item">
+        <h3>Чтение</h3>
+        <p>Темп, ошибки, понимание текста.</p>
+      </article>
+      <article class="check-item">
+        <h3>Память</h3>
+        <p>Что ребёнок запоминает и&#160;насколько легко может воспроизвести.</p>
+      </article>
+      <article class="check-item">
+        <h3>Внимание</h3>
+        <p>Удерживает ли задание и&#160;замечает ли важные детали.</p>
+      </article>
+      <article class="check-item">
+        <h3>Самостоятельность</h3>
+        <p>Понимает ли инструкцию и&#160;может ли начать выполнять без постоянной подсказки.</p>
+      </article>
+    </div>
+    <p class="after">После встречи педагог расскажет родителю, что у&#160;ребёнка уже получается хорошо, где возникает трудность и&#160;на&#160;что стоит обратить внимание в&#160;первую очередь.</p>
+    <a href="#form" class="btn btn-primary" data-cta="diagnostic">Проверить навыки ребёнка бесплатно</a>
+  </div>
+</section>
+
+<section id="result" class="results">
+  <div class="wrap">
+    <div class="results-top">
+      <h2>Что меняется после занятий</h2>
+      <p>Работаем с навыком: понял → запомнил → сделал сам.</p>
+    </div>
+
+    <div class="journey-block" id="skorochtenie">
+      <h3 class="journey-program">Скорочтение</h3>
+      <div class="journey">
+        <div class="journey-col now">
+          <h3>Было</h3>
+          <ul>
+            <li>Читает долго и&#160;быстро устаёт</li>
+            <li>Прочитал страницу — не&#160;помнит начало</li>
+            <li>Не может пересказать</li>
+            <li>Домашка растягивается на&#160;вечер</li>
+          </ul>
+        </div>
+        <div class="journey-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          <span>понял → запомнил → сделал сам</span>
+        </div>
+        <div class="journey-col after">
+          <h3>Становится</h3>
+          <ul>
+            <li>Читает увереннее и&#160;быстрее справляется с&#160;учебным текстом</li>
+            <li>Понимает смысл и&#160;удерживает прочитанное</li>
+            <li>Выделяет главное и&#160;рассказывает своими словами</li>
+            <li>Быстрее работает с&#160;текстовыми заданиями</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="journey-block prep" id="podgotovka">
+      <h3 class="journey-program">Подготовка к&#160;школе</h3>
+      <div class="journey">
+        <div class="journey-col now">
+          <h3>Было</h3>
+          <ul>
+            <li>Нужно несколько раз повторять задание</li>
+            <li>Не понимает, с&#160;чего начать</li>
+            <li>Постоянно ждёт помощи взрослого</li>
+            <li>Быстро отвлекается</li>
+          </ul>
+        </div>
+        <div class="journey-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          <span>удержал инструкцию</span>
+        </div>
+        <div class="journey-col after prep">
+          <h3>Становится</h3>
+          <ul>
+            <li>Слышит инструкцию и&#160;удерживает её</li>
+            <li>Разбирается в&#160;задании и&#160;начинает самостоятельно</li>
+            <li>Пробует выполнить задание сам</li>
+            <li>Дольше удерживает внимание на&#160;работе</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="photos">
+  <div class="wrap">
+    <div class="gallery-head">
+      <h2>Так проходят занятия в&#160;«Основе»</h2>
+      <p>Небольшие группы, спокойная рабочая атмосфера и&#160;внимание педагога к&#160;каждому ребёнку.</p>
+    </div>
+    <div class="gallery-grid">
+      <button class="gallery-item" type="button" data-full="images/gallery-01.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-01.jpg" alt="Дети занимаются за столом в центре"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-02.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-02.jpg" alt="Ученик центра на занятии"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-03.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-03.jpg" alt="Ребёнок выполняет задание"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-04.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-04.jpg" alt="Ребёнок работает с учебным материалом"></button>
+      <button class="gallery-item" type="button" data-full="images/gallery-05.jpg" aria-label="Увеличить фотографию"><img src="images/gallery-05.jpg" alt="Ученица центра с учебным пособием"></button>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="live">
+  <div class="wrap">
+    <div>
+      <h2>Почему родители выбирают «Основу»</h2>
+      <p>Камерный центр на&#160;Мичуринском: ребёнка здесь <b>знают лично</b> и&#160;помогают стать самостоятельнее в&#160;учёбе.</p>
+    </div>
+    <ol>
+      <li><div><b>Небольшие группы</b><span>Педагог видит, где именно ребёнок начинает теряться.</span></div></li>
+      <li><div><b>Понятная обратная связь</b><span>Родитель понимает, над чем сейчас работает ребёнок и&#160;что уже изменилось.</span></div></li>
+      <li><div><b>Учимся не&#160;ждать подсказку</b><span>Одна из главных целей — чтобы ребёнок всё чаще мог разобраться и&#160;выполнить задание самостоятельно.</span></div></li>
+      <li><div><b>Центр рядом</b><span>Мичуринский проспект — занятия недалеко от&#160;дома и&#160;школы.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <h2>Как нас найти</h2>
+    <div class="contacts-grid">
+      <div class="contacts-info">
+        <div class="name">Основа <em>знаний</em></div>
+        <address>Москва, Мичуринский&#160;просп., 11, корп.&#160;3</address>
+        <p><a href="tel:+79684551800">+7 968 455 1800</a></p>
+        <p>Приезжайте на&#160;диагностику — покажем кабинет и&#160;познакомим с&#160;педагогом.</p>
+        <a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start">Открыть в&#160;Яндекс&#160;Картах →</a>
+        <p><a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener">Отзывы родителей → Яндекс Карты</a></p>
+      </div>
+      <a class="contacts-map" href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" aria-label="Открыть карту в Яндекс Картах">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.511283%2C55.699093&z=18&pt=37.511283%2C55.699093%2Cpm2rdm" loading="lazy" allowfullscreen="true" style="border:0;width:100%;height:100%;min-height:340px;display:block"></iframe>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="form" class="finale">
+  <div class="wrap">
+    <div>
+      <h2>Запишите ребёнка на&#160;бесплатную диагностику</h2>
+      <p>Мы свяжемся с&#160;вами, уточним возраст ребёнка и&#160;подберём удобное время.</p>
+      <p>Есть образовательная лицензия · можно вернуть 13% стоимости обучения через налоговый вычет · возможна оплата материнским капиталом при соблюдении условий. <a href="/license/">Подробнее о&#160;лицензии и&#160;оплате</a></p>
+    </div>
+    <form id="lead-form" novalidate>
+      <h3>Оставьте заявку</h3>
+      <div class="form-field" data-field="name">
+        <input id="f_name" name="name" type="text" placeholder="Ваше имя" required autocomplete="name">
+        <div class="field-error" data-error-for="name" hidden></div>
+      </div>
+      <div class="row">
+        <div class="form-field" data-field="phone">
+          <input id="f_phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required autocomplete="tel" inputmode="tel">
+          <div class="field-error" data-error-for="phone" hidden></div>
+        </div>
+        <div class="form-field" data-field="age">
+          <input id="f_age" name="age" type="number" min="4" max="16" placeholder="Возраст ребёнка">
+          <div class="field-error" data-error-for="age" hidden></div>
+        </div>
+      </div>
+      <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
+      <button id="f_submit" type="submit">Записаться бесплатно</button>
+      <p class="form-note">Без обязательства покупать курс</p>
+      <div id="form-status" class="form-status" aria-live="polite"></div>
+      <p class="privacy">Нажимая кнопку, вы соглашаетесь на&#160;<a href="/consent/">обработку персональных данных</a>.</p>
+    </form>
+  </div>
+</section>
+
+<div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
+  <button type="button" aria-label="Закрыть">×</button>
+  <img src="" alt="Увеличенная фотография">
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap row">
+    <div><strong>Основа <em>знаний</em></strong> · Москва, Мичуринский просп., 11, к. 3</div>
+    <div>
+      <a href="/privacy/">Политика конфиденциальности</a>
+      ·
+      <a href="/license/">Лицензия</a>
+      ·
+      Сайт создан в&#160;студии <a href="https://studioglubina.ru/" target="_blank" rel="noopener">ГЛУБИНА</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form.js"></script>
+<script>
+(function(){
+  var lb=document.getElementById('photo-lightbox');
+  if(!lb) return;
+  var img=lb.querySelector('img');
+  var close=lb.querySelector('button');
+  document.querySelectorAll('.gallery-item[data-full]').forEach(function(item){
+    item.addEventListener('click',function(){
+      img.src=item.getAttribute('data-full');
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';
+    });
+  });
+  function hide(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');img.src='';document.body.style.overflow='';}
+  close.addEventListener('click',hide);
+  lb.addEventListener('click',function(e){if(e.target===lb) hide();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape' && lb.classList.contains('open')) hide();});
+})();
+</script>
+
 </body>
 </html>
