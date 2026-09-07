@@ -86,11 +86,11 @@
   .journey-block{scroll-margin-top:84px}
   @keyframes draw{to{stroke-dashoffset:0}}
 
-  section{padding:74px 0}
-  section.hero{padding:64px 0 56px}
-  section.contacts{padding:60px 0}
-  section.live{padding:78px 0}
-  section.finale{padding:74px 0}
+  section{padding:48px 0}
+  section.hero{padding:40px 0 36px}
+  section.contacts{padding:44px 0}
+  section.live{padding:48px 0}
+  section.finale{padding:52px 0}
 
   header.site{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   header.site nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
@@ -113,8 +113,8 @@
   .hero h1 .u svg{position:absolute;left:-3%;right:-3%;bottom:-11px;width:106%;height:18px;overflow:visible}
   .hero p.lead{font-size:18px;line-height:1.58;color:var(--muted);max-width:48ch;margin:0 0 22px;text-wrap:pretty}
   .hero p.lead b{color:var(--text);font-weight:600}
-  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
-  .hero-cta .btn{width:100%;justify-content:center}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .hero-cta .btn{justify-content:center}
   .hero-cta .btn-outline{background:var(--yellow);border:1.5px solid var(--yellow);color:var(--text)}
   .hero-cta .btn-outline:hover{background:var(--yellow-hover);border-color:var(--yellow-hover);color:var(--text)}
   .hero-meta{margin:0 0 26px;color:var(--muted);font-size:14.5px;font-weight:500;letter-spacing:.01em}
@@ -126,11 +126,11 @@
   .hero-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:top center}
 
   /* Real photo block */
-  .gallery{padding:18px 0 42px}
-  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+  .gallery{padding:8px 0 36px}
+  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:16px}
   .gallery-head h2{font-size:clamp(26px,3.5vw,40px)}
   .gallery-head p{margin:0;color:var(--muted);max-width:36ch;font-size:15.5px}
-  .gallery-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;aspect-ratio:2/1;min-height:480px}
+  .gallery-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:2.15/1;min-height:380px}
   .gallery-item{appearance:none;padding:0;text-align:inherit;font:inherit;color:inherit;display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);cursor:zoom-in;position:relative;min-width:0;min-height:0}
   .gallery-grid .gallery-item{height:100%;width:100%}
   .gallery-grid .gallery-item:nth-child(1){grid-row:1 / span 2}
@@ -169,7 +169,7 @@
   .proof span{display:block;color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.35}
 
   /* Directions — two choice blocks */
-  .directions{padding:56px 0}
+  .directions{padding:36px 0}
   .directions h2{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
   .directions .sub{color:var(--muted);max-width:44ch;margin:0 0 28px}
   .dir-choice{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
@@ -192,13 +192,13 @@
   .dir-card .dir-note{margin-top:10px;padding-top:12px;border-top:1px solid rgba(38,59,120,.12);font-size:14.5px;color:var(--text);line-height:1.5}
   .dir-card .dir-note b{display:block;margin-bottom:4px}
 
-  .skills{padding:12px 0 8px}
+  .skills{padding:0}
   .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   .skill-grid article{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
   .skill-grid h3{font-size:18px;margin:0 0 8px}
   .skill-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
 
-  .format-sec{padding:56px 0}
+  .format-sec{padding:40px 0}
   .format-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
   .format-sec .sub{color:var(--muted);max-width:56ch;margin:0 0 24px}
   .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -209,7 +209,7 @@
   .format-card li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2px;background:var(--blue)}
   .format-cta{margin-top:22px}
 
-  .faq-sec{padding:56px 0}
+  .faq-sec{padding:40px 0}
   .faq-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 22px}
   .faq-list{display:grid;gap:10px;max-width:900px}
   .faq-list details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 22px}
@@ -221,10 +221,10 @@
   .cta-points li{padding-left:18px;position:relative;color:var(--muted)}
   .cta-points li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:2px;background:var(--blue)}
 
-  .reviews{padding:74px 0}
+  .reviews{padding:44px 0}
 
   /* Recognize pains */
-  .recognize{padding:52px 0}
+  .recognize{padding:36px 0}
   .recognize h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
   .recognize .sub{color:var(--muted);max-width:52ch;margin:0 0 24px}
   .pain-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px 18px;list-style:none;margin:0;padding:0}
@@ -233,9 +233,9 @@
   .pain-grid li:nth-child(n+4)::before{background:var(--yellow)}
 
   /* Diagnostic check */
-  .check{padding:56px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .check h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px;max-width:22ch}
-  .check-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px 22px;margin:28px 0 22px}
+  .check{padding:40px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .check h2{font-size:clamp(26px,3.6vw,38px);margin:0 0 8px;max-width:28ch}
+  .check-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 20px;margin:18px 0 18px}
   .check-item h3{font-size:18px;margin:0 0 6px}
   .check-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
   .check .after{color:var(--muted);font-size:16.5px;line-height:1.6;max-width:62ch;margin:0 0 22px}
@@ -252,8 +252,8 @@
   .journey-block.prep .journey-col.after li::before{background:var(--yellow-num)}
   .journey-block.prep .journey-arrow{color:var(--yellow-num)}
   .journey{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
-  .journey-col{padding:28px 0}
-  .journey-col.after{background:var(--blue-soft);padding:28px;border-radius:16px}
+  .journey-col{padding:18px 0}
+  .journey-col.after{background:var(--blue-soft);padding:22px;border-radius:16px}
   .journey-col h3{font-size:22px;color:var(--muted);margin:0 0 18px;font-family:'Unbounded','Onest',sans-serif;font-weight:600;letter-spacing:-.01em}
   .journey-col.now h3::after{content:"";display:block;width:42px;height:5px;margin-top:10px;border-radius:999px;background:var(--yellow)}
   .journey-col.after h3{color:var(--dark-blue)}
@@ -279,7 +279,7 @@
   .live ol li span{color:#B7C0DA;font-size:14.5px;line-height:1.5}
 
   /* Reviews */
-  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px;flex-wrap:wrap}
   .reviews-head h2{font-size:clamp(28px,4vw,44px);max-width:16ch}
   .reviews-rating{text-align:right}
   .reviews-rating .num{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:44px;color:var(--dark-blue);line-height:1}
@@ -310,13 +310,13 @@
   .contacts-info .name em{font-style:normal;color:var(--blue)}
   .contacts-info address{font-style:normal;font-size:22px;line-height:1.4;color:var(--text);font-weight:600}
   .contacts-info p{margin:0;color:var(--muted);font-size:15px}
-  .contacts-map{min-height:340px;background:var(--blue-soft);display:block;overflow:hidden}
-  .contacts-map iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+  .contacts-map{min-height:280px;background:var(--blue-soft);display:block;overflow:hidden}
+  .contacts-map iframe{display:block;width:100%;height:100%;min-height:280px;border:0}
 
   /* Final — blue-soft */
   .finale{background:var(--blue-soft);border-top:0;color:var(--text)}
   .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .finale h2{color:var(--dark-blue);font-size:clamp(28px,4vw,44px);max-width:22ch}
+  .finale h2{color:var(--dark-blue);font-size:clamp(26px,3.6vw,38px);max-width:18ch}
   .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
   .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
   .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
@@ -348,9 +348,9 @@
   /* Tablet / mobile */
   @media (max-width:1099px){
     .wrap{width:calc(100% - 28px)}
-    section{padding:56px 0}
-    section.hero{padding:36px 0 32px}
-    section.live,section.finale{padding:56px 0}
+    section{padding:40px 0}
+    section.hero{padding:28px 0 24px}
+    section.live,section.finale{padding:40px 0}
     header.site nav{padding:12px 0;gap:12px}
     .brand{font-size:17px}
     .btn{min-height:44px}
@@ -476,7 +476,6 @@
         <a href="#form" class="btn btn-primary btn-lg" data-cta="diagnostic">Получить диагностику бесплатно</a>
         <a href="#directions" class="btn btn-outline btn-lg">Выбрать направление</a>
       </div>
-      <p class="hero-meta">40 минут · более 500 родителей прошли диагностику · мини-группы и индивидуально</p>
       <div class="proof">
         <div><b>500+</b><span>родителей прошли диагностику</span></div>
         <div><b>5–13</b><span>возраст детей в кабинете</span></div>
@@ -498,34 +497,28 @@
       <article class="dir-card">
         <div class="age">7–13 лет</div>
         <h3>Скорочтение и развитие мышления</h3>
-        <p class="trigger">Для школьников, которым важно легче работать с текстами, быстрее понимать задания, запоминать материал и учиться самостоятельнее.</p>
+        <p class="trigger">Для школьников, которым важно легче работать с текстами, понимать задания и учиться самостоятельнее.</p>
         <h4>Подходит, если ребёнок:</h4>
         <ul>
           <li>читает медленно или быстро устаёт;</li>
-          <li>не понимает смысл текста;</li>
-          <li>не может пересказать;</li>
+          <li>не понимает смысл и не может пересказать;</li>
           <li>забывает прочитанное;</li>
-          <li>долго думает и теряется;</li>
           <li>отвлекается и ждёт подсказки.</li>
         </ul>
-        <p class="dir-note"><b>Результат направления</b>Ребёнку легче читать, понимать задания, запоминать информацию, рассуждать и справляться без постоянной опоры на взрослого.</p>
         <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 7–13 лет</a>
       </article>
 
       <article class="dir-card alt">
         <div class="age">5–7 лет</div>
         <h3>Подготовка к школе без пробелов</h3>
-        <p class="trigger">Для дошкольников, которым важно прийти в 1 класс не просто со знанием букв, а с готовностью учиться, слушать, думать и выполнять задания.</p>
+        <p class="trigger">Для дошкольников, которым важно прийти в 1 класс готовыми учиться, слушать и выполнять задания.</p>
         <h4>Развиваем:</h4>
         <ul>
-          <li>навык чтения;</li>
-          <li>счёт и счёт в уме;</li>
-          <li>память и внимание;</li>
-          <li>мышление и речь;</li>
+          <li>чтение, счёт и счёт в уме;</li>
+          <li>память, внимание и речь;</li>
           <li>понимание инструкции;</li>
           <li>усидчивость и самостоятельность.</li>
         </ul>
-        <p class="dir-note"><b>Результат направления</b>Ребёнок приходит в школу более собранным, уверенным и готовым учиться: слышит задание, удерживает внимание, запоминает и отвечает.</p>
         <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 5–7 лет</a>
       </article>
     </div>
@@ -538,56 +531,35 @@
     <p class="sub">Часто проблема не в лени и не в характере. Ребёнку может не хватать конкретных учебных навыков: внимания, памяти, техники чтения, мышления и самоконтроля.</p>
     <ul class="pain-grid">
       <li>Читает медленно и быстро устаёт</li>
-      <li>Забывает информацию в нужный момент</li>
       <li>Не может пересказать своими словами</li>
       <li>Отвлекается и не доводит до конца</li>
-      <li>Долго думает и теряется при ответе</li>
-      <li>Домашка занимает больше времени, чем должна</li>
+      <li>Домашка занимает слишком много времени</li>
       <li>Ждёт помощи взрослого и подсказок</li>
       <li>Боится больших текстов и сложных заданий</li>
     </ul>
   </div>
 </section>
 
-<section class="skills">
-  <div class="wrap">
-    <div class="skill-grid">
-      <article>
-        <h3>Чтение и понимание</h3>
-        <p>Чтобы ребёнок не просто произносил слова, а понимал текст, удерживал смысл и мог пересказать.</p>
-      </article>
-      <article>
-        <h3>Память и внимание</h3>
-        <p>Чтобы меньше отвлекался, быстрее вспоминал информацию и доводил задания до результата.</p>
-      </article>
-      <article>
-        <h3>Мышление и самостоятельность</h3>
-        <p>Чтобы ребёнок рассуждал, считал, искал решения и меньше зависел от помощи родителей.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section id="diagnostic" class="check">
   <div class="wrap">
-    <h2>Сначала мы понимаем, что нужно именно вашему ребёнку</h2>
-    <p class="after">Перед началом занятий педагог смотрит не только знания, а базовые навыки, которые влияют на учёбу каждый день.</p>
+    <h2>Сначала понимаем, что нужно именно вашему ребёнку</h2>
+    <p class="after">На диагностике педагог смотрит базовые навыки, которые влияют на учёбу каждый день: чтение, память, внимание — и даёт план развития.</p>
     <div class="check-grid">
       <article class="check-item">
-        <h3>1. Чтение и текст</h3>
-        <p>Как ребёнок читает, понимает ли смысл, может ли ответить на вопросы и пересказать.</p>
+        <h3>Чтение и текст</h3>
+        <p>Понимает ли смысл и может ли пересказать.</p>
       </article>
       <article class="check-item">
-        <h3>2. Память</h3>
-        <p>Как запоминает информацию и насколько быстро может вспомнить её без долгих пауз.</p>
+        <h3>Память</h3>
+        <p>Как запоминает и насколько быстро вспоминает.</p>
       </article>
       <article class="check-item">
-        <h3>3. Внимание</h3>
-        <p>Насколько ребёнок удерживает задачу, не отвлекается и доводит работу до конца.</p>
+        <h3>Внимание</h3>
+        <p>Удерживает ли задачу и доводит ли до конца.</p>
       </article>
       <article class="check-item">
-        <h3>4. План развития</h3>
-        <p>Родители получают понятную картину: что уже хорошо и какую программу выбрать.</p>
+        <h3>План развития</h3>
+        <p>Что уже хорошо и какую программу выбрать.</p>
       </article>
     </div>
     <a href="#form" class="btn btn-primary" data-cta="diagnostic">Получить диагностику бесплатно</a>
@@ -598,40 +570,31 @@
   <div class="wrap">
     <div class="results-top">
       <h2>Что меняется после занятий</h2>
-      <p>Мы не обещаем «волшебный результат за неделю». Мы системно развиваем навыки, которые помогают ребёнку учиться спокойнее и самостоятельнее.</p>
+      <p>Системно развиваем навыки, которые помогают учиться спокойнее и самостоятельнее.</p>
     </div>
 
     <div class="journey-block" id="skorochtenie">
-      <h3 class="journey-program">До и после занятий</h3>
       <div class="journey">
         <div class="journey-col now">
-          <h3>До занятий</h3>
+          <h3>До</h3>
           <ul>
-            <li>читает медленно;</li>
-            <li>говорит «не помню»;</li>
-            <li>забывает прочитанное;</li>
-            <li>не может пересказать;</li>
-            <li>отвлекается;</li>
-            <li>не доводит задания до конца;</li>
-            <li>ждёт помощи от родителей;</li>
-            <li>не уверен в себе.</li>
+            <li>читает медленно и забывает прочитанное</li>
+            <li>не может пересказать</li>
+            <li>отвлекается и ждёт помощи</li>
+            <li>не уверен в себе</li>
           </ul>
         </div>
         <div class="journey-arrow" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
-          <span>навыки, которые помогают учиться</span>
+          <span>навыки для учёбы</span>
         </div>
         <div class="journey-col after">
-          <h3>После занятий</h3>
+          <h3>После</h3>
           <ul>
-            <li>читает увереннее;</li>
-            <li>лучше понимает текст;</li>
-            <li>быстрее вспоминает информацию;</li>
-            <li>пересказывает своими словами;</li>
-            <li>дольше держит внимание;</li>
-            <li>увереннее считает и рассуждает;</li>
-            <li>чаще справляется самостоятельно;</li>
-            <li>становится спокойнее в учёбе.</li>
+            <li>читает увереннее и понимает текст</li>
+            <li>пересказывает своими словами</li>
+            <li>дольше держит внимание</li>
+            <li>чаще справляется самостоятельно</li>
           </ul>
         </div>
       </div>
@@ -652,23 +615,6 @@
       <button class="gallery-item" type="button" data-full="images/lesson-3.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-3.jpg" alt="Мини-группа на занятии"></button>
       <button class="gallery-item" type="button" data-full="images/lesson-4.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-4.jpg" alt="Ребёнок после выполненного задания"></button>
     </div>
-  </div>
-</section>
-
-<section id="why" class="live">
-  <div class="wrap">
-    <div>
-      <h2>Не просто «дополнительные занятия», а сильная интеллектуальная база</h2>
-      <p>Современная школа требует от ребёнка не только знаний. Важно, чтобы он умел понимать задачу, концентрироваться, запоминать, думать, проверять себя и не сдаваться при трудности.</p>
-    </div>
-    <ol>
-      <li><div><b>Понимать задачу с первого раза</b><span>Ребёнок слышит инструкцию и сразу понимает, что нужно сделать.</span></div></li>
-      <li><div><b>Удерживать внимание и инструкцию</b><span>Меньше отвлекается и доводит работу до конца.</span></div></li>
-      <li><div><b>Запоминать и воспроизводить материал</b><span>Быстрее вспоминает информацию без долгих пауз.</span></div></li>
-      <li><div><b>Работать с текстом и смыслом</b><span>Читает, понимает и пересказывает своими словами.</span></div></li>
-      <li><div><b>Считать и рассуждать увереннее</b><span>Ищет решение сам, а не ждёт подсказку.</span></div></li>
-      <li><div><b>Доводить начатое до результата</b><span>Становится спокойнее и самостоятельнее в учёбе.</span></div></li>
-    </ol>
   </div>
 </section>
 
@@ -705,41 +651,11 @@
   </div>
 </section>
 
-<section id="format" class="format-sec">
-  <div class="wrap">
-    <h2>Сначала подбираем маршрут, потом программу</h2>
-    <p class="sub">Стоимость зависит от формата: мини-группа или индивидуальные занятия. На диагностике мы определяем, какое направление подойдёт ребёнку.</p>
-    <div class="format-grid">
-      <article class="format-card">
-        <h3>Мини-группы</h3>
-        <ul>
-          <li>для детей 5–7 и 7–13 лет;</li>
-          <li>маленькая группа;</li>
-          <li>программа по возрасту и задаче;</li>
-          <li>обратная связь родителям.</li>
-        </ul>
-      </article>
-      <article class="format-card">
-        <h3>Индивидуально</h3>
-        <ul>
-          <li>если нужна персональная траектория;</li>
-          <li>для выраженных трудностей с чтением или вниманием;</li>
-          <li>гибкий темп и акцент на слабые навыки;</li>
-          <li>подробные рекомендации родителям.</li>
-        </ul>
-      </article>
-    </div>
-    <div class="format-cta">
-      <a href="#form" class="btn btn-primary">Узнать расписание и стоимость</a>
-    </div>
-  </div>
-</section>
-
 <section id="faq" class="faq-sec">
   <div class="wrap">
     <h2>Частые вопросы</h2>
     <div class="faq-list">
-      <details open>
+      <details>
         <summary>Моему ребёнку 5 лет. Уже можно начинать?</summary>
         <p>Да. В 5–7 лет важно развивать внимание, память, счёт, понимание инструкции, речь и навык чтения — это база для спокойного старта в школе.</p>
       </details>
@@ -749,15 +665,11 @@
       </details>
       <details>
         <summary>Ребёнок умный, но отвлекается. Это к вам?</summary>
-        <p>Да. Часто ребёнок способен, но не удерживает внимание, теряет инструкцию, не доводит работу до конца и ждёт помощи взрослого. Эти навыки можно развивать.</p>
-      </details>
-      <details>
-        <summary>Вы занимаетесь только чтением?</summary>
-        <p>Нет. Направление для школьников — это скорочтение и развитие мышления: чтение, понимание текста, память, внимание, логика, пересказ и самостоятельность.</p>
+        <p>Да. Часто ребёнок способен, но не удерживает внимание, теряет инструкцию и ждёт помощи взрослого. Эти навыки можно развивать.</p>
       </details>
       <details>
         <summary>Можно сначала понять, что нужно ребёнку?</summary>
-        <p>Да. Для этого проводится диагностика. После неё педагог объясняет, какое направление и формат лучше подойдут ребёнку.</p>
+        <p>Да. Для этого проводится диагностика. После неё педагог объясняет, какое направление и формат лучше подойдут.</p>
       </details>
     </div>
   </div>
@@ -771,7 +683,7 @@
         <div class="name">Основа <em>знаний</em></div>
         <address>Москва, Мичуринский&#160;просп., 11, корп.&#160;3</address>
         <p><a href="tel:+79684551800">+7 968 455 1800</a></p>
-        <p>м. Раменки · Мичуринский проспект 11 к3. Приезжайте на диагностику — покажем кабинет и познакомим с педагогом.</p>
+        <p>м. Раменки. Приезжайте на диагностику — покажем кабинет и познакомим с педагогом.</p>
         <a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener" class="btn btn-primary" style="align-self:flex-start">Открыть в&#160;Яндекс&#160;Картах →</a>
         <p><a href="https://yandex.ru/maps/213/moscow/house/michurinskiy_prospekt_11k3/Z04YcwZhS0EPQFtvfXp4eH9iYA==/?ll=37.511283%2C55.699093&z=20.4" target="_blank" rel="noopener">Отзывы родителей → Яндекс Карты</a></p>
       </div>
@@ -785,14 +697,9 @@
 <section id="form" class="finale">
   <div class="wrap">
     <div>
-      <h2>Помогите ребёнку стать сильнее в учёбе — без постоянной зависимости от помощи взрослых</h2>
-      <p>Оставьте заявку — мы уточним возраст ребёнка, задачу семьи и подберём подходящее направление: скорочтение и развитие мышления 7–13 лет или подготовку к школе 5–7 лет.</p>
-      <ul class="cta-points">
-        <li>Диагностика перед стартом</li>
-        <li>Подбор направления по возрасту и навыкам</li>
-        <li>Мини-группы или индивидуальный формат</li>
-      </ul>
-      <p>Есть образовательная лицензия · можно вернуть 13% стоимости обучения через налоговый вычет · возможна оплата материнским капиталом при соблюдении условий. <a href="/license/">Подробнее о лицензии и оплате</a></p>
+      <h2>Запишите ребёнка на бесплатную диагностику</h2>
+      <p>Уточним возраст и задачу семьи и подберём направление: скорочтение 7–13 лет или подготовку к школе 5–7 лет. Есть мини-группы и индивидуальный формат.</p>
+      <p>Есть образовательная лицензия · налоговый вычет 13% · возможна оплата материнским капиталом. <a href="/license/">Подробнее</a></p>
     </div>
     <form id="lead-form" novalidate>
       <h3>Запись на диагностику</h3>
@@ -832,9 +739,6 @@
           <option>Нужна самостоятельность в учёбе</option>
           <option>Не знаю, хочу диагностику</option>
         </select>
-      </div>
-      <div class="form-field" data-field="comment">
-        <textarea id="f_comment" name="comment" placeholder="Комментарий, если хотите"></textarea>
       </div>
       <input id="f_website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none">
       <button id="f_submit" type="submit">Получить диагностику бесплатно</button>
