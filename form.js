@@ -75,7 +75,7 @@
   function validAge(v) {
     if (!v) return false;
     var n = parseInt(v, 10);
-    return !isNaN(n) && n >= 5 && n <= 13;
+    return !isNaN(n) && n >= 5 && n <= 14;
   }
 
   function leadKey(name, phone, age) {
@@ -192,8 +192,8 @@
       return;
     }
     if (!validAge(age)) {
-      showFieldError('age', 'Выберите возраст ребёнка — от 5 до 13 лет.');
-      setStatus('Выберите возраст ребёнка — от 5 до 13 лет.', 'err');
+      showFieldError('age', 'Выберите возраст ребёнка — от 5 до 14 лет.');
+      setStatus('Выберите возраст ребёнка — от 5 до 14 лет.', 'err');
       if (ageEl) ageEl.focus();
       return;
     }
