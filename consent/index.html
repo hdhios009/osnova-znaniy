@@ -44,7 +44,7 @@ img,svg,iframe,video{max-width:100%}
   [data-nav-back]{display:none !important}
   [data-nav-actions]{display:flex !important;align-items:center;gap:8px}
   [data-nav-burger]{display:inline-flex !important;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #E3DFD6;border-radius:10px;background:#fff;cursor:pointer;padding:0;color:#1C1B29}
-  [data-mobile-nav]{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);z-index:60;flex-direction:column;gap:2px;padding:10px;background:#F7F4EE;border:1px solid #E3DFD6;border-radius:0 0 14px 14px;box-shadow:0 14px 30px rgba(28,27,41,.1)}
+  [data-mobile-nav]{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);z-index:60;flex-direction:column;gap:2px;padding:10px;background:#FFFCF7;border:1px solid #E3DFD6;border-radius:0 0 14px 14px;box-shadow:0 14px 30px rgba(28,27,41,.1)}
   [data-mobile-nav].is-open{display:flex !important}
   [data-mobile-nav] a{display:flex;align-items:center;min-height:44px;padding:10px 12px;border-radius:10px;font-weight:600;font-size:16px;color:#1C1B29;text-decoration:none}
   html.nav-open,html.nav-open body{overflow:hidden}
@@ -63,7 +63,7 @@ img,svg,iframe,video{max-width:100%}
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box}
-  body{margin:0;background:#F7F4EE;color:#1C1B29;font-family:"Onest",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:#FFFCF7;color:#1C1B29;font-family:"Onest",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
   a{color:inherit}
   .wrap{width:min(820px,calc(100% - 36px));margin:0 auto}
   h2{font-family:'Unbounded';font-weight:600;font-size:22px;letter-spacing:-.02em;margin:38px 0 12px}
@@ -76,13 +76,13 @@ img,svg,iframe,video{max-width:100%}
 </helmet>
 
 <div style="position:relative">
-  <header style="background:#F7F4EE;border-bottom:1px solid #E3DFD6">
+  <header style="background:#FFFCF7;border-bottom:1px solid #E3DFD6">
     <div class="wrap" style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:16px 0">
       <a href="/" style="display:flex;align-items:center;gap:11px;text-decoration:none;color:#20232B">
         <span style="width:40px;height:40px;border-radius:11px;background:#fff;border:1px solid #E3DFD6;display:grid;place-items:center;overflow:hidden"><img src="/favicon-120.png" alt="Основа знаний" style="width:34px;height:34px;object-fit:contain"/></span>
-        <strong style="font-family:'Unbounded';font-weight:700;font-size:17px;letter-spacing:-.02em">Основа <span style="color:#405FC2">знаний</span></strong>
+        <strong style="font-family:'Unbounded';font-weight:700;font-size:17px;letter-spacing:-.02em">Основа <span style="color:#6246C8">знаний</span></strong>
       </a>
-      <a href="/" data-nav-back style="font-size:14.5px;color:#43413c;text-decoration:none" style-hover="color:#405FC2">← На главную</a>
+      <a href="/" data-nav-back style="font-size:14.5px;color:#43413c;text-decoration:none" style-hover="color:#6246C8">← На главную</a>
       <div data-nav-actions>
         <button type="button" data-nav-burger aria-expanded="false" aria-controls="site-mobile-nav" aria-label="Открыть меню"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       </div>
@@ -95,7 +95,7 @@ img,svg,iframe,video{max-width:100%}
   </header>
 
   <main class="wrap" style="padding:48px 0 64px">
-    <span style="display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:#405FC2;margin-bottom:16px"><span style="width:20px;height:2px;border-radius:2px;background:#405FC2"></span>Документ</span>
+    <span style="display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:#6246C8;margin-bottom:16px"><span style="width:20px;height:2px;border-radius:2px;background:#6246C8"></span>Документ</span>
     <h1 style="font-family:'Unbounded';font-weight:700;font-size:clamp(30px,5vw,46px);letter-spacing:-.035em;line-height:1.06;margin:0 0 10px">Согласие на обработку персональных данных</h1>
     <p style="color:#857f78;font-size:14.5px;margin:0">Обновлено: 28 июля 2026 г.</p>
 
@@ -126,13 +126,13 @@ img,svg,iframe,video{max-width:100%}
     <p>Согласие действует с момента отправки заявки и до достижения целей обработки либо до отзыва согласия пользователем — в зависимости от того, что наступит раньше.</p>
 
     <h2>6. Отзыв согласия</h2>
-    <p>Пользователь может отозвать согласие, обратившись к Оператору по телефону <a href="tel:+79684551800" style="color:#405FC2;text-decoration:underline;text-underline-offset:2px">+7 968 455 1800</a> или через Telegram <a href="https://t.me/Kotiksym" target="_blank" rel="noopener" style="color:#405FC2;text-decoration:underline;text-underline-offset:2px">@Kotiksym</a>. После отзыва обработка прекращается, за исключением случаев, когда хранение данных требуется по закону.</p>
+    <p>Пользователь может отозвать согласие, обратившись к Оператору по телефону <a href="tel:+79684551800" style="color:#6246C8;text-decoration:underline;text-underline-offset:2px">+7 968 455 1800</a> или через Telegram <a href="https://t.me/Kotiksym" target="_blank" rel="noopener" style="color:#6246C8;text-decoration:underline;text-underline-offset:2px">@Kotiksym</a>. После отзыва обработка прекращается, за исключением случаев, когда хранение данных требуется по закону.</p>
 
     <h2>7. Политика конфиденциальности</h2>
-    <p>Порядок защиты персональных данных, права пользователя и реквизиты Оператора приведены в отдельном документе: <a href="/privacy/" style="color:#405FC2;text-decoration:underline;text-underline-offset:2px">Политика конфиденциальности и реквизиты</a>.</p>
+    <p>Порядок защиты персональных данных, права пользователя и реквизиты Оператора приведены в отдельном документе: <a href="/privacy/" style="color:#6246C8;text-decoration:underline;text-underline-offset:2px">Политика конфиденциальности и реквизиты</a>.</p>
 
     <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:12px">
-      <a href="/" style="display:inline-flex;align-items:center;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;color:#fff;background:#405FC2;text-decoration:none">← Вернуться на сайт</a>
+      <a href="/" style="display:inline-flex;align-items:center;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;color:#fff;background:#6246C8;text-decoration:none">← Вернуться на сайт</a>
       <a href="/privacy/" style="display:inline-flex;align-items:center;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;color:#1C1B29;background:#fff;border:1px solid #E3DFD6;text-decoration:none">Политика конфиденциальности</a>
       <a href="/license/" style="display:inline-flex;align-items:center;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;color:#1C1B29;background:#fff;border:1px solid #E3DFD6;text-decoration:none">Лицензия</a>
     </div>
