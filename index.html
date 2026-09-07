@@ -67,11 +67,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F7F4EE; --surface:#FFFFFF; --line:#E3DFD6;
-    --blue:#405FC2; --blue-hover:#3450A8; --dark-blue:#263B78; --blue-soft:#EEF2FC;
-    --yellow:#F1C84B; --yellow-hover:#DDAE2D; --yellow-soft:#FFF4C4;
-    --yellow-text:#A87500; --yellow-num:#C69200;
-    --text:#20232B; --muted:#656A73;
+    --bg:#FAF8F2; --surface:#FFFFFF; --line:#E6E0D4;
+    --blue:#3465C5; --blue-hover:#2B56AD; --dark-blue:#243A52; --blue-soft:#EAF1FC;
+    --yellow:#F4C84B; --yellow-hover:#E0B53A; --yellow-soft:#FFF6D4;
+    --yellow-text:#8A6410; --yellow-num:#C49212;
+    --text:#1C2430; --muted:#4A5160;
+    --radius:14px; --radius-sm:10px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -80,38 +81,42 @@
   img,svg,iframe{max-width:100%;display:block}
   a{color:var(--blue);text-decoration:none}
   a:hover{color:var(--blue-hover)}
-  h1,h2,h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;color:var(--text);margin:0}
-  .wrap{width:calc(100% - 32px);max-width:1180px;margin:0 auto}
+  h1,h2,h3{font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;color:var(--dark-blue);margin:0}
+  .wrap{width:calc(100% - 48px);max-width:1360px;margin:0 auto}
+  @media (min-width:1680px){
+    .wrap{max-width:1440px;width:calc(100% - 96px)}
+  }
   section[id]{scroll-margin-top:84px}
   .journey-block{scroll-margin-top:84px}
   @keyframes draw{to{stroke-dashoffset:0}}
 
-  section{padding:48px 0}
-  section.hero{padding:40px 0 36px}
-  section.contacts{padding:44px 0}
-  section.live{padding:48px 0}
-  section.finale{padding:52px 0}
+  section{padding:64px 0}
+  section.hero{padding:48px 0 40px}
+  section.contacts{padding:64px 0 40px}
+  section.live{padding:56px 0}
+  section.finale{padding:64px 0}
+  section.gallery,section.directions,section.recognize,section.check,section.reviews,section.faq-sec,section.results{padding:64px 0}
 
-  header.site{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.site{position:sticky;top:0;z-index:40;background:rgba(250,248,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   header.site nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}
   .brand{display:flex;align-items:center;gap:11px;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.02em;color:var(--text)}
   .brand em{font-style:normal;color:var(--blue)}
   .brand-mark{width:42px;height:42px;border-radius:11px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;flex:0 0 auto}
   .brand-mark img{width:36px;height:36px;object-fit:contain}
-  .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-decoration:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:var(--radius-sm);font-weight:600;font-size:15px;border:0;cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-decoration:none}
   .btn-primary{background:var(--blue);color:#fff}
   .btn-primary:hover{background:var(--blue-hover);color:#fff}
   .btn-outline{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
   .btn-outline:hover{background:var(--blue);color:#fff}
-  .btn-lg{padding:16px 28px;font-size:16px}
+  .btn-lg{padding:14px 26px;font-size:16px;min-height:52px}
 
   /* Hero */
   .hero .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;font-weight:500;color:#43413c;background:var(--surface)}
   .hero .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:inline-block}
-  .hero h1{font-size:clamp(30px,4.4vw,48px);line-height:1.12;margin:20px 0 16px;text-wrap:wrap;max-width:16ch}
+  .hero h1{font-size:clamp(32px,4.2vw,52px);line-height:1.12;margin:20px 0 16px;text-wrap:wrap;max-width:18ch}
   .hero h1 .u{position:relative;white-space:normal;color:var(--blue)}
   .hero h1 .u svg{position:absolute;left:-3%;right:-3%;bottom:-11px;width:106%;height:18px;overflow:visible}
-  .hero p.lead{font-size:18px;line-height:1.58;color:var(--muted);max-width:48ch;margin:0 0 22px;text-wrap:pretty}
+  .hero p.lead{font-size:18px;line-height:1.58;color:var(--muted);max-width:46ch;margin:0 0 22px;text-wrap:pretty}
   .hero p.lead b{color:var(--text);font-weight:600}
   .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
   .hero-cta .btn{justify-content:center}
@@ -121,17 +126,17 @@
   .trust{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
   .trust span{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:13.5px;font-weight:600}
   .trust .stars{color:var(--yellow);letter-spacing:1px}
-  .hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.86fr);gap:44px;align-items:start}
-  .hero-photo{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 32px -18px rgba(38,59,120,.35);background:var(--surface);align-self:start;padding:0}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+  .hero-photo{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 32px -18px rgba(36,58,82,.28);background:var(--surface);align-self:center;padding:0}
   .hero-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:top center}
 
   /* Real photo block */
-  .gallery{padding:8px 0 36px}
-  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:16px}
-  .gallery-head h2{font-size:clamp(26px,3.5vw,40px)}
-  .gallery-head p{margin:0;color:var(--muted);max-width:36ch;font-size:15.5px}
-  .gallery-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:2.15/1;min-height:380px}
-  .gallery-item{appearance:none;padding:0;text-align:inherit;font:inherit;color:inherit;display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);cursor:zoom-in;position:relative;min-width:0;min-height:0}
+  .gallery{padding:64px 0}
+  .gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+  .gallery-head h2{font-size:clamp(28px,3.4vw,40px)}
+  .gallery-head p{margin:0;color:var(--muted);max-width:42ch;font-size:16px}
+  .gallery-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:2.15/1;min-height:420px}
+  .gallery-item{appearance:none;padding:0;text-align:inherit;font:inherit;color:inherit;display:block;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:var(--surface);cursor:zoom-in;position:relative;min-width:0;min-height:0}
   .gallery-grid .gallery-item{height:100%;width:100%}
   .gallery-grid .gallery-item:nth-child(1){grid-row:1 / span 2}
   .gallery-grid .gallery-item img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s ease}
@@ -159,7 +164,7 @@
     .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:minmax(220px,58vw) minmax(140px,36vw) minmax(140px,36vw);gap:10px;aspect-ratio:auto;min-height:0}
     .gallery-grid .gallery-item:nth-child(1){grid-column:1 / -1}
   }
-  .proof{display:grid;grid-template-columns:repeat(3,1fr);max-width:560px;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .proof{display:grid;grid-template-columns:repeat(3,1fr);max-width:none;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .proof>div{padding:18px 20px;border-right:1px solid var(--line)}
   .proof>div:last-child{border-right:0}
   .proof b{display:block;font-family:'Unbounded','Onest',system-ui,sans-serif;font-weight:700;font-size:26px;letter-spacing:-.04em;color:var(--dark-blue)}
@@ -169,11 +174,11 @@
   .proof span{display:block;color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.35}
 
   /* Directions — two choice blocks */
-  .directions{padding:36px 0}
-  .directions h2{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
-  .directions .sub{color:var(--muted);max-width:44ch;margin:0 0 28px}
+  .directions{padding:64px 0}
+  .directions h2,.recognize h2,.check h2,.results-top h2,.reviews-head h2,.contacts h2,.faq-sec h2,.format-sec h2{font-size:clamp(28px,3.4vw,40px);margin:0 0 10px}
+  .directions .sub,.recognize .sub,.format-sec .sub{color:var(--muted);max-width:54ch;margin:0 0 24px}
   .dir-choice{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
-  .dir-card{background:var(--blue-soft);border-radius:12px;padding:26px 24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+  .dir-card{background:var(--blue-soft);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:8px;min-width:0}
   .dir-card.alt{background:var(--yellow-soft)}
   .dir-card .age{color:var(--dark-blue);font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
   .dir-card.alt .age{color:var(--yellow-text)}
@@ -193,26 +198,23 @@
   .dir-card .dir-note b{display:block;margin-bottom:4px}
 
   .skills{padding:0}
-  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .skill-grid article{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+  .skill-grid article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
   .skill-grid h3{font-size:18px;margin:0 0 8px}
   .skill-grid p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
 
-  .format-sec{padding:40px 0}
-  .format-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
-  .format-sec .sub{color:var(--muted);max-width:56ch;margin:0 0 24px}
-  .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .format-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+  .format-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+  .format-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
   .format-card h3{font-size:22px;margin:0 0 12px}
   .format-card ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
   .format-card li{padding-left:16px;position:relative;color:var(--muted);font-size:15.5px;line-height:1.45}
   .format-card li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:2px;background:var(--blue)}
   .format-cta{margin-top:22px}
 
-  .faq-sec{padding:40px 0}
-  .faq-sec h2{font-size:clamp(28px,4vw,44px);margin:0 0 22px}
-  .faq-list{display:grid;gap:10px;max-width:900px}
-  .faq-list details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 22px}
+  .faq-sec{padding:64px 0}
+  .faq-sec h2{margin:0 0 22px}
+  .faq-list{display:grid;gap:10px;max-width:none}
+  .faq-list details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:4px 22px}
   .faq-list summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none}
   .faq-list summary::-webkit-details-marker{display:none}
   .faq-list details p{margin:0 0 16px;color:var(--muted);font-size:15.5px;line-height:1.55}
@@ -221,31 +223,28 @@
   .cta-points li{padding-left:18px;position:relative;color:var(--muted)}
   .cta-points li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:2px;background:var(--blue)}
 
-  .reviews{padding:44px 0}
+  .reviews{padding:64px 0}
 
   /* Recognize pains */
-  .recognize{padding:36px 0}
-  .recognize h2{font-size:clamp(28px,4vw,44px);margin:0 0 10px}
-  .recognize .sub{color:var(--muted);max-width:52ch;margin:0 0 24px}
-  .pain-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px 18px;list-style:none;margin:0;padding:0}
-  .pain-grid li{padding:12px 14px 12px 18px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:15.5px;font-weight:500;line-height:1.4;position:relative}
+  .recognize{padding:64px 0}
+  .pain-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px 14px;list-style:none;margin:0;padding:0}
+  .pain-grid li{padding:14px 16px 14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);font-size:15.5px;font-weight:500;line-height:1.4;position:relative}
   .pain-grid li::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:2px;background:var(--blue)}
   .pain-grid li:nth-child(n+4)::before{background:var(--yellow)}
 
   /* Diagnostic check */
-  .check{padding:40px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .check h2{font-size:clamp(26px,3.6vw,38px);margin:0 0 8px;max-width:28ch}
-  .check-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 20px;margin:18px 0 18px}
+  .check{padding:64px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .check h2{max-width:24ch}
+  .check-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 20px;margin:22px 0 22px}
   .check-item h3{font-size:18px;margin:0 0 6px}
   .check-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
   .check .after{color:var(--muted);font-size:16.5px;line-height:1.6;max-width:62ch;margin:0 0 22px}
   .check .btn{min-height:48px}
 
   /* Results */
-  .results-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:28px}
-  .results-top h2{font-size:clamp(28px,4vw,44px)}
-  .results-top p{color:var(--muted);margin:0;max-width:44ch}
-  .journey-block{margin-top:28px;padding-top:8px}
+  .results-top{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:24px}
+  .results-top p{color:var(--muted);margin:0;max-width:46ch}
+  .journey-block{margin-top:8px;padding-top:0}
   .journey-program{font-size:20px;margin:0 0 14px;color:var(--dark-blue)}
   .journey-block.prep .journey-program{color:var(--yellow-text)}
   .journey-col.after.prep{background:var(--yellow-soft)}
@@ -253,7 +252,7 @@
   .journey-block.prep .journey-arrow{color:var(--yellow-num)}
   .journey{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
   .journey-col{padding:18px 0}
-  .journey-col.after{background:var(--blue-soft);padding:22px;border-radius:16px}
+  .journey-col.after{background:var(--blue-soft);padding:22px;border-radius:var(--radius)}
   .journey-col h3{font-size:22px;color:var(--muted);margin:0 0 18px;font-family:'Unbounded','Onest',sans-serif;font-weight:600;letter-spacing:-.01em}
   .journey-col.now h3::after{content:"";display:block;width:42px;height:5px;margin-top:10px;border-radius:999px;background:var(--yellow)}
   .journey-col.after h3{color:var(--dark-blue)}
@@ -265,22 +264,18 @@
   .journey-arrow svg{width:56px;height:56px}
   .journey-arrow span{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);max-width:16ch;text-align:center;font-weight:600}
 
-  /* Live center — dark blue */
+  /* Live center — compact */
   .live{background:var(--dark-blue);color:#fff}
-  .live .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .live h2{color:#fff;font-size:clamp(28px,3.8vw,42px);max-width:18ch}
-  .live p{color:#C9D1EA;font-size:18px;line-height:1.65;margin:20px 0 0}
-  .live p b{color:#fff;font-weight:600}
-  .live ol{list-style:none;padding:0;margin:0;counter-reset:live}
-  .live ol li{counter-increment:live;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline}
-  .live ol li:last-child{border-bottom:0}
-  .live ol li::before{content:counter(live,decimal-leading-zero);font-family:'Unbounded','Onest',sans-serif;font-weight:700;color:var(--yellow);font-size:15px;letter-spacing:.02em}
-  .live ol li b{display:block;font-weight:600;font-size:18px;margin-bottom:4px}
-  .live ol li span{color:#B7C0DA;font-size:14.5px;line-height:1.5}
+  .live .wrap{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:36px;align-items:center}
+  .live h2{color:#fff;font-size:clamp(26px,3.4vw,38px);max-width:18ch}
+  .live p{color:rgba(255,255,255,.78);font-size:17px;line-height:1.6;margin:12px 0 0;max-width:46ch}
+  .live-points{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .live-points li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:16px 18px;font-weight:600;font-size:15.5px}
+  .live-points li span{display:block;margin-top:4px;color:rgba(255,255,255,.7);font-weight:500;font-size:14px}
 
   /* Reviews */
-  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px;flex-wrap:wrap}
-  .reviews-head h2{font-size:clamp(28px,4vw,44px);max-width:16ch}
+  .reviews-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+  .reviews-head h2{max-width:16ch}
   .reviews-rating{text-align:right}
   .reviews-rating .num{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:44px;color:var(--dark-blue);line-height:1}
   .reviews-rating .stars{color:var(--yellow);letter-spacing:3px;font-size:18px;margin-top:6px}
@@ -303,8 +298,8 @@
   .reviews-cta{display:flex;justify-content:center;margin-top:36px}
 
   /* Contacts — yellow info + map */
-  .contacts h2{font-size:clamp(28px,4vw,44px);margin:0 0 28px}
-  .contacts-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:0;overflow:hidden;border-radius:20px;border:1px solid var(--line)}
+  .contacts h2{margin:0 0 24px}
+  .contacts-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line)}
   .contacts-info{background:var(--yellow-soft);padding:38px;display:flex;flex-direction:column;justify-content:center;gap:16px;border-right:1px solid var(--line)}
   .contacts-info .name{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:22px;color:var(--text)}
   .contacts-info .name em{font-style:normal;color:var(--blue)}
@@ -318,13 +313,13 @@
   .finale .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
   .finale h2{color:var(--dark-blue);font-size:clamp(26px,3.6vw,38px);max-width:18ch}
   .finale p{color:var(--muted);font-size:17px;line-height:1.65;margin:16px 0 20px;max-width:48ch}
-  .finale form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(38,59,120,.25)}
+  .finale form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;display:grid;gap:12px;color:var(--text);box-shadow:0 6px 18px -12px rgba(36,58,82,.22)}
   .finale form h3{font-family:'Unbounded','Onest',sans-serif;font-weight:700;font-size:20px;margin:0 0 6px;color:var(--dark-blue)}
-  .finale form input,.finale form select,.finale form textarea{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s}
-  .finale form input:focus,.finale form select:focus,.finale form textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(64,95,194,.18)}
+  .finale form input,.finale form select,.finale form textarea{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:var(--radius-sm);font:inherit;font-size:15.5px;background:#fff;color:var(--text);transition:border-color .15s,box-shadow .15s;min-height:48px}
+  .finale form input:focus,.finale form select:focus,.finale form textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(52,101,197,.18)}
   .finale form textarea{min-height:88px;resize:vertical}
   .finale form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .finale form button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--blue);color:#fff;font:600 16px/1 'Onest';cursor:pointer;transition:background .18s}
+  .finale form button{width:100%;min-height:52px;padding:16px;border:0;border-radius:var(--radius-sm);background:var(--blue);color:#fff;font:600 16px/1 'Onest';cursor:pointer;transition:background .18s}
   .finale form button:hover:not(:disabled){background:var(--blue-hover)}
   .finale form button:disabled{opacity:.7;cursor:default}
   .finale form .privacy{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0}
@@ -347,10 +342,10 @@
 
   /* Tablet / mobile */
   @media (max-width:1099px){
-    .wrap{width:calc(100% - 28px)}
-    section{padding:40px 0}
-    section.hero{padding:28px 0 24px}
-    section.live,section.finale{padding:40px 0}
+    .wrap{width:calc(100% - 32px)}
+    section{padding:48px 0}
+    section.hero{padding:32px 0 28px}
+    section.live,section.finale,section.gallery,section.directions,section.recognize,section.check,section.reviews,section.faq-sec,section.results,section.contacts{padding:48px 0}
     header.site nav{padding:12px 0;gap:12px}
     .brand{font-size:17px}
     .btn{min-height:44px}
@@ -363,7 +358,8 @@
     .journey{grid-template-columns:1fr}
     .journey-arrow{transform:rotate(90deg);margin:6px auto}
     .live .wrap,.finale .wrap,.reviews-grid,.contacts-grid,.results-top{grid-template-columns:1fr;gap:24px}
-    section.directions,section.recognize,section.check{padding:40px 0}
+    .live-points{grid-template-columns:1fr 1fr}
+    section.directions,section.recognize,section.check{padding:48px 0}
     .contacts-grid{border-radius:16px}
     .contacts-info{border-right:0;border-bottom:1px solid var(--line);padding:28px 22px}
     .contacts-info address{font-size:20px}
@@ -379,10 +375,9 @@
   @media (max-width:640px){
     body{font-size:16px}
     .wrap{width:calc(100% - 24px)}
-    section{padding:44px 0}
+    section{padding:40px 0}
     section.hero{padding:28px 0 24px}
-    section.gallery{padding:8px 0 28px}
-    section.live,section.finale,section.contacts{padding:44px 0}
+    section.gallery,section.live,section.finale,section.contacts,section.directions,section.recognize,section.check,section.reviews,section.faq-sec,section.results{padding:40px 0}
     section[id]{scroll-margin-top:72px}
     .brand{font-size:15px;min-width:0}
     header.site nav{padding:10px 0;gap:8px}
@@ -407,10 +402,10 @@
     .gallery-grid{gap:10px}
     .gallery-item{border-radius:12px}
     .dir-choice,.format-grid{grid-template-columns:1fr}
-    .pain-grid,.check-grid,.skill-grid{grid-template-columns:1fr 1fr;gap:8px 10px}
+    .pain-grid,.check-grid,.skill-grid,.live-points{grid-template-columns:1fr 1fr;gap:8px 10px}
     .dir-card{padding:18px 16px;border-radius:10px}
     .check .btn,.dir-cta{width:100%;justify-self:stretch;white-space:normal}
-    section.directions,section.recognize,section.check{padding:32px 0}
+    section.directions,section.recognize,section.check{padding:40px 0}
     .journey-block{margin-top:18px}
     .proof{margin-bottom:0}
     .journey-col{padding:18px 0}
@@ -490,33 +485,29 @@
 
 <section id="directions" class="directions">
   <div class="wrap">
-    <h2>Подбираем программу под возраст и задачу ребёнка</h2>
-    <p class="sub">Мы не записываем всех в одну группу. Сначала понимаем, какие навыки нужно развивать именно вашему ребёнку.</p>
+    <h2>Два направления по возрасту и задаче</h2>
+    <p class="sub">Сначала смотрим, какие навыки нужно развивать именно вашему ребёнку — и только потом подбираем программу.</p>
 
     <div class="dir-choice">
       <article class="dir-card">
         <div class="age">7–13 лет</div>
-        <h3>Скорочтение и развитие мышления</h3>
-        <p class="trigger">Для школьников, которым важно легче работать с текстами, понимать задания и учиться самостоятельнее.</p>
-        <h4>Подходит, если ребёнок:</h4>
+        <h3>Скорочтение и мышление</h3>
+        <p class="trigger">Легче читать, понимать задания и учиться без постоянной подсказки.</p>
         <ul>
-          <li>читает медленно или быстро устаёт;</li>
-          <li>не понимает смысл и не может пересказать;</li>
-          <li>забывает прочитанное;</li>
-          <li>отвлекается и ждёт подсказки.</li>
+          <li>медленно читает или не понимает смысл;</li>
+          <li>не может пересказать;</li>
+          <li>отвлекается и ждёт помощи.</li>
         </ul>
         <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 7–13 лет</a>
       </article>
 
       <article class="dir-card alt">
         <div class="age">5–7 лет</div>
-        <h3>Подготовка к школе без пробелов</h3>
-        <p class="trigger">Для дошкольников, которым важно прийти в 1 класс готовыми учиться, слушать и выполнять задания.</p>
-        <h4>Развиваем:</h4>
+        <h3>Подготовка к школе</h3>
+        <p class="trigger">Прийти в 1 класс собранным: слышать задание, удерживать внимание и делать сам.</p>
         <ul>
-          <li>чтение, счёт и счёт в уме;</li>
+          <li>чтение, счёт и понимание инструкции;</li>
           <li>память, внимание и речь;</li>
-          <li>понимание инструкции;</li>
           <li>усидчивость и самостоятельность.</li>
         </ul>
         <a href="#form" class="btn btn-outline dir-cta">Подобрать программу 5–7 лет</a>
@@ -527,23 +518,37 @@
 
 <section id="pains" class="recognize">
   <div class="wrap">
-    <h2>Если ребёнок способный, но учёба даётся тяжелее, чем могла бы</h2>
-    <p class="sub">Часто проблема не в лени и не в характере. Ребёнку может не хватать конкретных учебных навыков: внимания, памяти, техники чтения, мышления и самоконтроля.</p>
+    <h2>Если ребёнок способный, но учёба даётся тяжелее</h2>
+    <p class="sub">Часто не хватает не знаний, а конкретных навыков: внимания, памяти, чтения и самоконтроля.</p>
     <ul class="pain-grid">
       <li>Читает медленно и быстро устаёт</li>
       <li>Не может пересказать своими словами</li>
       <li>Отвлекается и не доводит до конца</li>
       <li>Домашка занимает слишком много времени</li>
-      <li>Ждёт помощи взрослого и подсказок</li>
-      <li>Боится больших текстов и сложных заданий</li>
+      <li>Ждёт помощи взрослого</li>
+      <li>Боится больших текстов</li>
     </ul>
+    <div class="skill-grid">
+      <article>
+        <h3>Чтение</h3>
+        <p>Понимать текст и пересказывать своими словами.</p>
+      </article>
+      <article>
+        <h3>Память и внимание</h3>
+        <p>Удерживать задачу и доводить её до результата.</p>
+      </article>
+      <article>
+        <h3>Самостоятельность</h3>
+        <p>Рассуждать и справляться без постоянной подсказки.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section id="diagnostic" class="check">
   <div class="wrap">
-    <h2>Сначала понимаем, что нужно именно вашему ребёнку</h2>
-    <p class="after">На диагностике педагог смотрит базовые навыки, которые влияют на учёбу каждый день: чтение, память, внимание — и даёт план развития.</p>
+    <h2>Сначала диагностика — потом программа</h2>
+    <p class="after">За одну встречу педагог видит, как ребёнок читает, запоминает и удерживает внимание, и объясняет, какой маршрут выбрать.</p>
     <div class="check-grid">
       <article class="check-item">
         <h3>Чтение и текст</h3>
@@ -602,6 +607,21 @@
   </div>
 </section>
 
+<section id="why" class="live">
+  <div class="wrap">
+    <div>
+      <h2>Не дополнительные занятия, а интеллектуальная база</h2>
+      <p>Школа требует не только знаний. Важно уметь понять задачу, удержать внимание, запомнить материал и довести работу до конца.</p>
+    </div>
+    <ul class="live-points">
+      <li>Понять задачу<span>Слышать инструкцию и сразу понимать, что делать</span></li>
+      <li>Удержать внимание<span>Меньше отвлекаться и доводить до результата</span></li>
+      <li>Запомнить материал<span>Вспоминать без долгих пауз и подсказок</span></li>
+      <li>Справиться самому<span>Читать, рассуждать и работать самостоятельнее</span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="gallery" id="photos">
   <div class="wrap">
     <div class="gallery-head">
@@ -614,6 +634,24 @@
       <button class="gallery-item" type="button" data-full="images/lesson-2.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-2.jpg" alt="Задания на память и внимание"></button>
       <button class="gallery-item" type="button" data-full="images/lesson-3.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-3.jpg" alt="Мини-группа на занятии"></button>
       <button class="gallery-item" type="button" data-full="images/lesson-4.jpg" aria-label="Увеличить фотографию"><img src="images/lesson-4.jpg" alt="Ребёнок после выполненного задания"></button>
+    </div>
+    <div class="format-grid">
+      <article class="format-card">
+        <h3>Мини-группы</h3>
+        <ul>
+          <li>для детей 5–7 и 7–13 лет;</li>
+          <li>педагог видит темп каждого ребёнка;</li>
+          <li>обратная связь родителям.</li>
+        </ul>
+      </article>
+      <article class="format-card">
+        <h3>Индивидуально</h3>
+        <ul>
+          <li>персональная траектория;</li>
+          <li>акцент на слабые навыки;</li>
+          <li>стоимость и расписание — на диагностике.</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
