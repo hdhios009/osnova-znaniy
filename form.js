@@ -2,7 +2,7 @@
   'use strict';
 
   var FORM_ENDPOINT =
-    'https://script.google.com/macros/s/AKfycby87hWuo9uuhgNc2Lc16C_AnwFB9zVyvh5DTcOUhYVVMD_MaE2YvZtE1otrStmnxDyoJg/exec';
+    'https://script.google.com/macros/s/AKfycby84Y6oEJBSxg2LMXY1rnQ6DNSET0l4fxpiM1I4nXtBasB9sQtoRQQdfBYZyk2zyrDg5w/exec';
   var PAGE_NAME = 'Основа знаний — Главная';
   var ATTR_KEY = 'osnova_attribution';
   var ATTR_FIELDS = [
